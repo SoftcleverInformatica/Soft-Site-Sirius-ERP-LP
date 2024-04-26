@@ -17,8 +17,15 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontFamily:{
+      sc:[
+        '"Roboto", Arial',
+      ]
+    },
     extend: {
       colors: {
+        'sc': '#053553',
+        'pv1': '#24ADB5',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
