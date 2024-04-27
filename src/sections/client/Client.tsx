@@ -6,7 +6,7 @@ import iconUser from '../../../assets/user.svg';
 
 export default function Client() {
 	return (
-		<div className='px-[14.375rem] py-[3.625rem] flex flex-col '>
+		<div className='overflow-x-hidden px-[14.375rem] py-[3.625rem] flex flex-col '>
 			<div className='flex flex-col items-center space-y-12 '>
 				<h2>São Mais de 30 anos de experiências</h2>
 				<p>
