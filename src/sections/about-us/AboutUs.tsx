@@ -48,7 +48,7 @@ export default function AboutUs() {
             </div>
             {!isMobile && (
                 <div className=" col-span-4 col-start-8 row-start-2 row-span-8 flex flex-col justify-center items-center mr-4 ">
-                    <div className=" absolute w-[20%] h-[60%] rounded-xl bg-sc">
+                    <div className=" absolute w-[20%] max-w-[18rem] h-[60%]  max-h-[23.875rem] rounded-xl bg-sc">
                     </div>
                     <Image
                         className="relative right-[10%] w-[23rem]"

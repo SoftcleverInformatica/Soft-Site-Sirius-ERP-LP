@@ -1,15 +1,15 @@
 "use client"
 import Image from "next/image";
-import LogoAzul from "/assets/logo_azul.svg"
-import LogoBranco from "/assets/logo_branco.svg"
-import HeaderFull from "/assets/header-bg.png"
-import HeaderPartial from "/assets/header.png"
+import LogoAzul from "../../../assets/logo_azul.svg"
+import LogoBranco from "../../../assets/logo_branco.svg"
+import HeaderFull from "../../../assets/header-bg.png"
+import HeaderPartial from "../../../assets/header.png"
 
-import WhatsappIcon from "/assets/whatsapp.svg"
+import WhatsappIcon from "../../../assets/whatsapp.svg"
 import { useEffect, useState } from "react";
 import ButtonExpert from "@/components/button_expert";
 import { Button } from "@/components/ui/button";
-import WhatsappIconWhite from "/assets/whatsapp_white.svg"
+import WhatsappIconWhite from "../../../assets/whatsapp_white.svg"
 
 export default function Header() {
     const [isMobile, setIsMobile] = useState(true);
@@ -41,7 +41,7 @@ export default function Header() {
     return (
         <header
             style={bg}
-            className={`grid relative overflow-x-hidden grid-cols-12 grid-rows-8 gap-3 h-[100vh] min-h-[27rem]  lg:min-h-[40rem] bg-no-repeat bg-right-top pb-4 lg:bg-cover`}>
+            className={`grid relative overflow-x-hidden grid-cols-12 grid-rows-8 gap-3 h-[42rem] min-h-[27rem]  lg:min-h-[40rem] lg:max-h[42rem] bg-no-repeat bg-right-top pb-4 lg:bg-cover`}>
 
             <div className="col-span-full pl-10 min-w-[20rem] row-span-1 
             md:row-span-2 md:absolute md:left-[5%]
@@ -102,7 +102,7 @@ export default function Header() {
                 </div>
 
                 <Image
-                    className="h-[100vh] lg:col-span-6 lg:col-start-7"
+                    className="h-[40.7rem] lg:col-span-6 lg:col-start-7"
                     alt="background_image"
                     src={HeaderPartial}
                 />

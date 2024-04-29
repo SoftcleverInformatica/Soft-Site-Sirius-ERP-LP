@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
-import WhatsappIcon from "/assets/whatsapp.svg"
-import WhatsappIconWhite from "/assets/whatsapp_white.svg"
+import WhatsappIcon from "../../../assets/whatsapp.svg"
+import WhatsappIconWhite from "../../../assets/whatsapp_white.svg"
 import Image from 'next/image';
 
 
