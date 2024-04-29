@@ -85,7 +85,7 @@ export default function Client() {
 					
 				</div>
 			</div>
-				<ButtonExpert color={'blue'} className="gap-2 py-6 px-12 w-[100%] bg-sky-950 text-white hover:bg-scHover lg:w-[21.25rem] " />
+				<ButtonExpert color={'blue'} className="gap-2 py-6 px-12 w-[100%] bg-sky-950 text-white hover:bg-scHover lg:w-[15.25rem] " />
 		</div>
 	);
 }

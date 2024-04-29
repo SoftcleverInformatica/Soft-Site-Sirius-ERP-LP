@@ -51,15 +51,15 @@ export default function Products() {
     }, []);
 
     return (
-        <section className="w-full flex flex-col justify-center items-center overflow-y-hidden py-5  gap-7 h-[95vh]">
+        <section className="w-full flex flex-col justify-center items-center overflow-y-hidden py-5  gap-7">
             <h2 className="p-5 font-extrabold text-sc2 text-2xl text-center ">Conheça tudo que o Sírius ERP oferece para o seu negócio!</h2>
-            <div className="w-full flex flex-col justify-center items-center h-[80%]">
-                <Carousel className="w-[100%] lg:w-[80%] " plugins={[
+            <div className="w-full flex flex-col justify-center items-center h-[80%] md:mt-5">
+                <Carousel className="w-[100%]" plugins={[
                     Autoplay({ delay: 2000 })
                 ]}>
                     <CarouselContent className="-ml-1 pb-10">
                         {cards.map((_, index) => (
-                            <CarouselItem key={index} className="pl-4 pb-10  lg:px-8 basis-[78%] md:basis-1/2 lg:basis-[30%] h-[100%] ">
+                            <CarouselItem key={index} className="pl-4 pb-10  lg:px-8 basis-[78%] md:basis-[38%] lg:basis-[24%] h-[100%] ">
                                 <div className="p-1 mb-15 lg:p-0">
                                     <Card className=" mb-15 shadow-2xl z-30">
                                         <CardContent className="grid grid-rows-12 grid-cols-1 gap-3  h-[27rem] lg:h-[20rem]">
@@ -85,7 +85,7 @@ export default function Products() {
             </div>
 
 
-            <ButtonExpert color={'blue'} className="gap-2 p-3 w-[80%] font-semibold  bg-sc text-white hover:bg-scHover lg:w-[25%] lg:px-1 lg:py-6 lg:flex" />
+            <ButtonExpert color={'blue'} className="gap-2 py-6 px-12 w-[82%] bg-sky-950 text-white hover:bg-scHover lg:w-[15.25rem] " />
         </section>
     )
 }
