@@ -14,7 +14,11 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        'sm': '640px', // celular na vertical
+        'md': '768px', // tablet na vertical
+        'lg': '1024px', // tablet na horizontal
+        'xl': '1280px', // desktop
+        '2xl': '1536px' // tela grande
       },
     },
     fontFamily:{
