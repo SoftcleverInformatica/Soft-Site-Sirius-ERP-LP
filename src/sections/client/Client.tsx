@@ -13,7 +13,7 @@ export default function Client() {
 				<p className='text-sc text-lg'>
 					Nós da Soft Clever temos o intuito de ter sua empresa como membro do nosso grupo e não somente como mais um cliente.
 				</p>
-				<div className='grid grid-cols-1 sm:grid-cols-2 gap-10 lg:flex justify-center md:gap-15 lg:gap-20 '>
+				<div className='grid grid-cols-1 sm:grid-cols-2 gap-10 lg:flex md:gap-15 lg:gap-20 '>
 					{/* Users */}
 					<div className='flex flex-col gap-1.5 items-center justify-items-center '>
 						<div className='flex gap-5 items-center justify-items-center gap-'>
@@ -67,13 +67,13 @@ export default function Client() {
 					</div>
 					{/* team */}
 					<div className='flex flex-col gap-1.5 items-center justify-items-center '>
-						<div className='flex gap-5 items-center justify-items-center gap-'>
+						<div className='flex gap-5 items-center justify-items-center '>
 							<Image
 								className=''
 								alt='Ícone de clientes'
 								src={iconTeam}></Image>
 							<div className='flex flex-col gap-2 items-start justify-items-center '>
-								<p className='text-sc font-sc text-lg font-extrabold' >NOSSA EQUIPE</p>
+								<p className='text-sc font-sc text-lg font-extrabold sm:grid-cols-2' >NOSSA <br/> EQUIPE</p>
 								<p className='text-pv1 text-lg font-extrabold '>20 +</p>
 							</div>
 						</div>
