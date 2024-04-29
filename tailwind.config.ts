@@ -29,6 +29,7 @@ const config = {
     extend: {
       colors: {
         'sc': '#053553',
+        'sc2':'#003658',
         'pv1': '#24ADB5',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
