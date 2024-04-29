@@ -1,3 +1,4 @@
+import AboutUs from "@/sections/about-us/AboutUs";
 import Client from "@/sections/client/Client";
 import Header from "@/sections/header/Header";
 import Products from "@/sections/product/Products";
@@ -8,6 +9,7 @@ export default function Home() {
       <Header></Header>
       <Client></Client>
       <Products></Products>
+      <AboutUs></AboutUs>
     </main>
   );
 }
