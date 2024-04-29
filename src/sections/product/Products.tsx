@@ -85,7 +85,7 @@ export default function Products() {
             </div>
 
 
-            <ButtonExpert color={'blue'} className="gap-2 p-3 w-[80%] font-semibold  bg-sc text-white hover:bg-[#396680] lg:w-[25%] lg:px-1 lg:py-6 lg:flex" />
+            <ButtonExpert color={'blue'} className="gap-2 p-3 w-[80%] font-semibold  bg-sc text-white hover:bg-scHover lg:w-[25%] lg:px-1 lg:py-6 lg:flex" />
         </section>
     )
 }

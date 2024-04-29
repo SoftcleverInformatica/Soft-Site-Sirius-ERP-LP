@@ -72,7 +72,7 @@ export default function Header() {
             lg:col-span-3 lg:col-start-3 lg:row-start-8">
                 
                 <ButtonExpert color={isMobile ? 'white' : 'blue'} className="gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
-                lg:bg-sc lg:text-white lg:hover:bg-[#396680] lg:px-1 lg:py-6 lg:flex" />
+                lg:bg-sc lg:text-white lg:hover:bg-scHover lg:px-1 lg:py-6 lg:flex" />
             
             </div>
             {!isMobile && (<>

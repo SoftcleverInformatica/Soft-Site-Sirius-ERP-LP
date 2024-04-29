@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="flex flex-col p-0 m-0 b-0">
       <Header></Header>
-      {/* <Client></Client> */}
+      <Client></Client>
       <Products></Products>
     </main>
   );
