@@ -155,7 +155,7 @@ export default function Feedback() {
 	return (
 		<div
 			style={bg}
-			className='flex flex-col gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem] items-center  xl:px-[14.375rem]'>
+			className='flex flex-col gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem] items-center w-full xl:px-[14.375rem]'>
 			<h2 className='text-2xl font-bold text-white'>Quem usa nos recomenda</h2>
 
 			<Carousel className='flex  lg:max-w-2xl xl:max-w-5xl w-full '>

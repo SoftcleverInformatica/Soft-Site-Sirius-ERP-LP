@@ -8,13 +8,13 @@ import Feedback from "../sections/feedback/Feedback";
 
 export default function Home() {
   return (
-    <main className="flex flex-col p-0 m-0 b-0 max-w-[1440px] justify-center items-center">
+    <main className="flex flex-col p-0 m-0 b-0  justify-center items-center">
       <Header></Header>
       <Client></Client>
       <Products></Products>
       <Feedback></Feedback>
       <AboutUs></AboutUs>
-      <Segments></Segments>
+      {/* <Segments></Segments> */}
     </main>
   );
 }
