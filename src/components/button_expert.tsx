@@ -12,7 +12,7 @@ interface props{
 export default function ButtonExpert({className,color='white',label='Fale com um  especialista'}:props) {
     return (
         <Button className={`${className}`} >
-            <span className="text-sm md:font-light ">{label}</span>
+            <span className={`text-sm md:font-light ${color =='white' && '!font-semibold'} `}>{label}</span>
             <Image
             alt="WhatsappIcon"
             src={color == 'white' ? WhatsappIcon:WhatsappIconWhite}
