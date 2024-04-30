@@ -1,40 +1,28 @@
 import Image from 'next/image';
 import feedbackImageBg from '../../../assets/feedback.png';
 import avatar from '../../../assets/avatar.svg';
+import star from '../../../assets/star.svg';
+import starGray from '../../../assets/starGray.svg';
 // import Autoplay from "embla-carousel-autoplay";
 import ButtonExpert from '@/components/button_expert';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
-import useEmblaCarousel from 'embla-carousel-react';
 
 export default function Feedback() {
 	const bg = { backgroundImage: `url(${feedbackImageBg.src})` };
+	const bgStarGray = { backgroundImage: `url(${starGray.src})` };
+	const bgStar = { backgroundImage: `url(${star.src})` };
 
-	const feedbacks: { title: string; description: string; user: { image: any; name: string; professionalPosition: string } }[] = [
-		{
-			title: 'Ótima experiência de trabalho',
-			description:
-				'Trabalhar com este profissional foi uma experiência muito positiva. Ele demonstrou habilidades técnicas impressionantes e uma atitude proativa em resolver problemas.',
-			user: {
-				image: 'url_da_imagem',
-				name: 'Pedro Oliveira',
-				professionalPosition: 'Engenheiro de Software',
-			},
-		},
-		{
-			title: 'Muito satisfeito com o serviço!',
-			description:
-				'O serviço foi entregue no prazo estipulado e atendeu plenamente às nossas necessidades. Recomendo fortemente este profissional para futuros projetos.',
-			user: {
-				image: 'url_da_imagem',
-				name: 'Maria Santos',
-				professionalPosition: 'Diretora de Marketing',
-			},
-		},
+	const feedbacks: {
+		title: string;
+		description: string;
+		score: number;
+		user: { image: any; name: string; professionalPosition: string };
+	}[] = [
 		{
 			title: 'Excelente trabalho!',
 			description:
 				'O profissional realizou um trabalho excepcional, entregando resultados além das expectativas. Comunicação clara e eficiente durante todo o projeto.',
+			score: 5,
 			user: {
 				image: 'url_da_imagem',
 				name: 'João Silva',
@@ -42,19 +30,10 @@ export default function Feedback() {
 			},
 		},
 		{
-			title: 'Ótima experiência de trabalho',
-			description:
-				'Trabalhar com este profissional foi uma experiência muito positiva. Ele demonstrou habilidades técnicas impressionantes e uma atitude proativa em resolver problemas.',
-			user: {
-				image: 'url_da_imagem',
-				name: 'Pedro Oliveira',
-				professionalPosition: 'Engenheiro de Software',
-			},
-		},
-		{
 			title: 'Muito satisfeito com o serviço!',
 			description:
 				'O serviço foi entregue no prazo estipulado e atendeu plenamente às nossas necessidades. Recomendo fortemente este profissional para futuros projetos.',
+			score: 4.5,
 			user: {
 				image: 'url_da_imagem',
 				name: 'Maria Santos',
@@ -62,13 +41,113 @@ export default function Feedback() {
 			},
 		},
 		{
+			title: 'Ótima experiência de trabalho',
+			description:
+				'Trabalhar com este profissional foi uma experiência muito positiva. Ele demonstrou habilidades técnicas impressionantes e uma atitude proativa em resolver problemas.',
+			score: 4.8,
+			user: {
+				image: 'url_da_imagem',
+				name: 'Pedro Oliveira',
+				professionalPosition: 'Engenheiro de Software',
+			},
+		},
+		{
 			title: 'Excelente trabalho!',
 			description:
 				'O profissional realizou um trabalho excepcional, entregando resultados além das expectativas. Comunicação clara e eficiente durante todo o projeto.',
+			score: 5,
 			user: {
 				image: 'url_da_imagem',
 				name: 'João Silva',
 				professionalPosition: 'Gerente de Projetos',
+			},
+		},
+		{
+			title: 'Muito satisfeito com o serviço!',
+			description:
+				'O serviço foi entregue no prazo estipulado e atendeu plenamente às nossas necessidades. Recomendo fortemente este profissional para futuros projetos.',
+			score: 4.5,
+			user: {
+				image: 'url_da_imagem',
+				name: 'Maria Santos',
+				professionalPosition: 'Diretora de Marketing',
+			},
+		},
+		{
+			title: 'Ótima experiência de trabalho',
+			description:
+				'Trabalhar com este profissional foi uma experiência muito positiva. Ele demonstrou habilidades técnicas impressionantes e uma atitude proativa em resolver problemas.',
+			score: 4.8,
+			user: {
+				image: 'url_da_imagem',
+				name: 'Pedro Oliveira',
+				professionalPosition: 'Engenheiro de Software',
+			},
+		},
+		{
+			title: 'Excelente trabalho!',
+			description:
+				'O profissional realizou um trabalho excepcional, entregando resultados além das expectativas. Comunicação clara e eficiente durante todo o projeto.',
+			score: 5,
+			user: {
+				image: 'url_da_imagem',
+				name: 'João Silva',
+				professionalPosition: 'Gerente de Projetos',
+			},
+		},
+		{
+			title: 'Muito satisfeito com o serviço!',
+			description:
+				'O serviço foi entregue no prazo estipulado e atendeu plenamente às nossas necessidades. Recomendo fortemente este profissional para futuros projetos.',
+			score: 4.5,
+			user: {
+				image: 'url_da_imagem',
+				name: 'Maria Santos',
+				professionalPosition: 'Diretora de Marketing',
+			},
+		},
+		{
+			title: 'Ótima experiência de trabalho',
+			description:
+				'Trabalhar com este profissional foi uma experiência muito positiva. Ele demonstrou habilidades técnicas impressionantes e uma atitude proativa em resolver problemas.',
+			score: 4.8,
+			user: {
+				image: 'url_da_imagem',
+				name: 'Pedro Oliveira',
+				professionalPosition: 'Engenheiro de Software',
+			},
+		},
+		{
+			title: 'Excelente trabalho!',
+			description:
+				'O profissional realizou um trabalho excepcional, entregando resultados além das expectativas. Comunicação clara e eficiente durante todo o projeto.',
+			score: 5,
+			user: {
+				image: 'url_da_imagem',
+				name: 'João Silva',
+				professionalPosition: 'Gerente de Projetos',
+			},
+		},
+		{
+			title: 'Muito satisfeito com o serviço!',
+			description:
+				'O serviço foi entregue no prazo estipulado e atendeu plenamente às nossas necessidades. Recomendo fortemente este profissional para futuros projetos.',
+			score: 4.5,
+			user: {
+				image: 'url_da_imagem',
+				name: 'Maria Santos',
+				professionalPosition: 'Diretora de Marketing',
+			},
+		},
+		{
+			title: 'Ótima experiência de trabalho',
+			description:
+				'Trabalhar com este profissional foi uma experiência muito positiva. Ele demonstrou habilidades técnicas impressionantes e uma atitude proativa em resolver problemas.',
+			score: 4.8,
+			user: {
+				image: 'url_da_imagem',
+				name: 'Pedro Oliveira',
+				professionalPosition: 'Engenheiro de Software',
 			},
 		},
 	];
@@ -76,36 +155,46 @@ export default function Feedback() {
 	return (
 		<div
 			style={bg}
-			className='overflow-x-hidden flex flex-col gap-10 px-[2.5rem] py-[1.8rem] bg-no-repeat bg-center items-center md:px-20  lg:px-60  '>
-			<h2 className='text-2xl font-bold text-white	'>Quem usa nos recomenda</h2>
+			className='flex flex-col gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem] items-center md:px-20 lg:px-[14.375rem]'>
+			<h2 className='text-2xl font-bold text-white'>Quem usa nos recomenda</h2>
 
-			<Carousel className='w-full'>
-				<CarouselContent className='flex gap-10'>
+			<Carousel className='flex  max-w-5xl w-full '>
+				<CarouselContent className='flex gap-9 px-4'>
 					{feedbacks.map((_, index) => (
 						<CarouselItem
 							key={index}
-							className='sm:basis-1/2 lg:basis-1/3 '>
+							className='flex max-w-64 '>
 							<div
-								className='flex flex-col gap-5 flex-wrap w-full h-full p-5 bg-white rounded-lg'
+								className='flex flex-col gap-4  w-full h-full px-5 py-10 bg-white rounded-lg'
 								key={index}>
-								<span className='text-5xl font-bold text-sc'>&#34;</span>
-								<h4 className='text-2xl font-bold text-sc	'>{_.title}</h4>
-								<p className='flex-wrap '>{_.description}</p>
+								<span className='text-5xl font-bold text-sc font-serif'>&#34;</span>
+								<h4 className='text-xl font-bold text-sc	'>{_.title}</h4>
+								<p className='text-sm text-sc'>{_.description}</p>
+
+								<div className='flex items-center gap-2'>
+									<p className='text-xs text-sc'>{_.score}</p>
+									<div
+										style={bgStarGray}
+										className='w-[5.875rem]  h-[1.125rem] '>
+										<div
+											style={{ backgroundImage: `url(${star.src})`, width: `${_.score * 20}%` }}
+											className='h-full '></div>
+									</div>
+								</div>
+
 								{/* from */}
 								<div className='flex gap-5'>
 									{/* avatar */}
-
 									<Image
 										className=''
 										// src={_.user.name}
 										src={avatar}
 										alt='Imagem do perfil'
 									/>
-
 									{/* info */}
 									<div className='flex flex-col'>
-										<p className=''>{_.user.name}</p>
-										<p className=''>{_.user.professionalPosition}</p>
+										<p className='text-sm font-semibold text-sc'>{_.user.name}</p>
+										<p className='text-xs text-sc'>{_.user.professionalPosition}</p>
 									</div>
 								</div>
 							</div>
@@ -113,6 +202,10 @@ export default function Feedback() {
 					))}
 				</CarouselContent>
 			</Carousel>
+			<ButtonExpert
+				color={'white'}
+				className='gap-2 py-6 px-12 w-[100%] bg-white text-sky-950 hover:bg-scHover lg:w-[15.25rem] '
+			/>
 		</div>
 	);
 }
