@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Images Segments */
+.varejo{
+  background-image: url(../../assets/FrameVarejo.png);
+}
+.atacado{
+  background-image: url(../../assets/FrameAtacado.png);
+}
+.industria{
+  background-image: url(../../assets/FrameIndustria.png);
+}
+.fiscal{
+  background-image: url(../../assets/FrameFiscal.png);
+}
 
 @layer base {
   :root {

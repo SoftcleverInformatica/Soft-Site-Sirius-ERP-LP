@@ -7,9 +7,8 @@ import HeaderPartial from "../../../assets/header.png"
 
 import WhatsappIcon from "../../../assets/whatsapp.svg"
 import { useEffect, useState } from "react";
-import ButtonExpert from "@/components/button_expert";
-import { Button } from "@/components/ui/button";
 import WhatsappIconWhite from "../../../assets/whatsapp_white.svg"
+import { Button } from "@/src/components/ui/button";
 
 export default function Header() {
     const [isMobile, setIsMobile] = useState(true);

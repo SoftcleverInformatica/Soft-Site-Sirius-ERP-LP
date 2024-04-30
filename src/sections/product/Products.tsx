@@ -1,12 +1,11 @@
 "use client"
-import ButtonExpert from "@/components/button_expert";
-import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Cog from "../../../assets/Cog.svg";
-import WhatsappIconBlue from "../../../assets/whatsapp.svg"
+import ButtonExpert from "@/src/components/button_expert";
+import { Card, CardContent } from "@/src/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem } from "@/src/components/ui/carousel";
 
 
 
