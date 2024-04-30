@@ -4,8 +4,8 @@ import avatar from '../../../assets/avatar.svg';
 import star from '../../../assets/star.svg';
 import starGray from '../../../assets/starGray.svg';
 // import Autoplay from "embla-carousel-autoplay";
-import ButtonExpert from '@/components/button_expert';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import ButtonExpert from '@/src/components/button_expert';
+import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/carousel';
 
 export default function Feedback() {
 	const bg = { backgroundImage: `url(${feedbackImageBg.src})` };
