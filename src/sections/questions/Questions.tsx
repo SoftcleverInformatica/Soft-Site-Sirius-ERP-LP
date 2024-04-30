@@ -77,6 +77,7 @@ export default function Questions() {
 
 
                 <div className="col-span-10 col-start-2  row-span-7 row-start-3
+                md:mb-[2.5rem]
             lg:col-span-6 lg:col-start-6 lg:row-start-1 lg:row-st
             ">
                     <Accordion

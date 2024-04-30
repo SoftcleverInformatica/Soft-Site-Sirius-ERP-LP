@@ -50,6 +50,7 @@ export default function Differential() {
             >Nossos Diferenciais</h1>
 
             <ul className="col-span-10 row-span-10 col-start-2 flex flex-col gap-[6rem] lg:gap-6 row-start-3 text-justify text-sc font-medium text-lg
+            md:pb-[4rem] md:gap-[4rem]
             lg:col-span-5 lg:col-start-3 lg:row-start-3 lg:text-left lg:text-sm">
                 {differentials.map((text, index) => {
                     return (
