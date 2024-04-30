@@ -7,6 +7,7 @@ import Segments from "../sections/segments/Segments";
 import Differential from "../sections/differential/Diferential";
 import Feedback from "../sections/feedback/Feedback";
 import Questions from "../sections/questions/Questions";
+import Footer from "../sections/footer/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Segments/>
       <Differential/>
       <Questions/>
+      <Footer/>
     </main>
   );
 }
