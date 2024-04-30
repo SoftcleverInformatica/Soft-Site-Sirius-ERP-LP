@@ -3,7 +3,7 @@ import iconClient from '../../../assets/clients.svg';
 import iconProject from '../../../assets/project.svg';
 import iconTeam from '../../../assets/team.svg';
 import iconUser from '../../../assets/user.svg';
-import ButtonExpert from '@/components/button_expert';
+import ButtonExpert from '@/src/components/button_expert';
 
 export default function Client() {
 	return (

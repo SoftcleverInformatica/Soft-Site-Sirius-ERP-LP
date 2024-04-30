@@ -1,11 +1,7 @@
 import Image from 'next/image';
 import feedbackImageBg from '../../../assets/feedback.png';
 import avatar from '../../../assets/avatar.svg';
-// import Autoplay from "embla-carousel-autoplay";
-import ButtonExpert from '@/components/button_expert';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
-import useEmblaCarousel from 'embla-carousel-react';
+import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/carousel';
 
 export default function Feedback() {
 	const bg = { backgroundImage: `url(${feedbackImageBg.src})` };
