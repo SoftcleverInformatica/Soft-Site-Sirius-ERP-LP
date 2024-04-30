@@ -8,7 +8,7 @@ import ButtonExpert from '@/components/button_expert';
 export default function Client() {
 	return (
 		<div className='overflow-x-hidden flex flex-col gap-10 px-[2.5rem] py-[1.8rem] items-center lg:px-[14.375rem] lg:py-[3.625rem]  '>
-			<div className='flex flex-col items-center space-y-12 '>
+			<div className='flex flex-col items-center space-y-12 lg:max-w-2xl xl:max-w-5xl w-full '>
 				<h2 className='text-2xl font-bold text-sc	'>São Mais de 30 anos de experiências</h2>
 				<p className='text-sc text-lg'>
 					Nós da Soft Clever temos o intuito de ter sua empresa como membro do nosso grupo e não somente como mais um cliente.

@@ -155,46 +155,49 @@ export default function Feedback() {
 	return (
 		<div
 			style={bg}
-			className='flex flex-col gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem] items-center md:px-20 lg:px-[14.375rem]'>
+			className='flex flex-col gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem] items-center  xl:px-[14.375rem]'>
 			<h2 className='text-2xl font-bold text-white'>Quem usa nos recomenda</h2>
 
-			<Carousel className='flex  max-w-5xl w-full '>
-				<CarouselContent className='flex gap-9 px-4'>
+			<Carousel className='flex  lg:max-w-2xl xl:max-w-5xl w-full '>
+				<CarouselContent className='flex gap-5 -ml-1'>
 					{feedbacks.map((_, index) => (
 						<CarouselItem
 							key={index}
-							className='flex max-w-64 '>
+							className='pl-1 md:basis-1/2 lg:basis-1/3 '>
 							<div
-								className='flex flex-col gap-4  w-full h-full px-5 py-10 bg-white rounded-lg'
+								className='flex flex-col gap-5  justify-between w-full h-full px-5 py-10 bg-white rounded-lg '
 								key={index}>
-								<span className='text-5xl font-bold text-sc font-serif'>&#34;</span>
-								<h4 className='text-xl font-bold text-sc	'>{_.title}</h4>
-								<p className='text-sm text-sc'>{_.description}</p>
-
-								<div className='flex items-center gap-2'>
-									<p className='text-xs text-sc'>{_.score}</p>
-									<div
-										style={bgStarGray}
-										className='w-[5.875rem]  h-[1.125rem] '>
-										<div
-											style={{ backgroundImage: `url(${star.src})`, width: `${_.score * 20}%` }}
-											className='h-full '></div>
-									</div>
+								<div>
+									<span className='text-5xl font-bold text-sc font-serif'>&#34;</span>
+									<h4 className='text-xl font-bold text-sc	'>{_.title}</h4>
+									<p className='text-sm text-sc'>{_.description}</p>
 								</div>
 
-								{/* from */}
-								<div className='flex gap-5'>
-									{/* avatar */}
-									<Image
-										className=''
-										// src={_.user.name}
-										src={avatar}
-										alt='Imagem do perfil'
-									/>
-									{/* info */}
-									<div className='flex flex-col'>
-										<p className='text-sm font-semibold text-sc'>{_.user.name}</p>
-										<p className='text-xs text-sc'>{_.user.professionalPosition}</p>
+								<div className='flex flex-col gap-2'>
+									<div className='flex items-center gap-2'>
+										<p className='text-xs text-sc'>{_.score}</p>
+										<div
+											style={bgStarGray}
+											className='w-[5.875rem]  h-[1.125rem] '>
+											<div
+												style={{ backgroundImage: `url(${star.src})`, width: `${_.score * 20}%` }}
+												className='h-full '></div>
+										</div>
+									</div>
+									{/* from */}
+									<div className='flex gap-5'>
+										{/* avatar */}
+										<Image
+											className=''
+											// src={_.user.name}
+											src={avatar}
+											alt='Imagem do perfil'
+										/>
+										{/* info */}
+										<div className='flex flex-col'>
+											<p className='text-sm font-semibold text-sc'>{_.user.name}</p>
+											<p className='text-xs text-sc'>{_.user.professionalPosition}</p>
+										</div>
 									</div>
 								</div>
 							</div>
