@@ -14,6 +14,9 @@
 .fiscal{
   background-image: url(../../assets/FrameFiscal.png);
 }
+.section9{
+  background-image: url(../../assets/Section9.png);
+}
 
 @layer base {
   :root {

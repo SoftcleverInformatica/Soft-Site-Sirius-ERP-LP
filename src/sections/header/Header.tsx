@@ -44,9 +44,9 @@ export default function Header() {
 
             <div className="col-span-full pl-10 min-w-[20rem] row-span-1 
             md:row-span-2 md:absolute md:left-[5%]
-            lg:pl-0 lg:col-span-2 lg:col-start-3 lg:row-span-2 lg:row-start-1 flex lg:items-center pt-2">
+            lg:pl-0 lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-2 flex lg:items-center pt-2">
                 <Image
-                    className="w-[60%] md:max-h-[4rem] lg:max-h-[3.5rem] lg:w-[100%]"
+                    className="w-[60%] md:max-h-[4rem] lg:max-h-[3.5rem] lg:w-[100%] lg:ml-[6.5rem]"
                     alt="logo Softclever"
                     src={isMobile ? LogoBranco : LogoAzul}
                 />
