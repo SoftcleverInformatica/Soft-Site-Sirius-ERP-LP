@@ -2,7 +2,7 @@
 import Image from "next/image";
 import LogoAzul from "../../../assets/logo_azul.svg"
 import LogoBranco from "../../../assets/logo_branco.svg"
-import HeaderFull from "../../../assets/header-bg.png"
+import HeaderFull from "../../../assets/HeaderBG.png"
 import HeaderPartial from "../../../assets/header.png"
 
 import WhatsappIcon from "../../../assets/whatsapp.svg"
@@ -36,7 +36,7 @@ export default function Header() {
         };
     }, []);
 
-    const bg = isMobile ? { backgroundImage: `url(${HeaderPartial.src})`, } : undefined;
+    const bg = isMobile ? { backgroundImage: `url(${HeaderFull.src})`, } : undefined;
     return (
         <header
             style={bg}
