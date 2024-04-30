@@ -3,7 +3,7 @@ import feedbackImageBg from '../../../assets/feedback.png';
 import avatar from '../../../assets/avatar.svg';
 import star from '../../../assets/star.svg';
 import starGray from '../../../assets/starGray.svg';
-// import Autoplay from "embla-carousel-autoplay";
+import Autoplay from "embla-carousel-autoplay";
 import ButtonExpert from '@/src/components/button_expert';
 import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/carousel';
 
@@ -22,7 +22,7 @@ export default function Feedback() {
 			title: 'Excelente trabalho!',
 			description:
 				'O profissional realizou um trabalho excepcional, entregando resultados além das expectativas. Comunicação clara e eficiente durante todo o projeto.',
-			score: 5,
+			score: 1,
 			user: {
 				image: 'url_da_imagem',
 				name: 'João Silva',
@@ -158,7 +158,9 @@ export default function Feedback() {
 			className='flex flex-col gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem] items-center w-full xl:px-[14.375rem]'>
 			<h2 className='text-2xl font-bold text-white'>Quem usa nos recomenda</h2>
 
-			<Carousel className='flex  lg:max-w-2xl xl:max-w-5xl w-full '>
+			<Carousel
+				className='flex  lg:max-w-2xl xl:max-w-5xl w-full '
+				plugins={[Autoplay({ delay: 3000 })]}>
 				<CarouselContent className='flex gap-5 -ml-1'>
 					{feedbacks.map((_, index) => (
 						<CarouselItem
