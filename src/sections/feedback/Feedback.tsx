@@ -304,7 +304,7 @@ export default function Feedback() {
 
 			<Carousel
 				className='flex  lg:max-w-2xl xl:max-w-5xl w-full '
-				plugins={[Autoplay({ delay: 90000 })]}>
+				plugins={[Autoplay({ delay: 4000 })]}>
 				<CarouselContent className='flex gap-5 -ml-1'>
 					{feedbacks.map((_, index) => (
 						<CarouselItem
