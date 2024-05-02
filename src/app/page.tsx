@@ -11,7 +11,7 @@ import Footer from "../sections/footer/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col p-0 m-0 b-0 justify-center max-w-[1440px] items-center">
+    <main className="flex flex-col p-0 mx-auto b-0 justify-center max-w-[1440px] items-center">
       <Header/>
       <Client/>
       <Products/>
