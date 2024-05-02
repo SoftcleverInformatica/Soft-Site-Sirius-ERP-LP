@@ -74,7 +74,8 @@ export default function AboutUs() {
                 className="gap-2 py-6 px-12 w-full font-semibold  bg-sc text-white hover:bg-scHover 
             col-span-10 col-start-2 row-start-11 lg:col-start-3 
             md:mt-2 md:row-start-6
-            lg:w-[15.25rem] lg:col-span-3 lg:row-start-5 lg:mt-[2.6rem]" />
+            lg:w-[15.25rem] lg:col-span-3 lg:row-start-5 lg:mt-[2.6rem] lg:mb-[2rem]
+            " />
 
 
         </section>
