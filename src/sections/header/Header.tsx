@@ -70,15 +70,18 @@ export default function Header() {
             <div className="col-span-10  col-start-2 row-start-8 
             lg:col-span-3 lg:col-start-3 lg:row-start-8">
 
-
-                <Button className={`gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
+                <a
+                href="https://api.whatsapp.com/send?phone=5511992810249"
+                >
+                    <Button className={`gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
                 lg:bg-sc lg:text-white lg:hover:bg-scHover lg:px-1 lg:py-6 lg:flex`} >
-                    <span className="text-lg md:font-normal ">Fale com um Especialista</span>
-                    <Image
-                        alt="WhatsappIcon"
-                        src={isMobile ? WhatsappIcon : WhatsappIconWhite}
-                    />
-                </Button>
+                        <span className="text-lg md:font-normal ">Fale com um Especialista</span>
+                        <Image
+                            alt="WhatsappIcon"
+                            src={isMobile ? WhatsappIcon : WhatsappIconWhite}
+                        />
+                    </Button>
+                </a>
             </div>
             {!isMobile && (<>
                 <div className="flex justify-start items-start flex-col absolute top-[15vh] left-[80vw]">
