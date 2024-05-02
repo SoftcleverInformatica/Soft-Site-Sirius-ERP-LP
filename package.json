@@ -2,10 +2,11 @@
   "name": "soft-site-sirius-erp-lp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.softclever.com.br/SiriusERP",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "node ./server.js",
     "lint": "next lint",
     "ui": "npx shadcn-ui@latest add"
   },
