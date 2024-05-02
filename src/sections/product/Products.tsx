@@ -6,6 +6,16 @@ import Cog from "../../../assets/Cog.svg";
 import ButtonExpert from "@/src/components/button_expert";
 import { Card, CardContent } from "@/src/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem } from "@/src/components/ui/carousel";
+import NotaFiscalEletronica from '@/assets/Produtos-SVG/Nota-Fiscal-Eletronica.svg'
+import PedidoVenda from '@/assets/Produtos-SVG/Ped-Vendas.svg'
+import Compras from '@/assets/Produtos-SVG/Compras.svg'
+import Financeiro from '@/assets/Produtos-SVG/Financeiro.svg'
+import Producao from '@/assets/Produtos-SVG/Producao.svg'
+import Relatorio from '@/assets/Produtos-SVG/Relatorio.svg'
+import OrdemDeServico from '@/assets/Produtos-SVG/Ordem-de-Servico.svg'
+import NotaFiscalServicos from '@/assets/Produtos-SVG/Nota-Fiscal-Servico.svg'
+import ForcaDeVendas from '@/assets/Produtos-SVG/Forca-de-Vendas.svg'
+
 
 
 
@@ -14,15 +24,15 @@ export default function Products() {
     const [isMobile, setIsMobile] = useState(true);
 
     const cards: { image: any, label: string, description: string }[] = [
-        { image: "Imagem1", label: "Nota Fiscal Eletronica", description: "Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber." },
-        { image: "Imagem2", label: "Pedidos de Vendas", description: "Controle comercial completo. Orçamentos, pedidos, comissões, curva ABC de clientes e produtos, estatísticas de vendas e muito mais. Permite a geração da NF-e, baixa do estoque e envio dos títulos ao contas a receber. Também pode ser integrado ao Força de Vendas." },
-        { image: "Imagem3", label: "Financeiro", description: "Controle detalhado das contas a pagar e a receber a partir de contas contábeis ou centro de custos. Permite integração com cobrança bancária (boletos) e conciliação de saldo." },
-        { image: "Imagem4", label: "Compras", description: "Pedidos de compras para serviços ou produtos. Entrada de mercadoria a partir do XML do fornecedor com envio dos títulos ao módulo contas a pagar." },
-        { image: "Imagem5", label: "Produção", description: "Geração de ordem de produção para estoque a partir do pedido de venda. Controle de matéria prima, ficha técnica, fases da produção e muito mais." },
-        { image: "Imagem6", label: "Relatórios Gerenciais", description: "Essenciais para o controle completo e gestão financeira da empresa. Permite ao usuário diversas opções de filtros e relatórios" },
-        { image: "Imagem7", label: "Ordens de Serviços", description: "Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados." },
-        { image: "Imagem8", label: "Nota Fiscal de Serviços", description: "Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro." },
-        { image: "Imagem9", label: "Força de Vendas", description: "Geração de pedido de venda através da WEB já integrado ao Sírius. Indicado para empresas que possuem vendedores externos e precisam de agilidade nas vendas, controle de estoque em tempo real e geração eficiente da NF-e." },
+        { image: NotaFiscalEletronica, label: "Nota Fiscal Eletronica", description: "Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber." },
+        { image: PedidoVenda, label: "Pedidos de Vendas", description: "Controle comercial completo. Orçamentos, pedidos, comissões, curva ABC de clientes e produtos, estatísticas de vendas e muito mais. Permite a geração da NF-e, baixa do estoque e envio dos títulos ao contas a receber. Também pode ser integrado ao Força de Vendas." },
+        { image: Compras, label: "Compras", description: "Pedidos de compras para serviços ou produtos. Entrada de mercadoria a partir do XML do fornecedor com envio dos títulos ao módulo contas a pagar." },
+        { image: Financeiro, label: "Financeiro", description: "Controle detalhado das contas a pagar e a receber a partir de contas contábeis ou centro de custos. Permite integração com cobrança bancária (boletos) e conciliação de saldo." },
+        { image: Producao, label: "Produção", description: "Geração de ordem de produção para estoque a partir do pedido de venda. Controle de matéria prima, ficha técnica, fases da produção e muito mais." },
+        { image: Relatorio, label: "Relatórios Gerenciais", description: "Essenciais para o controle completo e gestão financeira da empresa. Permite ao usuário diversas opções de filtros e relatórios" },
+        { image: OrdemDeServico, label: "Ordens de Serviços", description: "Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados." },
+        { image: NotaFiscalServicos, label: "Nota Fiscal de Serviços", description: "Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro." },
+        { image: ForcaDeVendas, label: "Força de Vendas", description: "Geração de pedido de venda através da WEB já integrado ao Sírius. Indicado para empresas que possuem vendedores externos e precisam de agilidade nas vendas, controle de estoque em tempo real e geração eficiente da NF-e." },
     ]
 
     useEffect(() => {
@@ -66,9 +76,9 @@ export default function Products() {
                                                 className=" col-span-full row-span-4 row-start-2 w-[100%] border-none  flex flex-col items-center justify-center"
                                             >
                                                 <Image 
-                                                    className="w-[65%] lg:w-[50%]" 
+                                                    className="w-[65%] max-w-[8rem] lg:w-[50%] lg:max-w-[50%]" 
                                                     alt="Cog"
-                                                    src={Cog}
+                                                    src={_.image}
                                                 />
                                             </div>
 
