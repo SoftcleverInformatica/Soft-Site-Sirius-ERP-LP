@@ -25,14 +25,14 @@ export default function Products() {
 
     const cards: { image: any, label: string, description: string }[] = [
         { image: NotaFiscalEletronica, label: "Nota Fiscal Eletronica", description: "Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber." },
-        { image: PedidoVenda, label: "Pedidos de Vendas", description: "Controle comercial completo. Orçamentos, pedidos, comissões, curva ABC de clientes e produtos, estatísticas de vendas e muito mais. Permite a geração da NF-e, baixa do estoque e envio dos títulos ao contas a receber. Também pode ser integrado ao Força de Vendas." },
-        { image: Compras, label: "Compras", description: "Pedidos de compras para serviços ou produtos. Entrada de mercadoria a partir do XML do fornecedor com envio dos títulos ao módulo contas a pagar." },
-        { image: Financeiro, label: "Financeiro", description: "Controle detalhado das contas a pagar e a receber a partir de contas contábeis ou centro de custos. Permite integração com cobrança bancária (boletos) e conciliação de saldo." },
-        { image: Producao, label: "Produção", description: "Geração de ordem de produção para estoque a partir do pedido de venda. Controle de matéria prima, ficha técnica, fases da produção e muito mais." },
-        { image: Relatorio, label: "Relatórios Gerenciais", description: "Essenciais para o controle completo e gestão financeira da empresa. Permite ao usuário diversas opções de filtros e relatórios" },
-        { image: OrdemDeServico, label: "Ordens de Serviços", description: "Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados." },
+        { image: ForcaDeVendas, label: "Força de Vendas", description: "Plataforma WEB para pedidos de venda integrada ao Sírius, ideal para vendedores externos, oferecendo rapidez nas vendas, controle de estoque em tempo real e emissão ágil de NF-e." },
+        { image: PedidoVenda, label: "Pedidos de Vendas", description: "Sistema de gestão comercial com funcionalidades para orçamentos, pedidos, análise de vendas, geração de NF-e, controle de estoque e integração com Força de Vendas." },
         { image: NotaFiscalServicos, label: "Nota Fiscal de Serviços", description: "Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro." },
-        { image: ForcaDeVendas, label: "Força de Vendas", description: "Geração de pedido de venda através da WEB já integrado ao Sírius. Indicado para empresas que possuem vendedores externos e precisam de agilidade nas vendas, controle de estoque em tempo real e geração eficiente da NF-e." },
+        { image: Relatorio, label: "Relatórios Gerenciais", description: "Essenciais para o controle completo e gestão financeira da empresa. Permite ao usuário diversas opções de filtros e relatórios" },
+        { image: Financeiro, label: "Financeiro", description: "Controle detalhado das contas a pagar e a receber a partir de contas contábeis ou centro de custos. Permite integração com cobrança bancária (boletos) e conciliação de saldo." },
+        { image: Compras, label: "Compras", description: "Pedidos de compras para serviços ou produtos. Entrada de mercadoria a partir do XML do fornecedor com envio dos títulos ao módulo contas a pagar." },
+        { image: Producao, label: "Produção", description: "Geração de ordem de produção para estoque a partir do pedido de venda. Controle de matéria prima, ficha técnica, fases da produção e muito mais." },
+        { image: OrdemDeServico, label: "Ordens de Serviços", description: "Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados." },
     ]
 
     useEffect(() => {
