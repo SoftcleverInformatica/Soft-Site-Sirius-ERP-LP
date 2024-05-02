@@ -76,7 +76,7 @@ export default function Products() {
                                                 className=" col-span-full row-span-4 row-start-2 w-[100%] border-none  flex flex-col items-center justify-center"
                                             >
                                                 <Image 
-                                                    className="w-[65%] lg:w-[50%]" 
+                                                    className="w-[65%] max-w-[8rem] lg:w-[50%] lg:max-w-[50%]" 
                                                     alt="Cog"
                                                     src={_.image}
                                                 />
