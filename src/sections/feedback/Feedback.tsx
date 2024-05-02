@@ -24,125 +24,125 @@ export default function Feedback() {
 			message:
 				'A Soft Cleber desde 2015 mantém um atendimento muito bom. Tem o domínio do software e da política financeira do governo. O custo de contrato mensal também está bem competitivo. Enfim, é uma boa empresa para contratar.',
 			score: 5,
-			image: 'Aurelio-Vari.png',
+			image: 'Aurelio Vari.png',
 		},
 		{
 			name: 'Rosely Barbosa',
-			image: 'Rosely-Barbosa.png',
+			image: 'Rosely Barbosa.png',
 			score: 5,
 			message:
 				'Trabalhamos com a Soft Clever há mais de 10 anos, sempre nos atendeu bem, com cordialidade e rapidez. Nossas solicitações sempre foram atendidas.',
 		},
 		{
 			name: 'Buker engrenagens',
-			image: 'Buker-engrenagens.png',
+			image: 'Buker engrenagens.png',
 			score: 5,
 			message:
 				'A Soft Clever resolveu-me um problema que durante muito tempo a tentar resolver, sem sucesso. Analisaram com o máximo cuidado, conseguiram identificar o problema, e ver a melhor solução. Somos gratos por essa parceria de tanto tempo!!!!',
 		},
 		{
 			name: 'RHVAUD VAUD',
-			image: 'RHVAUD-VAUD.png',
+			image: 'RHVAUD VAUD.png',
 			score: 5,
 			message:
 				'O sistema é ágil e prático para emissão de notas fiscais. Sempre que surge algum problema, o pessoal do suporte são super competentes e atenciosos.',
 		},
 		{
 			name: 'AIA Embalagens',
-			image: 'AIA-Embalagens.png',
+			image: 'AIA Embalagens.png',
 			score: 5,
 			message:
 				'adoro trabalhar com a equipe da soft clever, ERP descomplicado, funcionários sempre dispostos a ajudar, explicam e auxiliam sempre da melhor forma... super indico !',
 		},
 		{
 			name: 'Bax Festas',
-			image: 'Bax-Festas.png',
+			image: 'Bax Festas.png',
 			score: 5,
 			message: 'Excelente atendimento e rapidez para solucionar os problemas. Parceria duradoura e eficiente.',
 		},
 		{
 			name: 'Alex Cavalcante',
-			image: 'Alex-Cavalcante.png',
+			image: 'Alex Cavalcante.png',
 			score: 5,
 			message: 'Empresa muito prestativa sempre muito rápida para o atendimento e com muita postura, indico.',
 		},
 		{
 			name: 'Cristiano Boscariol',
-			image: 'Cristiano-Boscariol.png',
+			image: 'Cristiano Boscariol.png',
 			score: 5,
 			message: 'Bom Atendimento , sempre sendo muito bem atendido ..',
 		},
 		{
 			name: 'Ana Maria Giamarini Couto',
-			image: 'Ana-Maria-Giamarini-Couto.png',
+			image: 'Ana Maria Giamarini Couto.png',
 			score: 5,
 			message: 'Minha experiência está sendo boa, sendo atendida dentro da minha necessidade.',
 		},
 		{
 			name: 'Stefano Klein',
-			image: 'Stefano-Klein.png',
+			image: 'Stefano Klein.png',
 			score: 5,
 			message: 'Atendimento nota 10,paciência dos atendentes,( já se tornaram amigos) nota 10,meus parabens',
 		},
 		{
 			name: 'Valdeir Oliveira',
-			image: 'Valdeir-Oliveira.png',
+			image: 'Valdeir Oliveira.png',
 			score: 5,
 			message: 'E muito bom o atendimento  com quem falei sempre  min atenderam muito bem estão  de parabéns',
 		},
 		{
 			name: 'renovando moda',
-			image: 'renovando-moda.png',
+			image: 'renovando moda.png',
 			score: 5,
 			message: 'ótimo atendimento e estão sempre com disposição para ajudar!',
 		},
 		{
 			name: 'Michelle Mendes',
-			image: 'Michelle-Mendes.png',
+			image: 'Michelle Mendes.png',
 			score: 5,
 			message: 'Bons profissionais, sistema customizado e bom custo benefício!',
 		},
 		{
 			name: 'Stefanie Prado',
-			image: 'Stefanie-Prado.png',
+			image: 'Stefanie Prado.png',
 			score: 5,
 			message: 'A soft Clever tem um atendimento maravilhoso,  super rápido e ágil.',
 		},
 		{
 			name: 'Pedro Lima',
-			image: 'Pedro-Lima.png',
+			image: 'Pedro Lima.png',
 			score: 5,
 			message: 'Excelente atendimento, sempre atenciosos no que precisar!',
 		},
 		{
 			name: 'Rita de Cassia Troiano Trindade',
-			image: 'Rita-de-Cassia-Troiano-Trindade.png',
+			image: 'Rita de Cassia Troiano Trindade.png',
 			score: 5,
 			message: 'Os serviços e explicações foram rápidas e claras.',
 		},
 		{
 			name: 'Cadiveu Academy',
-			image: 'Cadiveu-Academy.png',
+			image: 'Cadiveu Academy.png',
 			score: 5,
 			message:
 				'Conheço o trabalho da empresa de longa data, são extremamente sérios e comprometidos com seus clientes. O suporte realmente funciona, estão sempre interessados em resolver os problemas e solucionar as nossas dúvidas, dá para perceber que eles realmente entendem do que estão falando. ',
 		},
 		{
 			name: 'Caio Felipe de Mendonça',
-			image: 'Caio-Felipe-de-Mendonca.png',
+			image: 'Caio Felipe de Mendonca.png',
 			score: 5,
 			message:
 				'Tenho o sistema da Soft Clever cerca de 7 anos e sempre recebi um atendimento excelente, tanto do suporte quanto do comercial. Sistema atende a todas as minhas necessidades e estou muito satisfeito. Já tive outros sistemas e só com o Sírius tive um custo beneficio muito positivo',
 		},
 		{
 			name: 'Edna Guaita',
-			image: 'Edna-Guaita.png',
+			image: 'Edna Guaita.png',
 			score: 5,
 			message: 'foi tudo normal',
 		},
 		{
 			name: 'Israel Bezerra',
-			image: 'Israel-Bezerra.png',
+			image: 'Israel Bezerra.png',
 			score: 5,
 			message: 'Muito bom o atendimento e presteza!!',
 		},
@@ -304,7 +304,7 @@ export default function Feedback() {
 
 			<Carousel
 				className='flex  lg:max-w-2xl xl:max-w-5xl w-full '
-				plugins={[Autoplay({ delay: 3000 })]}>
+				plugins={[Autoplay({ delay: 90000 })]}>
 				<CarouselContent className='flex gap-5 -ml-1'>
 					{feedbacks.map((_, index) => (
 						<CarouselItem
@@ -325,13 +325,13 @@ export default function Feedback() {
 									<div className='flex gap-5'>
 										{/* avatar */}
 										<Image
-											className=''
-											// src={`/assets/reviews/${_.image.src}`}
-											// key={`review-image-${index}`}
-											// width={32}
-											// height={32}
-											src={avatar}
-											alt='Imagem do perfil'
+											className='max-w-10 max-h-10'
+											src={`/reviews/${_.image}`}
+											key={`review-image-${index}`}
+											width={40}
+											height={40}
+											// src={avatar}
+											alt={`Imagem do perfil do usuário  ${_.name}`}
 										/>
 										{/* info */}
 										<div className='flex flex-col'>
