@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": "https://sirius.softclever.com.br/",
 	"scripts": {
+		"next": "next dev",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "NODE_ENV=production node server.js",
