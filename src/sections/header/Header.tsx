@@ -72,7 +72,7 @@ export default function Header() {
             lg:col-span-3 lg:col-start-3 lg:row-start-8'>
 				<Button
 					onClick={() => {
-						window.open('https://web.whatsapp.com/send?phone=5511992810249', '_blank');
+						window.open('https://api.whatsapp.com/send?phone=5511992810249', '_blank');
 					}}
 					className={`gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
                 lg:bg-sc lg:text-white lg:hover:bg-scHover lg:px-1 lg:py-6 lg:flex`}>
@@ -88,7 +88,7 @@ export default function Header() {
 					<div className='flex justify-start items-start flex-col absolute top-[15vh] left-[80vw]'>
 						<button
 							onClick={() => {
-								window.open('https://web.whatsapp.com/send?phone=5511992810249', '_blank');
+								window.open('https://api.whatsapp.com/send?phone=5511992810249', '_blank');
 							}}
 							className='bg-white text-[#003658] flex flex-row gap-1  justify-center col-span-2 items-center w-[8rem] p-1 rounded-md hover:bg-zinc-300  hover:transition'>
 							<span className='font-semibold text-[#003658] w-2rem h-fit pr-2'>Contato</span>
