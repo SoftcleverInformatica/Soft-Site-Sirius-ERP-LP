@@ -32,7 +32,7 @@ export default function Segments() {
 		<section
 			className={`w-full bg-sc flex flex-col gap-[1.5rem]  justify-center items-center 
             `}>
-			<div className='flex flex-col gap-[1.5rem] px-[2rem] py-[2.5rem] w-full lg:gap-[2.5rem] lg:max-w-3xl xl:max-w-5xl '> 
+			<div className='flex flex-col gap-[1.5rem] px-[2rem] py-[2.5rem] w-full lg:gap-[2.5rem] lg:max-w-3xl xl:max-w-5xl '>
 				<h1
 					className={` text-white font-bold text-2xl 
                 `}>
@@ -98,7 +98,8 @@ export default function Segments() {
 				<div className='w-full flex flex-col justify-center items-center md:mt-[2rem]'>
 					<ButtonExpert
 						color={'white'}
-						className='gap-2 py-6 px-12  w-[97%] font-semibold bg-white text-sky-950 hover:bg-zinc-300 lg:w-[15.25rem] lg:font-bold '
+						className2='w-[97%] lg:w-[15.25rem]'
+						className='gap-2 py-6 px-12 w-full font-semibold bg-white text-sky-950 hover:bg-zinc-300 lg:font-bold '
 					/>
 				</div>
 			</div>

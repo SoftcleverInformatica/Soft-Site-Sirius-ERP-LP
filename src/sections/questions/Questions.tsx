@@ -106,12 +106,14 @@ export default function Questions() {
                 {isMobile && (
                     <ButtonExpert
                         color={'white'}
-                        className="gap-2 py-6 px-12 col-span-10 col-start-2 row-start-10 font-semibold bg-white text-sc hover:bg-zinc-300" />
+                        className2='col-span-10 col-start-2 row-start-10'
+                        className='gap-2 py-6 px-12 w-full font-semibold bg-white text-sc hover:bg-zinc-300'
+                    />
                 )}
 
             </section>
             <div
-            className="section9 bg-cover bg-no-repeat w-full h-[15vh] lg:h-[25vh] max-h-[15rem] min-h-[8rem]"
+                className="section9 bg-cover bg-no-repeat w-full h-[15vh] lg:h-[25vh] max-h-[15rem] min-h-[8rem]"
             ></div>
         </>
     )

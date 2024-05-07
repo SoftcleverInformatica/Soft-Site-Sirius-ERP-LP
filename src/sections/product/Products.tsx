@@ -75,8 +75,8 @@ export default function Products() {
                                             <div
                                                 className=" col-span-full row-span-4 row-start-2 w-[100%] border-none  flex flex-col items-center justify-center"
                                             >
-                                                <Image 
-                                                    className="w-[65%] max-w-[8rem] lg:w-[50%] lg:max-w-[50%]" 
+                                                <Image
+                                                    className="w-[65%] max-w-[8rem] lg:w-[50%] lg:max-w-[50%]"
                                                     alt="Cog"
                                                     src={_.image}
                                                 />
@@ -94,7 +94,11 @@ export default function Products() {
             </div>
 
 
-            <ButtonExpert color={'blue'} className="gap-2 py-6 px-12 w-[82%] bg-sky-950 text-white hover:bg-scHover lg:w-[15.25rem] " />
+            <ButtonExpert
+                color={'blue'}
+                className2='w-[82%] lg:w-[15.25rem]'
+                className='gap-2 py-6 px-12 w-full bg-sky-950 text-white hover:bg-scHover'
+            />
         </section>
     )
 }

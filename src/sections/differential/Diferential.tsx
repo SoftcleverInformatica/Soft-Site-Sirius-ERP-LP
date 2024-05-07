@@ -79,12 +79,12 @@ export default function Differential() {
                 </div>
             )}
 
-            <ButtonExpert
+<ButtonExpert
                 color={'blue'}
-                className="gap-2 py-6 px-12 w-full font-semibold mt-16  bg-sc text-white hover:bg-scHover 
-            col-span-10 col-start-2 row-start-13 lg:col-start-3 
-            md:mt-2
-            lg:w-[15.25rem]" />
+                className2=" col-span-10 col-start-2 row-start-13 lg:col-start-3 mt-16
+                md:mt-2
+                lg:w-[15.25rem]"
+                className="gap-2 py-6 px-12 w-full font-semibold bg-sc text-white hover:bg-scHover" />
 
 
         </section>

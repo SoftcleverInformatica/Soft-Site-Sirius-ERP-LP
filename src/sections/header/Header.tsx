@@ -13,7 +13,7 @@ import { Button } from '@/src/components/ui/button';
 
 
 export default function Header() {
-	
+
 	const [isMobile, setIsMobile] = useState(false);
 
 	const link_whatsapp = 'https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f';
@@ -76,35 +76,33 @@ export default function Header() {
 			<div
 				className='col-span-10  col-start-2 row-start-8 
             lg:col-span-3 lg:col-start-3 lg:row-start-8'>
-				<Button
-					onClick={() => {
-						window.open(link_whatsapp, '_blank');
-					}}
-					className={`gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
-                lg:bg-sc lg:text-white lg:hover:bg-scHover lg:px-1 lg:py-6 lg:flex`}>
-					<span className='text-lg md:font-normal '>Fale com um Especialista</span>
-					<Image
-						alt='WhatsappIcon'
-						src={isMobile ? WhatsappIcon : WhatsappIconWhite}
-					/>
-				</Button>
+				<a href={link_whatsapp} target='_blank'>
+					<Button
+						className={`gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
+					lg:bg-sc lg:text-white lg:hover:bg-scHover lg:px-1 lg:py-6 lg:flex`}>
+						<span className='text-lg md:font-normal '>Fale com um Especialista</span>
+						<Image
+							alt='WhatsappIcon'
+							src={isMobile ? WhatsappIcon : WhatsappIconWhite}
+						/>
+					</Button>
+				</a>
 			</div>
 			{!isMobile && (
 				<>
 					<div className='flex justify-start items-start flex-col absolute top-[15vh] left-[80vw]'>
-						<button
-							onClick={() => {
-								window.open(link_whatsapp, '_blank');
-							}}
-							className='bg-white text-[#003658] flex flex-row gap-1  justify-center col-span-2 items-center w-[8rem] p-1 rounded-md hover:bg-zinc-300  hover:transition'>
-							<span className='font-semibold text-[#003658] w-2rem h-fit pr-2'>Contato</span>
+						<a href={link_whatsapp} target='_blank' className='col-span-2 w-[8rem]'>
+							<button
+								className='bg-white text-[#003658] flex flex-row gap-1  justify-center col-span-2 items-center w-[8rem] p-1 rounded-md hover:bg-zinc-300  hover:transition'>
+								<span className='font-semibold text-[#003658] w-2rem h-fit pr-2'>Contato</span>
 
-							<Image
-								className='w-[1.2rem] h-fit'
-								alt='WhatsappIcon'
-								src={WhatsappIcon}
-							/>
-						</button>
+								<Image
+									className='w-[1.2rem] h-fit'
+									alt='WhatsappIcon'
+									src={WhatsappIcon}
+								/>
+							</button>
+						</a>
 					</div>
 
 					<Image
