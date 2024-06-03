@@ -315,7 +315,11 @@ export default function Feedback() {
 								key={index}>
 								<div className='flex flex-col '>
 									<span className='text-4xl font-bold text-sc '>&#34;</span>
-									<ReadMore className='text-[0.9rem] leading-6 text-sc text-justify' text={_.message} amountOfWords={26}  />
+									<ReadMore
+										className='text-[0.9rem] leading-6 text-sc text-justify'
+										text={_.message}
+										amountOfWords={26}
+									/>
 									<p className='text-justify'></p>
 									<span className='text-4xl text-right w-full font-bold text-sc '>&#34;</span>
 								</div>
@@ -355,8 +359,8 @@ export default function Feedback() {
 				</CarouselContent>
 			</Carousel>
 			<ButtonExpert
-				color={'white'}
-				className='gap-2 py-6 px-12 w-[100%] bg-white text-sky-950 hover:bg-scHover lg:w-[15.25rem] '
+				color={'orange'}
+				label='Fale com um especialista'
 			/>
 		</div>
 	);
