@@ -1,14 +1,13 @@
 'use client';
 import Image from 'next/image';
-import LogoAzul from '../../../assets/logo_azul.svg';
-import LogoBranco from '../../../assets/logo_branco.svg';
 import HeaderFull from '../../../assets/HeaderBG.png';
 import HeaderPartial from '../../../assets/header.png';
+import LogoAzul from '../../../assets/logo_azul.svg';
+import LogoBranco from '../../../assets/logo_branco.svg';
 
-import WhatsappIcon from '../../../assets/whatsapp.svg';
+import ButtonExpert from '@/src/components/button_expert';
 import { useEffect, useState } from 'react';
-import WhatsappIconWhite from '../../../assets/whatsapp_white.svg';
-import { Button } from '@/src/components/ui/button';
+import WhatsappIcon from '../../../assets/whatsapp.svg';
 
 export default function Header() {
 	const [isMobile, setIsMobile] = useState(false);
@@ -70,20 +69,12 @@ export default function Header() {
 
 			<div
 				className='col-span-10  col-start-2 row-start-8 
-            lg:col-span-3 lg:col-start-3 lg:row-start-8'>
-				<a
-					href={link_whatsapp}
-					target='_blank'>
-					<Button
-						className={`gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
-					lg:bg-sc lg:text-white lg:hover:bg-scHover lg:px-1 lg:py-6 lg:flex`}>
-						<span className='text-lg md:font-normal '>Fale com um Especialista</span>
-						<Image
-							alt='WhatsappIcon'
-							src={isMobile ? WhatsappIcon : WhatsappIconWhite}
-						/>
-					</Button>
-				</a>
+				lg:col-span-4 lg:col-start-3 lg:row-start-8'>
+				<ButtonExpert
+					color={'orange'}
+					label='Quero atendimento personalizado'
+					animation='animate-pulse'
+				/>
 			</div>
 			{!isMobile && (
 				<>
@@ -91,17 +82,7 @@ export default function Header() {
 						<a
 							href={link_whatsapp}
 							target='_blank'
-							className='col-span-2 w-[8rem]'>
-							<button className='bg-white text-[#003658] flex flex-row gap-1  justify-center col-span-2 items-center w-[8rem] p-1 rounded-md hover:bg-zinc-300  hover:transition'>
-								<span className='font-semibold text-[#003658] w-2rem h-fit pr-2'>Contato</span>
-
-								<Image
-									className='w-[1.2rem] h-fit'
-									alt='WhatsappIcon'
-									src={WhatsappIcon}
-								/>
-							</button>
-						</a>
+							className='col-span-2 w-[8rem]'></a>
 					</div>
 
 					<Image
