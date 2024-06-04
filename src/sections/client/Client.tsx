@@ -2,6 +2,7 @@ import ButtonExpert from '@/src/components/button_expert';
 import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
+import CountUp from 'react-countup';
 import iconClient from '../../../assets/clients.svg';
 import clientBax from '../../../assets/clients/bax.png';
 import clientBinelli from '../../../assets/clients/binelli.png';
@@ -68,7 +69,16 @@ export default function Client() {
 								src={iconUser}></Image>
 							<div className='flex flex-col gap-2 items-start justify-items-center '>
 								<p className='text-sc font-sc text-lg font-extrabold'>USUÁRIOS</p>
-								<p className='text-pv1 text-lg font-extrabold '>12000 +</p>
+								<p className='text-pv1 text-lg font-extrabold '>
+									<CountUp
+										duration={2}
+										separator=''
+										delay={1}
+										start={0}
+										end={12000}
+									/>{' '}
+									+
+								</p>
 							</div>
 						</div>
 						<div>
@@ -85,43 +95,42 @@ export default function Client() {
 								src={iconClient}></Image>
 							<div className='flex flex-col gap-2 items-start justify-items-center '>
 								<p className='text-sc font-sc text-lg font-extrabold'>CLIENTES</p>
-								<p className='text-pv1 text-lg font-extrabold '>3000 +</p>
+								<p className='text-pv1 text-lg font-extrabold '>
+									<CountUp
+										duration={2}
+										separator=''
+										delay={1}
+										start={0}
+										end={3700}
+									/>{' '}
+									+
+								</p>
 							</div>
 						</div>
 						<div>
-							<p className='text-sc text-base font-extrabold'>+ de 3000</p>
+							<p className='text-sc text-base font-extrabold'>+ de 3700</p>
 							<p className='text-sc text-base font-extrabold'>CLIENTES</p>
 						</div>
 					</div>
-					{/* projects */}
-					<div className='flex flex-col gap-1.5 items-center justify-items-center '>
-						<div className='flex gap-5 items-center justify-items-center gap-'>
-							<Image
-								className=''
-								alt='Ícone de clientes'
-								src={iconProject}></Image>
-							<div className='flex flex-col gap-2 items-start justify-items-center '>
-								<p className='text-sc font-sc text-lg font-extrabold'>PROJETOS</p>
-								<p className='text-pv1 text-lg font-extrabold '>1000 +</p>
-							</div>
-						</div>
-						<div>
-							<p className='text-sc text-base font-extrabold'>+ de 1000</p>
-							<p className='text-sc text-base font-extrabold'>PROJETOS</p>
-						</div>
-					</div>
-					{/* team */}
+					{/* Team */}
 					<div className='flex flex-col gap-1.5 items-center justify-items-center '>
 						<div className='flex gap-5 items-center justify-items-center '>
 							<Image
 								className=''
 								alt='Ícone de clientes'
 								src={iconTeam}></Image>
-							<div className='flex flex-col gap-2 items-start justify-items-center '>
-								<p className='text-sc font-sc text-lg font-extrabold sm:grid-cols-2'>
-									NOSSA <br /> EQUIPE
+							<div className='flex flex-col gap-2 items-start justify-items-center flex-wrap'>
+								<p className="text-sc font-sc text-lg font-extrabold whitespace-pre-wrap before:content-['NOSSA\A_EQUIPE'] sm:before:content-['NOSSA_EQUIPE'] "></p>
+								<p className='text-pv1 text-lg font-extrabold '>
+									<CountUp
+										duration={2}
+										separator=''
+										delay={1}
+										start={0}
+										end={20}
+									/>{' '}
+									+
 								</p>
-								<p className='text-pv1 text-lg font-extrabold '>20 +</p>
 							</div>
 						</div>
 						<div>
