@@ -299,26 +299,26 @@ export default function Feedback() {
 	return (
 		<div
 			style={bg}
-			className='flex flex-col gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem] items-center w-full xl:px-[14.375rem]'>
+			className='flex flex-col gap-10 bg-cover bg-center items-center w-full px-[2.5rem] py-[1.8rem]'>
 			<h2 className='text-2xl font-bold text-white'>Quem usa nos recomenda</h2>
 
 			<Carousel
-				className='flex  lg:max-w-2xl xl:max-w-5xl w-full '
+				className='flex  w-full xl:max-w-[1440px]'
 				plugins={[Autoplay({ delay: 4000 })]}>
-				<CarouselContent className='flex gap-5 -ml-1'>
+				<CarouselContent className='flex w-full'>
 					{feedbacks.map((_, index) => (
 						<CarouselItem
 							key={index}
-							className='pl-1 md:basis-1/2 lg:basis-1/3 '>
+							className='pl-2 md:basis-1/3 lg:basis-1/5 '>
 							<div
-								className='flex flex-col  justify-between w-full min-h-96 px-5 py-10 bg-white rounded-lg '
+								className='flex flex-col justify-between max-w-[80%] md:max-w-60 lg:max-w-60 min-h-80 px-5 py-10 ml-12 bg-white rounded-lg '
 								key={index}>
 								<div className='flex flex-col '>
 									<span className='text-4xl font-bold text-sc '>&#34;</span>
 									<ReadMore
 										className='text-[0.9rem] leading-6 text-sc text-justify'
 										text={_.message}
-										amountOfWords={26}
+										amountOfWords={16}
 									/>
 									<p className='text-justify'></p>
 									<span className='text-4xl text-right w-full font-bold text-sc '>&#34;</span>
@@ -326,10 +326,10 @@ export default function Feedback() {
 
 								<div className='flex flex-col gap-2'>
 									{/* from */}
-									<div className='flex gap-5'>
+									<div className='flex items-center gap-5'>
 										{/* avatar */}
 										<Image
-											className='max-w-10 max-h-10'
+											className='max-w-5 max-h-5'
 											src={`/reviews/${_.image}`}
 											key={`review-image-${index}`}
 											width={40}
@@ -339,12 +339,12 @@ export default function Feedback() {
 										/>
 										{/* info */}
 										<div className='flex flex-col'>
-											<p className='text-sm font-semibold text-sc'>{_.name}</p>
+											<p className='text-[9px] font-semibold text-sc'>{_.name}</p>
 											<div className='flex items-center gap-2'>
-												<p className='text-xs text-sc'>{_.score}</p>
+												<p className='text-[10px] text-sc'>{_.score}</p>
 												<div
 													style={bgStarGray}
-													className='w-[5.875rem]  h-[1.125rem] '>
+													className='w-[2.8rem]  h-[0.6rem]'>
 													<div
 														style={{ backgroundImage: `url(${star.src})`, width: `${_.score * 20}%` }}
 														className='h-full '></div>
