@@ -32,7 +32,7 @@ export default function AboutUs() {
 
 	return (
 		<section
-			className='grid grid-cols-12 grid-rows-12 
+			className='grid grid-cols-12 grid-rows-12 pb-10 pt-4
         mt-16
         md:grid-rows-7
         lg:grid-rows-5 lg:mt-0'>
@@ -87,7 +87,6 @@ export default function AboutUs() {
 					label='Fale com um especialista'
 				/>
 			</div>
-			<div className='section9 bg-cover bg-no-repeat w-full h-[15vh] lg:h-[25vh] max-h-[15rem] min-h-[8rem]'></div>
 		</section>
 	);
 }
