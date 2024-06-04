@@ -103,40 +103,28 @@ export default function Products() {
 	return (
 		<section className='w-full flex flex-col justify-center items-center overflow-y-hidden py-5  gap-7'>
 			<h2 className='p-5 font-extrabold text-sc2 text-2xl text-center '>
-				Conheça tudo que o Sírius ERP oferece para o seu negócio!
+			Conheça as soluções da Sirius ERP
 			</h2>
-			<div className='w-full flex flex-col justify-center items-center h-[80%] md:mt-5'>
-				<Carousel
-					className='w-[100%]'
-					plugins={[Autoplay({ delay: 2000 })]}>
-					<CarouselContent className='-ml-1 pb-10'>
-						{cards.map((_, index) => (
-							<CarouselItem
-								key={index}
-								className='pl-4 pb-10  lg:px-8 basis-[78%] md:basis-[38%] lg:basis-[24%] h-[100%] '>
-								<div className='p-1 mb-15 lg:p-0'>
-									<Card className=' mb-15 shadow-2xl z-30'>
-										<CardContent className='grid grid-rows-12 grid-cols-1 gap-3  h-[27rem] lg:h-[20rem]'>
-											<div className=' col-span-full row-span-4 row-start-2 w-[100%] border-none  flex flex-col items-center justify-center'>
-												<Image
-													className='w-[65%] max-w-[8rem] lg:w-[50%] lg:max-w-[50%]'
-													alt='Cog'
-													src={_.image}
-												/>
-											</div>
+			<div className='flex flex-wrap gap-6 justify-center w-full '>
+					{cards.map((_, index) => (
+						<Card
+							key={index}
+							className='p-4 max-w-[17rem] min-h-[30rem] shadow-2xl '>
+							<CardContent className='flex flex-col items-center gap-6'>
+								<Image
+									className='w-24 h-24 lg:w-32 lg:h-32'
+									alt={_.image}
+									src={_.image}
+								/>
 
-											<h2 className=' w-full col-span-full  row-span-2 row-start-6 text-center flex flex-row justify-center items-center font-bold text-2xl lg:text-[1.14rem] text-sc'>
-												{_.label}
-											</h2>
-											<p className='col-span-full  row-span-5 row-start-8 text-center text-sc lg:text-sm'>{_.description}</p>
-										</CardContent>
-									</Card>
-								</div>
-							</CarouselItem>
-						))}
-					</CarouselContent>
-				</Carousel>
-			</div>
+								<h2 className=' w-full leading-5 text-center flex flex-row justify-center items-center font-bold text-2xl lg:text-[1.14rem] text-sc  ' >
+									{_.label}
+								</h2>
+								<p className='text-justify text-sc lg:text-sm '>{_.description}</p>
+							</CardContent>
+						</Card>
+					))}
+				</div>
 
 			<ButtonExpert
 				color={'orange'}
