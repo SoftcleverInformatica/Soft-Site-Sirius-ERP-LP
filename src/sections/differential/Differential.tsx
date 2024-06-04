@@ -45,24 +45,69 @@ export default function Differential() {
 			<div className=' lg:max-w-3xl xl:max-w-4xl '>
 				<div className='flex items-center gap-10 '>
 					<div className='flex flex-col gap-14  '>
-						<h1 className='text-justify text-sc  text-lg font-semibold lg:text-left lg:text-3xl'>Nossos Diferenciais</h1>
+						<h1 className='text-justify text-sc  text-lg font-semibold lg:text-left lg:text-3xl'>
+							Porque a Sirius Varejo é a escolha certa para o seu negócio
+						</h1>
 						<ul
 							className='flex flex-col gap-[6rem] lg:gap-6 row-start-3 text-justify text-sc font-medium text-lg							max-w-[600px]
-							lg:text-left lg:text-lg'>
-							{differentials.map((text, index) => {
-								return (
-									<li
-										key={index}
-										className='flex flex-row gap-4 items-center h-[2rem]'>
-										<Image
-											sizes=''
-											alt='Tick'
-											src={Tick}
-										/>
-										<span>{text}</span>
-									</li>
-								);
-							})}
+            lg:text-left lg:text-lg'>
+							<li className='flex flex-row gap-4 items-center h-[2rem]'>
+								<Image
+									sizes=''
+									alt='Tick'
+									src={Tick}
+								/>
+								<span>
+									O <strong className='text-[#CC4125]'>ÚNICO</strong> sistema{' '}
+									<strong className='text-[#CC4125]'>SEM CONTRATO</strong> de fidelidade
+								</span>
+							</li>
+							<li className='flex flex-row gap-4 items-center h-[2rem]'>
+								<Image
+									sizes=''
+									alt='Tick'
+									src={Tick}
+								/>
+								<span>
+									A <strong className='text-[#CC4125]'>ÚNICA EMPRESA</strong> que oferece um atendimento{' '}
+									<strong className='text-[#CC4125]'>humanizado e personalizado</strong>, sem qualquer tipo de robô.
+								</span>
+							</li>
+							<li className='flex flex-row gap-4 items-center h-[2rem]'>
+								<Image
+									sizes=''
+									alt='Tick'
+									src={Tick}
+								/>
+								<span>
+									O sistema <strong className='text-[#CC4125]'>MAIS SIMPLES</strong> e{' '}
+									<strong className='text-[#CC4125]'>ÁGIL</strong> para ser usado.
+								</span>
+							</li>
+							<li className='flex flex-row gap-4 items-center h-[2rem]'>
+								<Image
+									sizes=''
+									alt='Tick'
+									src={Tick}
+								/>
+								<span>Pacotes para todos os tipos e tamanhos de empresa</span>
+							</li>
+							<li className='flex flex-row gap-4 items-center h-[2rem]'>
+								<Image
+									sizes=''
+									alt='Tick'
+									src={Tick}
+								/>
+								<span>Mais de 12.000 usuários atendidos em milhares de projetos implantados.</span>
+							</li>
+							<li className='flex flex-row gap-4 items-center h-[2rem]'>
+								<Image
+									sizes=''
+									alt='Tick'
+									src={Tick}
+								/>
+								<span>A empresa mais tradicional do mercado, com mais de 30 anos de experiência</span>
+							</li>
 						</ul>
 					</div>
 
