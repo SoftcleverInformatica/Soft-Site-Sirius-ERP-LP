@@ -87,6 +87,7 @@ export default function AboutUs() {
 					label='Fale com um especialista'
 				/>
 			</div>
+			<div className='section9 bg-cover bg-no-repeat w-full h-[15vh] lg:h-[25vh] max-h-[15rem] min-h-[8rem]'></div>
 		</section>
 	);
 }
