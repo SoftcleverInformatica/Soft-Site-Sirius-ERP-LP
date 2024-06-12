@@ -46,7 +46,7 @@ export default function Differential() {
 				<div className='flex items-center gap-10 '>
 					<div className='flex flex-col gap-14  '>
 						<h1 className='text-justify text-sc  text-lg font-semibold lg:text-left lg:text-3xl'>
-							Porque a Sirius Varejo é a escolha certa para o seu negócio
+							Porque a Sirius ERP é a escolha certa para o seu negócio
 						</h1>
 						<ul
 							className='flex flex-col gap-[6rem] lg:gap-6 row-start-3 text-justify text-sc font-medium text-lg							max-w-[600px]

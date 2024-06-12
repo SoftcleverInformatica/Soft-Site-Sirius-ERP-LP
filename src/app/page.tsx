@@ -15,13 +15,13 @@ export default function Home() {
 		<main className='flex flex-col p-0 mx-auto b-0 justify-center max-w-[1440px] items-center'>
 			<Header />
 			<Video />
-			<Client />
 			<Products />
 			<Differential />
 			<Segments />
 			<Feedback />
 			<Questions />
 			<AboutUs />
+			<Client />
 			<Footer />
 		</main>
 	);

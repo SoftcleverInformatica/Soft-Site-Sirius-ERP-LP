@@ -61,7 +61,7 @@ export default function Header() {
 					<h2 className='text-5xl font-bold'>Sirius ERP</h2>
 
 					<p className='text-lg font-normal'>
-						Tenha controle total de todos os departamentos da sua empresa através do Sirius Varejo: o único sistema sem contrato
+						Tenha controle total de todos os departamentos da sua empresa através do Sirius ERP: o único sistema sem contrato
 						de fidelidade e que <span className='font-bold'> garante o melhor atendimento através de uma equipe dedicada</span>
 					</p>
 				</div>
