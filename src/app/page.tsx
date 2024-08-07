@@ -1,4 +1,5 @@
 'use client';
+
 import AboutUs from '../sections/about-us/AboutUs';
 import Client from '../sections/client/Client';
 import Differential from '../sections/differential/Differential';
@@ -12,7 +13,7 @@ import Video from '../sections/video/Video';
 
 export default function Home() {
 	return (
-		<main className='flex flex-col p-0 mx-auto b-0 justify-center max-w-[1440px] items-center'>
+		<div className='flex flex-col text-primary font-secondary bg-hero-monitor'>
 			<Header />
 			<Video />
 			<Products />
@@ -23,6 +24,6 @@ export default function Home() {
 			<AboutUs />
 			<Client />
 			<Footer />
-		</main>
+		</div>
 	);
 }

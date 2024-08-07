@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -21,16 +21,15 @@ const config = {
         '2xl': '1536px' // tela grande
       },
     },
-    fontFamily:{
-      sc:[
-        '"Roboto", Arial',
-      ]
-    },
     extend: {
+      fontFamily: {
+        'primary': ['Montserrat', 'Roboto',],
+        'secondary': ['Ubuntu'],
+      },
       colors: {
         'sc': '#053553',
-        'scHover':'#396680',
-        'sc2':'#003658',
+        'scHover': '#396680',
+        'sc2': '#003658',
         'pv1': '#24ADB5',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -85,9 +84,14 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        'base-lp': "url('../../assets/base.png')",
+        'hero-monitor': "url('../../assets/header.png')",
+        'hero-laptop-sat-web': 'url("/assets/mockup-laptop-sat-web.png")',
+      }
     },
-    borderRadius:{
-      'scrollbar':'0.5rem',
+    borderRadius: {
+      'scrollbar': '0.5rem',
     }
   },
   plugins: [

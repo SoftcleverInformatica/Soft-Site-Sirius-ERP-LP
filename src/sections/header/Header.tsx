@@ -1,97 +1,50 @@
 'use client';
-import Image from 'next/image';
-import HeaderFull from '../../../assets/HeaderBG.png';
-import HeaderPartial from '../../../assets/header.png';
-import LogoAzul from '../../../assets/logo_azul.svg';
-import LogoBranco from '../../../assets/logo_branco.svg';
 
-import ButtonExpert from '@/src/components/button_expert';
-import { useEffect, useState } from 'react';
-import WhatsappIcon from '../../../assets/whatsapp.svg';
+import { Button } from '@/src/components/ui/button';
+import { LogoSoftclever } from '@/src/components/ui/svgs';
 
 export default function Header() {
-	const [isMobile, setIsMobile] = useState(false);
+	// const link_whatsapp = 'https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f';
 
-	const link_whatsapp = 'https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f';
-
-	useEffect(() => {
-		if (window.innerWidth >= 320 && window.innerWidth <= 1023) {
-			setIsMobile(true);
-		} else {
-			setIsMobile(false);
-		}
-
-		function updateText() {
-			if (window.innerWidth >= 320 && window.innerWidth <= 1023) {
-				setIsMobile(true);
-			} else {
-				setIsMobile(false);
-			}
-		}
-
-		// Adiciona um ouvinte de evento de redimensionamento da janela
-		window.addEventListener('resize', updateText);
-
-		// Remove o ouvinte de evento ao desmontar o componente
-		return () => {
-			window.removeEventListener('resize', updateText);
-		};
-	}, []);
-
-	const bg = isMobile ? { backgroundImage: `url(${HeaderFull.src})` } : undefined;
 	return (
-		<header
-			style={bg}
-			className={`grid relative overflow-x-hidden grid-cols-12 grid-rows-8 gap-3 h-[42rem] min-h-[27rem]  lg:min-h-[40rem] lg:max-h[42rem] bg-no-repeat bg-right-top pb-4 lg:bg-cover`}>
-			<div
-				className='col-span-full pl-10 min-w-[20rem] row-span-1 
-            md:row-span-2 md:absolute md:left-[5%]
-            lg:pl-0 lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-2 flex lg:items-center pt-2'>
-				<Image
-					className='w-[60%] md:max-h-[4rem] lg:max-h-[3.5rem] lg:w-[100%] lg:ml-[6.5rem]'
-					alt='logo Softclever'
-					src={isMobile ? LogoBranco : LogoAzul}
-				/>
-			</div>
-
-			<div
-				className='flex flex-col col-start-2 col-span-10 row-start-3 p-2 gap-3 text-[#f2faff] 
-            lg:text-[#003658] lg:col-span-5 lg:row-span-8 lg:col-start-3 lg:row-start-4'>
-				<div className='flex flex-col gap-10'>
-					<h2 className='text-5xl font-bold'>Sirius ERP</h2>
-
-					<p className='text-lg font-normal'>
-						Tenha controle total de todos os departamentos da sua empresa através do Sirius ERP: o único sistema sem contrato
-						de fidelidade e que <span className='font-bold'> garante o melhor atendimento através de uma equipe dedicada</span>
-					</p>
+		<header className='w-full flex flex-col items-center bg-hero-laptop-sat-web bg-no-repeat bg-[right_10rem_top_14rem] bg-[length:600px_400px]  '>
+			<div className={`max-w-6xl py-28 flex flex-col gap-20 `}>
+				<div className='flex flex-col items-center w-full fixed top-0  left-0  '>
+					<div className='w-full  '>
+						<p className='w-full  text-start text-secondary font-primary text-3xl bg-primary py-3 px-96'>Planos a partir de: R$ 99,98</p>
+					</div>
+				</div>
+				<nav className=''>
+					<ul className='flex gap-10 justify-between items-center text-lg font-light'>
+						<li>
+							<LogoSoftclever width={190} height={53} color='#003658' />
+						</li>
+						<div className='flex gap-10'>
+							<li>
+								<a href='#'>Sobre</a>
+							</li>
+							<li>
+								<a href='#'>Funcionalidades</a>
+							</li>
+							<li>
+								<a href='#'>Preços</a>
+							</li>
+						</div>
+						<li>
+							<a href='#'>Contato</a>
+						</li>
+					</ul>
+				</nav>
+				<div className='flex gap-20'>
+					<div className='w-3/5'>
+						<h2 className='text-5xl font-extrabold leading-tight uppercase tracking-wide font-main'>Transforme a Gestão do Seu Negócio com Nosso Software ERP</h2>
+						<p className='my-12 text-xl leading-9 font-normal tracking-wider font-secondary '>Simplifique processos, aumente a eficiência e tome decisões baseadas em dados com nosso ERP líder de mercado.</p>
+						<Button size={'lg'} className=''>
+							Solicitar Demonstração Gratuita
+						</Button>
+					</div>
 				</div>
 			</div>
-
-			<div
-				className='col-span-10  col-start-2 row-start-8 
-				lg:col-span-4 lg:col-start-3 lg:row-start-8'>
-				<ButtonExpert
-					color={'orange'}
-					label='Quero atendimento personalizado'
-					animation='animate-pulse'
-				/>
-			</div>
-			{!isMobile && (
-				<>
-					<div className='flex justify-start items-start flex-col absolute top-[15vh] left-[80vw]'>
-						<a
-							href={link_whatsapp}
-							target='_blank'
-							className='col-span-2 w-[8rem]'></a>
-					</div>
-
-					<Image
-						className='h-[40.7rem] lg:col-span-6 lg:col-start-7'
-						alt='background_image'
-						src={HeaderPartial}
-					/>
-				</>
-			)}
 		</header>
 	);
 }
