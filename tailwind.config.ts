@@ -29,7 +29,7 @@ const config = {
       colors: {
         'sc': '#053553',
         'scHover': '#396680',
-        'sc2': '#003658',
+        'sc2': '#00366B',
         'pv1': '#24ADB5',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -69,6 +69,8 @@ const config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        full: '9999px',
+        'scrollbar': '0.5rem',
       },
       keyframes: {
         "accordion-down": {
@@ -90,9 +92,7 @@ const config = {
         'hero-laptop-sat-web': 'url("/assets/mockup-laptop-sat-web.png")',
       }
     },
-    borderRadius: {
-      'scrollbar': '0.5rem',
-    }
+
   },
   plugins: [
     require("tailwindcss-animate"),
