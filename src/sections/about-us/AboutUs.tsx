@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import SobreNos from '../../../assets/about-us.png';
+import SobreNos from '../../../public/assets/about-us.png';
 import { useEffect, useState } from 'react';
 import ButtonExpert from '@/src/components/button_expert';
 

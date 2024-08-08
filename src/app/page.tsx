@@ -13,7 +13,7 @@ import Video from '../sections/video/Video';
 
 export default function Home() {
 	return (
-		<div className='flex flex-col text-primary font-secondary bg-hero-monitor'>
+		<div className='flex flex-col text-primary font-secondary '>
 			<Header />
 			<Video />
 			<Products />

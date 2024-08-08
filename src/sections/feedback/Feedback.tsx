@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import feedbackImageBg from '../../../assets/feedback.png';
-import avatar from '../../../assets/avatar.svg';
-import star from '../../../assets/star.svg';
-import starGray from '../../../assets/starGray.svg';
+import feedbackImageBg from '../../../public/assets/feedback.png';
+import avatar from '../../../public/assets/avatar.svg';
+import star from '../../../public/assets/star.svg';
+import starGray from '../../../public/assets/starGray.svg';
 import Autoplay from 'embla-carousel-autoplay';
 import ButtonExpert from '@/src/components/button_expert';
 import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/carousel';

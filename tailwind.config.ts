@@ -85,8 +85,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        'base-lp': "url('../../assets/base.png')",
-        'hero-monitor': "url('../../assets/header.png')",
+        'base-lp': "url('/assets/base.png')",
+        'hero-monitor': "url('/assets/header.png')",
         'hero-laptop-sat-web': 'url("/assets/mockup-laptop-sat-web.png")',
       }
     },

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import fbLogo from '../../../assets/facebookLogo.svg';
-import insta from '../../../assets/instagramLogo.svg';
-import youtubeLogo from '../../../assets/youtubeLogo.svg';
+import fbLogo from '../../../public/assets/facebookLogo.svg';
+import insta from '../../../public/assets/instagramLogo.svg';
+import youtubeLogo from '../../../public/assets/youtubeLogo.svg';
 
 export default function Footer() {
 	return (

@@ -3,18 +3,18 @@ import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/car
 import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import CountUp from 'react-countup';
-import iconClient from '../../../assets/clients.svg';
-import clientBax from '../../../assets/clients/bax.png';
-import clientBinelli from '../../../assets/clients/binelli.png';
-import clientBollatel from '../../../assets/clients/bollatel.png';
-import clientColormix from '../../../assets/clients/colormix.png';
-import clientCoopercas from '../../../assets/clients/coopercas.png';
-import clientEscaleve from '../../../assets/clients/escaleve.png';
-import clientPolar from '../../../assets/clients/polar.png';
-import clientPortoro from '../../../assets/clients/portoro.png';
-import iconProject from '../../../assets/project.svg';
-import iconTeam from '../../../assets/team.svg';
-import iconUser from '../../../assets/user.svg';
+import iconClient from '../../../public/assets/clients.svg';
+import clientBax from '../../../public/assets/clients/bax.png';
+import clientBinelli from '../../../public/assets/clients/binelli.png';
+import clientBollatel from '../../../public/assets/clients/bollatel.png';
+import clientColormix from '../../../public/assets/clients/colormix.png';
+import clientCoopercas from '../../../public/assets/clients/coopercas.png';
+import clientEscaleve from '../../../public/assets/clients/escaleve.png';
+import clientPolar from '../../../public/assets/clients/polar.png';
+import clientPortoro from '../../../public/assets/clients/portoro.png';
+import iconProject from '../../../public/assets/project.svg';
+import iconTeam from '../../../public/assets/team.svg';
+import iconUser from '../../../public/assets/user.svg';
 
 export default function Client() {
 	const imgs: { alt: string; src: any }[] = [

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import WhatsappIcon from '../../assets/whatsapp.svg';
-import WhatsappIconWhite from '../../assets/whatsapp_white.svg';
+import WhatsappIcon from '../../public/assets/whatsapp.svg';
+import WhatsappIconWhite from '../../public/assets/whatsapp_white.svg';
 
 interface props {
 	className?: string;

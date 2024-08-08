@@ -2,19 +2,19 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
-import Cog from '../../../assets/Cog.svg';
+import Cog from '../../../public/assets/Cog.svg';
 import ButtonExpert from '@/src/components/button_expert';
 import { Card, CardContent } from '@/src/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/carousel';
-import NotaFiscalEletronica from '@/assets/Produtos-SVG/Nota-Fiscal-Eletronica.svg';
-import PedidoVenda from '@/assets/Produtos-SVG/Ped-Vendas.svg';
-import Compras from '@/assets/Produtos-SVG/Compras.svg';
-import Financeiro from '@/assets/Produtos-SVG/Financeiro.svg';
-import Producao from '@/assets/Produtos-SVG/Producao.svg';
-import Relatorio from '@/assets/Produtos-SVG/Relatorio.svg';
-import OrdemDeServico from '@/assets/Produtos-SVG/Ordem-de-Servico.svg';
-import NotaFiscalServicos from '@/assets/Produtos-SVG/Nota-Fiscal-Servico.svg';
-import ForcaDeVendas from '@/assets/Produtos-SVG/Forca-de-Vendas.svg';
+import NotaFiscalEletronica from '../../../public/assets/Produtos-SVG/Nota-Fiscal-Eletronica.svg';
+import PedidoVenda from '../../../public/assets/Produtos-SVG/Ped-Vendas.svg';
+import Compras from '../../../public/assets/Produtos-SVG/Compras.svg';
+import Financeiro from '../../../public/assets/Produtos-SVG/Financeiro.svg';
+import Producao from '../../../public/assets/Produtos-SVG/Producao.svg';
+import Relatorio from '../../../public/assets/Produtos-SVG/Relatorio.svg';
+import OrdemDeServico from '../../../public/assets/Produtos-SVG/Ordem-de-Servico.svg';
+import NotaFiscalServicos from '../../../public/assets/Produtos-SVG/Nota-Fiscal-Servico.svg';
+import ForcaDeVendas from '../../../public/assets/Produtos-SVG/Forca-de-Vendas.svg';
 
 export default function Products() {
 	const [isMobile, setIsMobile] = useState(true);
