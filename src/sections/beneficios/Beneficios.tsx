@@ -1,9 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/src/components/ui/card';
 import { Graph, LineSegments, PresentationChart } from '@phosphor-icons/react/dist/ssr';
 
-type CardProps = React.ComponentProps<typeof Card>;
-
-export default function Beneficios({ className, ...props }: CardProps) {
+export default function Beneficios() {
 	const beneficios = [
 		{ icon: <LineSegments size={32} weight='duotone' />, titulo: 'Aumento da Eficiência', descricao: 'Automatize tarefas rotineiras e melhore a produtividade da sua equipe.' },
 		{ icon: <PresentationChart size={32} weight='duotone' />, titulo: 'Decisões Baseadas em Dados', descricao: 'Acesse relatórios detalhados e tome decisões informadas para o crescimento do seu negócio.' },

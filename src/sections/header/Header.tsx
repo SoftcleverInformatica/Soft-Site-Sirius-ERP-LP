@@ -21,16 +21,16 @@ export default function Header() {
 						</li>
 						<div className=' flex-col lg:flex-row gap-10 hidden lg:flex'>
 							<li>
-								<a href='#'>Sobre</a>
+								<a href='#sobre'>Sobre</a>
 							</li>
 							<li>
-								<a href='#'>Funcionalidades</a>
+								<a href='#funcionalidades'>Funcionalidades</a>
 							</li>
 							<li>
-								<a href='#'>Preços</a>
+								<a href='#precos'>Preços</a>
 							</li>
 							<li>
-								<a href='#'>Contato</a>
+								<a href='#contato'>Contato</a>
 							</li>
 						</div>
 						<div className='w-[190px]'></div>

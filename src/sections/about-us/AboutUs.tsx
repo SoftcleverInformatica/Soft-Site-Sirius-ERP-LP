@@ -31,7 +31,7 @@ export default function AboutUs() {
 	}, []);
 
 	return (
-		<section
+		<section id='sobre'
 			className='grid grid-cols-12 grid-rows-12 pb-10 pt-4
         mt-16
         md:grid-rows-7

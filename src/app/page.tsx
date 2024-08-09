@@ -17,20 +17,20 @@ import Video from '../sections/video/Video';
 
 export default function Home() {
 	return (
-		<div className='flex flex-col text-primary font-secondary '>
+		<div className='  flex flex-col text-primary font-secondary '>
 			<Header />
 			<Beneficios />
 			<Funcionalidades />
 			<ProvasSociais />
 			<Trial />
-			{/* <Video />
+			<Video />
 			<Products />
 			<Differential />
 			<Segments />
 			<Feedback />
 			<Questions />
 			<AboutUs />
-			<Client /> */}
+			<Client />
 			<Footer />
 		</div>
 	);
