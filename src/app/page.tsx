@@ -1,5 +1,3 @@
-'use client';
-
 import AboutUs from '../sections/about-us/AboutUs';
 import Beneficios from '../sections/beneficios/Beneficios';
 import Client from '../sections/client/Client';
@@ -23,14 +21,14 @@ export default function Home() {
 			<Funcionalidades />
 			<ProvasSociais />
 			<Trial />
-			<Video />
-			<Products />
-			<Differential />
-			<Segments />
-			<Feedback />
-			<Questions />
-			<AboutUs />
-			<Client />
+			{/* <Video /> */}
+			{/* <Products /> */}
+			{/* <Differential /> */}
+			{/* <Segments /> */}
+			{/* <Feedback /> */}
+			{/* <Questions /> */}
+			{/* <AboutUs /> */}
+			{/* <Client /> */}
 			<Footer />
 		</div>
 	);

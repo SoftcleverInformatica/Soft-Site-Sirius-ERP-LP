@@ -7,7 +7,7 @@ export default function Footer() {
 	return (
 		<>
 			<div className='section9 bg-cover bg-no-repeat w-full h-[15vh] lg:h-[25vh] max-h-[15rem] min-h-[8rem]'></div>
-			<div className='flex flex-col gap-10 bg-sc text-white text-xs px-[2.5rem] py-[1.8rem] items-center w-full '>
+			<div className='flex flex-col gap-10 bg-[#00366b] text-white text-xs px-[2.5rem] py-[1.8rem] items-center w-full '>
 				<div className='flex flex-col gap-10 sm:px-20 justify-between  sm:flex-row items-center  lg:max-w-2xl xl:max-w-4xl w-full border-b-[1px] border-white py-10 '>
 					<div className='flex flex-col  gap-1'>
 						<h4 className='text-lg font-bold  '>REDE SOCIAIS</h4>
