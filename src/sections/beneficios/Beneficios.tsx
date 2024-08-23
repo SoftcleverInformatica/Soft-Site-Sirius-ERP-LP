@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/src/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Graph, LineSegments, PresentationChart } from '@phosphor-icons/react/dist/ssr';
 
 export default function Beneficios() {

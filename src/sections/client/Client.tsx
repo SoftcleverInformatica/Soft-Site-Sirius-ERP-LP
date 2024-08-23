@@ -1,5 +1,5 @@
-import ButtonExpert from '@/src/components/button_expert';
-import { Carousel, CarouselContent, CarouselItem } from '@/src/components/ui/carousel';
+import ButtonExpert from '@/components/button_expert';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import CountUp from 'react-countup';

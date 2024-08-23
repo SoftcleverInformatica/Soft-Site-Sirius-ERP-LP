@@ -1,6 +1,6 @@
 'use client';
 import { AccordionItem, Accordion, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
-import ButtonExpert from '@/src/components/button_expert';
+import ButtonExpert from '@/components/button_expert';
 import { useState, useEffect } from 'react';
 
 export default function Questions() {

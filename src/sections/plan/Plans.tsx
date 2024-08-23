@@ -1,4 +1,4 @@
-import ButtonExpert from "@/src/components/button_expert";
+import ButtonExpert from "@/components/button_expert";
 import {
   ArrowsLeftRight,
   Barcode,

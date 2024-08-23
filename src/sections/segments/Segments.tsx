@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Imagem5 from '@/assets/Image5.png';
-import ButtonExpert from '@/src/components/button_expert';
+import ButtonExpert from '@/components/button_expert';
 export default function Segments() {
 	const [isMobile, setIsMobile] = useState(true);
 	useEffect(() => {

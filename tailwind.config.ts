@@ -10,17 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        'sm': '640px', // celular na vertical
-        'md': '768px', // tablet na vertical
-        'lg': '1024px', // tablet na horizontal
-        'xl': '1280px', // desktop
-        '2xl': '1536px' // tela grande
-      },
-    },
     extend: {
       fontFamily: {
         'primary': ['Montserrat', 'Roboto',],
@@ -89,8 +78,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "teste": 'fade-in-left-out-right 6s linear infinite ',
-
+        "range": 'fade-in-left-out-right 6s linear infinite ',
       },
       backgroundImage: {
         'base-lp': "url('/assets/base.png')",
@@ -98,8 +86,6 @@ const config = {
         'hero-laptop-sat-web': 'url("/assets/mockup-laptop-sat-web.png")',
       }
     },
-
-
   },
   plugins: [
     require("tailwindcss-animate"),

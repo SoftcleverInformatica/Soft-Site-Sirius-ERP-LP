@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import DiferenciaisImagem from '../../../public/assets/DiferenciaisImage.png';
 import { useEffect, useState } from 'react';
-import ButtonExpert from '@/src/components/button_expert';
+import ButtonExpert from '@/components/button_expert';
 import Tick from '../../../public/assets/NossosDiferenciaisTick.svg';
 
 export default function Differential() {
