@@ -28,7 +28,7 @@ export default function ProvasSociais() {
 
 	return (
 		<section className='w-full flex flex-col items-center '>
-			<div className='max-w-5xl lg:max-w-6xl  xl:max-w-7xl w-full py-10 px-4 lg:px-24 flex flex-col gap-6 lg:gap-20 '>
+			<div className={`	w-full flex flex-col gap-6 pt-10 px-4 md:px-10 md:pt-20 lg:px-24 lg:pt-28 lg:gap-20 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<h2 className='text-3xl lg:text-5xl font-extrabold leading-tight uppercase tracking-wide font-main'>Nossos Casos de Sucesso</h2>
 				<div>
 					<Carousel className='w-full ' opts={{ loop: true }}>
