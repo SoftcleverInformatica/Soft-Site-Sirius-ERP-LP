@@ -11,22 +11,25 @@ export default function Beneficios() {
 	return (
 		<section className='w-full flex flex-col items-center '>
 			<div className={`	w-full flex flex-col gap-6 pt-10 px-4 md:px-10 md:pt-20 lg:px-24 lg:pt-28 lg:gap-20 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-[90rem]`}>
-				<h2 className='text-3xl lg:text-5xl font-extrabold leading-tight uppercase tracking-wide font-main'>Benefícios do Nosso ERP</h2>
-				<div className='flex flex-col lg:flex-row gap-10 '>
-					{beneficios.map((_, i) => (
-						<Card key={i} className={'max-w-[768px] lg:w-96'}>
-							<CardHeader>
-								<CardTitle className='text-primary flex items-start gap-2'>
-									{_.icon} {_.titulo}
-								</CardTitle>
-							</CardHeader>
-							<CardContent className='grid gap-4'>
-								<CardDescription>{_.descricao}</CardDescription>
-							</CardContent>
-						</Card>
-					))}
+				<div className='bg-[#dc8c00] py-10 px-9 flex flex-col gap-6 rounded-[40px]'>
+					<h2 className='text-3xl lg:text-5xl text-center text-balance text-muted/85 font-extrabold leading-tight  tracking-wide font-main truncate'>Precisando de tranquilidade na administração?</h2>
+					<div className='flex flex-col lg:flex-row gap-10 '>
+						{beneficios.map((_, i) => (
+							<Card key={i} className={'max-w-[768px] lg:w-96'}>
+								<CardHeader>
+									<CardTitle className='text-muted/85 font-bold flex items-start gap-2'>
+										{_.icon} {_.titulo}
+									</CardTitle>
+								</CardHeader>
+								<CardContent className='grid gap-4'>
+									<CardDescription>{_.descricao}</CardDescription>
+								</CardContent>
+							</Card>
+						))}
+					</div>
 				</div>
 			</div>
 		</section>
 	);
 }
+
