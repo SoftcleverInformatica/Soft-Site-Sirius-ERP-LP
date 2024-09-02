@@ -9,47 +9,46 @@ export default function Header() {
 		console.log('teste');
 	};
 	return (
-		<header className='w-full flex flex-col items-center  '>
-			<div className={`	w-full flex flex-col gap-6 pt-40 px-4 md:px-10 md:pt-20 lg:px-24 lg:pt-28 lg:gap-20 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-[90rem]`}>
-				<div className='w-full h-40 flex flex-col items-center fixed top-0  left-0 justify-center bg-primary md:h-20'>
-					<div className=' bg-gradient-to-r from-primary from-60% via-blue-500  w-full h-full absolute left-0 animate-range  z-0 '></div>
-					<div className=' w-full flex flex-col  items-center justify-between z-10 px-4 md:px-10 gap-4 md:gap-6 lg:gap-20  md:flex-row lg:px-24 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-[90rem]'>
-						<p className=' text-center md:text-start text-white font-primary font-medium md:font-bold text-xl '>Planos a partir de: R$ 89,90</p>
-						<Button size={'lg'} className='rounded-full md:font-medium text-lg hover:ring-2 ring-primary-foreground ' variant={'white'}>
+		<header className='z-10 flex w-full flex-col items-center'>
+			<div className={`flex w-full flex-col gap-6 px-4 pt-40 md:px-10 md:pt-20 lg:max-w-5xl lg:gap-20 lg:px-24 lg:pt-28 xl:max-w-6xl 2xl:max-w-[90rem]`}>
+				<div className='fixed left-0 top-0 flex h-40 w-full flex-col items-center justify-center bg-primary md:h-20'>
+					<div className='absolute left-0 z-0 h-full w-full animate-range bg-gradient-to-r from-primary from-60% via-blue-500'></div>
+					<div className='z-10 flex w-full flex-col items-center justify-between gap-4 px-4 md:flex-row md:gap-6 md:px-10 lg:max-w-5xl lg:gap-20 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]'>
+						<p className='text-center font-primary text-xl font-medium text-white md:text-start md:font-bold'>Planos a partir de: R$ 89,90</p>
+						<Button size={'lg'} className='rounded-full text-lg ring-primary-foreground hover:ring-2 md:font-medium' variant={'white'}>
 							Solicitar sua Demonstração
 						</Button>
 					</div>
 				</div>
 
-				<nav className='bg-white border-gray-200 dark:bg-gray-900'>
-					<div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-						<LogoSoftclever width={190} height={53} color='#0050DC' />
+				<nav className='border-gray-200 bg-white dark:bg-gray-900'>
+					<div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4'>
+						<LogoSoftclever width={190} height={53} className='fill-primary' />
 						<button
-							onClick={ f1}
+							onClick={f1}
 							type='button'
-							className='hidden  items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
-						>
+							className='hidden h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden'>
 							<span className='sr-only'>Open main menu</span>
-							<svg className='w-5 h-5' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 17 14'>
+							<svg className='h-5 w-5' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 17 14'>
 								<path stroke='currentColor' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M1 1h15M1 7h15M1 13h15' />
 							</svg>
 						</button>
 
 						<div className='hidden w-full md:block md:w-auto' id='navbar-default'>
-							<ul className='flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+							<ul className='mt-4 flex flex-col p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse'>
 								<li>
-									<a href='#sobre' className='block px-4 rounded-full text-black  border-2 border-border  '>
+									<a href='#sobre' className='block rounded-full border-2 border-border px-4 text-black'>
 										Sobre
 									</a>
 								</li>
 								<li>
-									<a href='#funcionalidades' className='block px-4 rounded-full text-black  border-2 border-border '>
+									<a href='#funcionalidades' className='block rounded-full border-2 border-border px-4 text-black'>
 										Funcionalidades
 									</a>
 								</li>
 								<li>
-									<a href='#precos' className='block px-4 rounded-full text-black  border-2 border-border '>
-										Preços
+									<a href='#planos' className='block rounded-full border-2 border-border px-4 text-black'>
+										Planos
 									</a>
 								</li>
 							</ul>
@@ -57,23 +56,24 @@ export default function Header() {
 					</div>
 				</nav>
 
-				<div className='flex flex-col md:flex-row gap-8 md:gap-10 items-center '>
+				<div className='flex flex-col items-center gap-8 md:flex-row md:gap-10'>
 					<div className='w-full lg:w-3/5'>
-						<h2 className='text-2xl lg:text-4xl xl:text-5xl font-extrabold leading-tight  tracking-wide font-main  '>Transforme a Gestão do Seu Negócio com Nosso Software ERP</h2>
-						<p className='my-6 md:my-12 text-base md:text-lg lg:text-xl  lg:leading-9 font-normal tracking-wider font-secondary '>Simplifique processos, aumente a eficiência e tome decisões baseadas em dados com nosso ERP líder de mercado.</p>
-						<div className='flex flex-wrap gap-6 items-center md:items-start justify-center w-full '>
-							<Button size={'lg'} className='rounded-full w-56 sm:w-auto'>
+						<h2 className='font-main text-2xl font-extrabold leading-tight tracking-wide lg:text-4xl xl:text-5xl'>Transforme a Gestão do Seu Negócio com Nosso Software ERP</h2>
+						<p className='my-6 font-secondary text-base font-normal tracking-wider md:my-12 md:text-lg lg:text-xl lg:leading-9'>
+							Simplifique processos, aumente a eficiência e tome decisões baseadas em dados com nosso ERP líder de mercado.
+						</p>
+						<div className='flex w-full flex-wrap items-center justify-center gap-6 md:items-start'>
+							<Button size={'lg'} className='w-56 rounded-full sm:w-auto'>
 								Solicitar Demonstração
 							</Button>
-							<Button size={'lg'} className='rounded-full w-56 sm:w-auto' variant={'white'}>
+							<Button size={'lg'} className='w-56 rounded-full sm:w-auto' variant={'white'}>
 								Conheça os planos
 							</Button>
 						</div>
 					</div>
-					<div className='hidden sm:block bg-primary max-w-full w-[29rem] h-48 lg:h-[18rem] rounded-3xl md:rounded-[40px] bg-hero-laptop-sat-web bg-no-repeat bg-[left_50%_top_50%] bg-[length:16rem_10.6rem] lg:bg-[length:20rem_13.3rem]   '></div>
+					<div className='bg-hero-laptop-sat-web hidden h-48 w-[29rem] max-w-full rounded-3xl bg-primary bg-[length:16rem_10.6rem] bg-[left_50%_top_50%] bg-no-repeat sm:block md:rounded-[40px] lg:h-[18rem] lg:bg-[length:20rem_13.3rem]'></div>
 				</div>
 			</div>
 		</header>
 	);
 }
-

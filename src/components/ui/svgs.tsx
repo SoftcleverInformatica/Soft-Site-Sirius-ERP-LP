@@ -1,11 +1,12 @@
 type Props = {
 	width: number;
 	height: number;
-	color: string;
+	color?: string;
+	className?: string;
 };
 
-const LogoSoftclever = ({ width, height, color }: Props) => (
-	<svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} fill={color} xmlns='<http://www.w3.org/2000/svg>'>
+const LogoSoftclever = ({ width, height, color, className }: Props) => (
+	<svg className={className} width={width} height={height} viewBox={`0 0 ${width} ${height}`} fill={color} xmlns='<http://www.w3.org/2000/svg>'>
 		<path
 			d='M75.3317 30.769C75.5217 34.075 71.9877 36.07 68.0927 35.899C65.7747 35.823 63.4947 35.405 62.1647 34.816L61.7467 34.626L62.6017 31.662L62.7347 31.681L62.8107 32.004C63.3617 34.455 66.3447 35.386 68.2827 35.424C70.2207 35.481 73.1087 34.55 73.0897 32.061C73.0707 29.667 70.8287 29.496 68.5677 29.23L67.9407 29.154C65.2997 28.85 62.3357 28.09 62.4307 25.126C62.5257 21.801 65.8507 20.566 68.9287 20.547C70.4107 20.547 73.0707 21.079 74.3057 21.554L74.5907 21.668L73.8877 24.138L73.6027 24.043L73.4697 23.682C72.6717 21.706 70.6007 21.212 68.9287 21.155C66.4777 21.06 64.5397 22.124 64.5587 24.138C64.5777 26.247 66.8957 26.665 69.2517 26.912L69.7267 26.95C72.2917 27.216 75.1797 27.748 75.3317 30.769Z'
 			fill={color}

@@ -1,7 +1,8 @@
 'use client';
-import { AccordionItem, Accordion, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
+
+import { useEffect, useState } from 'react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import ButtonExpert from '@/components/button_expert';
-import { useState, useEffect } from 'react';
 
 export default function Questions() {
 	const [isMobile, setIsMobile] = useState(true);
@@ -63,57 +64,25 @@ export default function Questions() {
 	];
 	return (
 		<>
-			<section className='grid grid-cols-12 grid-rows-10 lg:grid-rows-3 w-full bg-sc gap-6 lg:py-[3.3rem] md:pb-6 shadow-xl'>
-				<div
-					className='col-span-10 col-start-2 row-span-1 row-start-2
-            lg:col-span-3 lg:col-start-2 lg:row-span-2 lg:row-start-2 
-            flex flex-col gap-4
-            '>
-					<h2
-						className=' text-white font-bold text-3xl
-												lg:text-5xl lg:leading-[3.5rem]'>
-						Perguntas Frequentes
-					</h2>
-					{!isMobile && (
-						<ButtonExpert
-							color={'orange'}
-							label='Fale com um especialista'
-						/>
-					)}
+			<section className='grid w-full grid-cols-12 grid-rows-10 gap-6 bg-sc shadow-xl md:pb-6 lg:grid-rows-3 lg:py-[3.3rem]'>
+				<div className='col-span-10 col-start-2 row-span-1 row-start-2 flex flex-col gap-4 lg:col-span-3 lg:col-start-2 lg:row-span-2 lg:row-start-2'>
+					<h2 className='text-3xl font-bold text-white lg:text-5xl lg:leading-[3.5rem]'>Perguntas Frequentes</h2>
+					{!isMobile && <ButtonExpert color={'orange'} label='Fale com um especialista' />}
 				</div>
 
-				<div
-					className='col-span-10 col-start-2  row-span-7 row-start-3
-                md:mb-[2.5rem]
-            lg:col-span-6 lg:col-start-6 lg:row-start-1 lg:row-st
-            '>
-					<Accordion
-						className='gap-3 bg-white p-4  rounded-md'
-						type='single'
-						collapsible>
+				<div className='lg:row-st col-span-10 col-start-2 row-span-7 row-start-3 md:mb-[2.5rem] lg:col-span-6 lg:col-start-6 lg:row-start-1'>
+					<Accordion className='gap-3 rounded-md bg-white p-4' type='single' collapsible>
 						{QuestionsResponse.map((item, index) => {
 							return (
-								<AccordionItem
-									className='bg-sc mb-3 rounded-md'
-									value={index.toString()}
-									key={index}>
-									<AccordionTrigger className='text-white text-lg font-semibold gap-2 px-3 text-left'>
-										{item.Question}
-									</AccordionTrigger>
-									<AccordionContent className='text-white text-base font-normal px-4 text-justify'>
-										{item.Response}
-									</AccordionContent>
+								<AccordionItem className='mb-3 rounded-md bg-sc' value={index.toString()} key={index}>
+									<AccordionTrigger className='gap-2 px-3 text-left text-lg font-semibold text-white'>{item.Question}</AccordionTrigger>
+									<AccordionContent className='px-4 text-justify text-base font-normal text-white'>{item.Response}</AccordionContent>
 								</AccordionItem>
 							);
 						})}
 					</Accordion>
 				</div>
-				{isMobile && (
-					<ButtonExpert
-						color={'orange'}
-						label='Fale com um especialista'
-					/>
-				)}
+				{isMobile && <ButtonExpert color={'orange'} label='Fale com um especialista' />}
 			</section>
 		</>
 	);

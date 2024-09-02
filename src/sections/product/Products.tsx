@@ -1,136 +1,130 @@
 'use client';
+
+import { useState } from 'react';
+import { ArrowRight } from '@phosphor-icons/react';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import Autoplay from 'embla-carousel-autoplay';
-import Cog from '../../../public/assets/Cog.svg';
+import Cardapio from 'root/public/assets/Produtos-SVG/cardapio.svg';
+import Delivery from 'root/public/assets/Produtos-SVG/delivery.svg';
+import Financeiro from 'root/public/assets/Produtos-SVG/Financeiro.svg';
+import ForcaDeVendas from 'root/public/assets/Produtos-SVG/Forca-de-Vendas.svg';
+import iFood from 'root/public/assets/Produtos-SVG/ifood.svg';
+import Tray from 'root/public/assets/Produtos-SVG/logo_tray.svg';
+import marketplace from 'root/public/assets/Produtos-SVG/marketplace.svg';
+import mercadoLivre from 'root/public/assets/Produtos-SVG/mercado-livre.svg';
+import NotaFiscalEletronica from 'root/public/assets/Produtos-SVG/Nota-Fiscal-Eletronica.svg';
+import NotaFiscalServicos from 'root/public/assets/Produtos-SVG/Nota-Fiscal-Servico.svg';
+import otica from 'root/public/assets/Produtos-SVG/otica.svg';
+import PedidoVenda from 'root/public/assets/Produtos-SVG/Ped-Vendas.svg';
+import pet from 'root/public/assets/Produtos-SVG/pet.svg';
+import Producao from 'root/public/assets/Produtos-SVG/Producao.svg';
+import webLojas from 'root/public/assets/Produtos-SVG/web-lojas.svg';
 import ButtonExpert from '@/components/button_expert';
-import { Card, CardContent } from '@/components/ui/card';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import NotaFiscalEletronica from '../../../public/assets/Produtos-SVG/Nota-Fiscal-Eletronica.svg';
-import PedidoVenda from '../../../public/assets/Produtos-SVG/Ped-Vendas.svg';
-import Compras from '../../../public/assets/Produtos-SVG/Compras.svg';
-import Financeiro from '../../../public/assets/Produtos-SVG/Financeiro.svg';
-import Producao from '../../../public/assets/Produtos-SVG/Producao.svg';
-import Relatorio from '../../../public/assets/Produtos-SVG/Relatorio.svg';
-import OrdemDeServico from '../../../public/assets/Produtos-SVG/Ordem-de-Servico.svg';
-import NotaFiscalServicos from '../../../public/assets/Produtos-SVG/Nota-Fiscal-Servico.svg';
-import ForcaDeVendas from '../../../public/assets/Produtos-SVG/Forca-de-Vendas.svg';
 
 export default function Products() {
-	const [isMobile, setIsMobile] = useState(true);
+	const [selecionado, setSelecionado] = useState({ item: 0 });
 
 	const cards: { image: any; label: string; description: string }[] = [
 		{
 			image: NotaFiscalEletronica,
-			label: 'Nota Fiscal Eletronica',
-			description:
-				'Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber.',
+			label: 'Sírius S@T/NFC-e - Emissor de cupom fiscal',
+			description: 'Emissor de cupom fiscal homologado na SEFAZ com controle de estoque, caixa, financeiro e compras. Vendas através descrição ou código de barras. ',
 		},
 		{
 			image: ForcaDeVendas,
-			label: 'Força de Vendas',
-			description:
-				'Plataforma WEB para pedidos de venda integrada ao Sírius, ideal para vendedores externos, oferecendo rapidez nas vendas, controle de estoque em tempo real e emissão ágil de NF-e.',
+			label: 'Sírius Pré-Venda',
+			description: 'Emissor de pedido de venda (NÃO FISCAL) com controle de estoque, caixa, financeiro e compras. Vendas através descrição ou código de barras e integração com balança.',
 		},
 		{
 			image: PedidoVenda,
-			label: 'Pedidos de Vendas',
-			description:
-				'Sistema de gestão comercial com funcionalidades para orçamentos, pedidos, análise de vendas, geração de NF-e, controle de estoque e integração com Força de Vendas.',
+			label: 'Sírius Comanda',
+			description: 'Comandas para restaurantes, padarias, pizzarias, bares e entretenimento em geral. Abertura, fechamento e controle dos itens da comanda.',
 		},
 		{
 			image: NotaFiscalServicos,
-			label: 'Nota Fiscal de Serviços',
-			description:
-				'Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro.',
+			label: 'Sírius Nota Fiscal de Serviço',
+			description: 'Nota Fiscal de Serviço Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro.',
 		},
 		{
-			image: Relatorio,
-			label: 'Relatórios Gerenciais',
-			description:
-				'Essenciais para o controle completo e gestão financeira da empresa. Permite ao usuário diversas opções de filtros e relatórios',
+			image: Delivery,
+			label: 'Sírius Delivery',
+			description: 'Controle das entregas para o comércio em geral.',
 		},
 		{
 			image: Financeiro,
-			label: 'Financeiro',
-			description:
-				'Controle detalhado das contas a pagar e a receber a partir de contas contábeis ou centro de custos. Permite integração com cobrança bancária (boletos) e conciliação de saldo.',
+			label: 'Sírius NFE',
+			description: 'Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber.',
 		},
 		{
-			image: Compras,
-			label: 'Compras',
-			description:
-				'Pedidos de compras para serviços ou produtos. Entrada de mercadoria a partir do XML do fornecedor com envio dos títulos ao módulo contas a pagar.',
+			image: Cardapio,
+			label: 'Sírius Cardápio Digital',
+			description: 'Cardápio digital para o Food Service com opção de delivery.',
 		},
 		{
 			image: Producao,
-			label: 'Produção',
-			description:
-				'Geração de ordem de produção para estoque a partir do pedido de venda. Controle de matéria prima, ficha técnica, fases da produção e muito mais.',
+			label: 'Sírius Integração IFood',
+			description: 'Captura os pedidos do iFood, monta o pedido de venda e executa o despacho de forma rápida e fácil.',
 		},
 		{
-			image: OrdemDeServico,
-			label: 'Ordens de Serviços',
-			description:
-				'Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados.',
+			image: webLojas,
+			label: 'Sírius WEB Lojas',
+			description: 'Tenha o controle de uma ou mais lojas através da WEB. Permite o cadastro dos produtos e o ajuste dos saldos das lojas, além da conferência das vendas e dos valores do caixa.',
+		},
+		{
+			image: otica,
+			label: 'Sírius Óticas',
+			description: 'Controle de lentes, armações, marcas e modelos e controle das ordens de serviços.',
+		},
+		{
+			image: pet,
+			label: 'Sírius Pet Shop',
+			description: 'Controle de raça, tipo de pelagem, tutor e vacinação, além de agendamentos, atendimentos e muito mais.',
+		},
+		{
+			image: marketplace,
+			label: 'Sírius MarketPlace',
+			description: 'Integração completa com marketplaces populares, permitindo a gestão da sua loja. Sincronize produtos, preços, e promoções para maximizar suas vendas online.',
 		},
 	];
 
-	useEffect(() => {
-		if (window.innerWidth >= 320 && window.innerWidth <= 1024) {
-			setIsMobile(true);
-		} else {
-			setIsMobile(false);
-		}
-
-		function updateText() {
-			if (window.innerWidth >= 320 && window.innerWidth <= 1024) {
-				setIsMobile(true);
-			} else {
-				setIsMobile(false);
-			}
-		}
-
-		// Adiciona um ouvinte de evento de redimensionamento da janela
-		window.addEventListener('resize', updateText);
-
-		// Remove o ouvinte de evento ao desmontar o componente
-		return () => {
-			window.removeEventListener('resize', updateText);
-		};
-	}, []);
+	const item = (item: number) => {
+		return (
+			<div key={Math.random()} className='flex animate-fadeIn flex-col gap-10 p-6 opacity-0'>
+				<h3>{cards[item].label}</h3>
+				<h6>{cards[item].description}</h6>
+				<Image className='h-24 w-full lg:h-72 lg:w-auto' alt={cards[item].label} src={cards[item].image} width={1000} height={1000} />
+			</div>
+		);
+	};
 
 	return (
-		<section className='w-full flex flex-col justify-center items-center overflow-y-hidden py-5  gap-7'>
-			<h2 className='p-5 font-extrabold text-sc2 text-2xl text-center '>
-			Conheça as soluções da Sirius ERP
-			</h2>
-			<div className='flex flex-wrap gap-6 justify-center w-full '>
-					{cards.map((_, index) => (
-						<Card
-							key={index}
-							className='p-4 max-w-[17rem] min-h-[30rem] shadow-2xl '>
-							<CardContent className='flex flex-col items-center gap-6'>
-								<Image
-									className='w-24 h-24 lg:w-32 lg:h-32'
-									alt={_.image}
-									src={_.image}
-								/>
+		<section className='flex w-full flex-col items-center py-10 xl:py-20'>
+			<div className='flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]'>
+				<h2 className='text-justify text-lg font-semibold lg:text-left lg:text-3xl'>Conheça as soluções da Soft Clever para o seu comércio varejista!</h2>
 
-								<h2 className=' w-full leading-5 text-center flex flex-row justify-center items-center font-bold text-2xl lg:text-[1.14rem] text-sc  ' >
-									{_.label}
-								</h2>
-								<p className='text-justify text-sc lg:text-sm '>{_.description}</p>
-							</CardContent>
-						</Card>
-					))}
+				<div className='flex h-full flex-col items-center gap-5 self-center rounded-3xl bg-primary p-5 opacity-90 sm:w-auto sm:flex-row md:h-20'>
+					<p className='text-white'>Integrações com:</p>
+					<Image src={iFood} alt='logo ifood' width={60} />
+					<Image src={Tray} alt='logo Tray' width={60} />
+					<Image src={mercadoLivre} alt='logo Mercado Livre' width={60} />
 				</div>
 
-			<ButtonExpert
-				color={'orange'}
-				label='Quero decolar o meu negócio'
-				animation='animate-pulse'
-			/>
+				<div className='flex flex-col justify-between rounded-[40px] border-2 lg:flex-row lg:gap-10'>
+					<div className='w-full lg:w-1/2'>
+						<div className='flex w-full gap-4 overflow-x-auto p-6 lg:flex-col lg:gap-0'>
+							{cards.map((_, i) => (
+								<div
+									key={i}
+									onClick={() => setSelecionado({ item: i })}
+									className={`flex h-40 w-48 shrink-0 items-end justify-start rounded-3xl border-2 border-gray-400 p-6 text-base font-semibold lg:h-auto lg:w-auto lg:items-center lg:justify-between lg:rounded-none lg:border-0 lg:border-b lg:p-2 ${selecionado.item === i ? '' : ''} `}>
+									<span>{_.label}</span> <ArrowRight className='hidden lg:block'></ArrowRight>
+								</div>
+							))}
+						</div>
+					</div>
+					<div className='w-full rounded-ee-3xl rounded-es-3xl bg-secondary text-white lg:w-1/2 lg:rounded-es-none lg:rounded-se-3xl'>{item(selecionado.item)}</div>
+				</div>
+				<ButtonExpert color={'orange'} label='Quero decolar o meu negócio' animation='animate-pulse' />
+			</div>
 		</section>
 	);
 }

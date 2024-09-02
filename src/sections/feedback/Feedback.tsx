@@ -1,12 +1,12 @@
+import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
-import feedbackImageBg from '../../../public/assets/feedback.png';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import ButtonExpert from '@/components/button_expert';
+import { ReadMore } from '@/components/ReadMore';
 import avatar from '../../../public/assets/avatar.svg';
+import feedbackImageBg from '../../../public/assets/feedback.png';
 import star from '../../../public/assets/star.svg';
 import starGray from '../../../public/assets/starGray.svg';
-import Autoplay from 'embla-carousel-autoplay';
-import ButtonExpert from '@/components/button_expert';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import { ReadMore } from '@/components/ReadMore';
 
 export default function Feedback() {
 	const bg = { backgroundImage: `url(${feedbackImageBg.src})` };
@@ -30,8 +30,7 @@ export default function Feedback() {
 			name: 'Rosely Barbosa',
 			image: 'Rosely Barbosa.png',
 			score: 5,
-			message:
-				'Trabalhamos com a Soft Clever há mais de 10 anos, sempre nos atendeu bem, com cordialidade e rapidez. Nossas solicitações sempre foram atendidas.',
+			message: 'Trabalhamos com a Soft Clever há mais de 10 anos, sempre nos atendeu bem, com cordialidade e rapidez. Nossas solicitações sempre foram atendidas.',
 		},
 		{
 			name: 'Buker engrenagens',
@@ -44,15 +43,13 @@ export default function Feedback() {
 			name: 'RHVAUD VAUD',
 			image: 'RHVAUD VAUD.png',
 			score: 5,
-			message:
-				'O sistema é ágil e prático para emissão de notas fiscais. Sempre que surge algum problema, o pessoal do suporte são super competentes e atenciosos.',
+			message: 'O sistema é ágil e prático para emissão de notas fiscais. Sempre que surge algum problema, o pessoal do suporte são super competentes e atenciosos.',
 		},
 		{
 			name: 'AIA Embalagens',
 			image: 'AIA Embalagens.png',
 			score: 5,
-			message:
-				'adoro trabalhar com a equipe da soft clever, ERP descomplicado, funcionários sempre dispostos a ajudar, explicam e auxiliam sempre da melhor forma... super indico !',
+			message: 'adoro trabalhar com a equipe da soft clever, ERP descomplicado, funcionários sempre dispostos a ajudar, explicam e auxiliam sempre da melhor forma... super indico !',
 		},
 		{
 			name: 'Bax Festas',
@@ -183,8 +180,7 @@ export default function Feedback() {
 			name: 'Jessica Moniz de Souza',
 			image: 'Jessica Moniz de Souza.png',
 			score: 5,
-			message:
-				'Software de qualidade, pratico, fácil de operar e que atende a todas as necessidade, suporte preparado para atender as duvidas do cliente, sem dúvida o melhor custo x beneficio que encontrei.',
+			message: 'Software de qualidade, pratico, fácil de operar e que atende a todas as necessidade, suporte preparado para atender as duvidas do cliente, sem dúvida o melhor custo x beneficio que encontrei.',
 		},
 		{
 			name: 'Quezia Fabiana',
@@ -297,31 +293,19 @@ export default function Feedback() {
 	];
 
 	return (
-		<div
-			style={bg}
-			className='flex flex-col gap-10 bg-cover bg-center items-center w-full px-[2.5rem] py-[1.8rem]'>
+		<div style={bg} className='flex w-full flex-col items-center gap-10 bg-cover bg-center px-[2.5rem] py-[1.8rem]'>
 			<h2 className='text-2xl font-bold text-white'>Quem usa nos recomenda</h2>
 
-			<Carousel
-				className='flex  w-full xl:max-w-[1440px]'
-				plugins={[Autoplay({ delay: 4000 })]}>
+			<Carousel className='flex w-full xl:max-w-[1440px]' plugins={[Autoplay({ delay: 4000 })]}>
 				<CarouselContent className='flex w-full'>
 					{feedbacks.map((_, index) => (
-						<CarouselItem
-							key={index}
-							className='pl-2 md:basis-1/3 lg:basis-1/5 '>
-							<div
-								className='flex flex-col justify-between max-w-[80%] md:max-w-60 lg:max-w-60 min-h-80 px-5 py-10 ml-12 bg-white rounded-lg '
-								key={index}>
-								<div className='flex flex-col '>
-									<span className='text-4xl font-bold text-sc '>&#34;</span>
-									<ReadMore
-										className='text-[0.9rem] leading-6 text-sc text-justify'
-										text={_.message}
-										amountOfWords={16}
-									/>
+						<CarouselItem key={index} className='pl-2 md:basis-1/3 lg:basis-1/5'>
+							<div className='ml-12 flex min-h-80 max-w-[80%] flex-col justify-between rounded-lg bg-white px-5 py-10 md:max-w-60 lg:max-w-60' key={index}>
+								<div className='flex flex-col'>
+									<span className='text-4xl font-bold text-sc'>&#34;</span>
+									<ReadMore className='text-justify text-[0.9rem] leading-6 text-sc' text={_.message} amountOfWords={16} />
 									<p className='text-justify'></p>
-									<span className='text-4xl text-right w-full font-bold text-sc '>&#34;</span>
+									<span className='w-full text-right text-4xl font-bold text-sc'>&#34;</span>
 								</div>
 
 								<div className='flex flex-col gap-2'>
@@ -329,7 +313,7 @@ export default function Feedback() {
 									<div className='flex items-center gap-5'>
 										{/* avatar */}
 										<Image
-											className='max-w-5 max-h-5'
+											className='max-h-5 max-w-5'
 											src={`/reviews/${_.image}`}
 											key={`review-image-${index}`}
 											width={40}
@@ -342,12 +326,8 @@ export default function Feedback() {
 											<p className='text-[9px] font-semibold text-sc'>{_.name}</p>
 											<div className='flex items-center gap-2'>
 												<p className='text-[10px] text-sc'>{_.score}</p>
-												<div
-													style={bgStarGray}
-													className='w-[2.8rem]  h-[0.6rem]'>
-													<div
-														style={{ backgroundImage: `url(${star.src})`, width: `${_.score * 20}%` }}
-														className='h-full '></div>
+												<div style={bgStarGray} className='h-[0.6rem] w-[2.8rem]'>
+													<div style={{ backgroundImage: `url(${star.src})`, width: `${_.score * 20}%` }} className='h-full'></div>
 												</div>
 											</div>
 										</div>
@@ -358,10 +338,7 @@ export default function Feedback() {
 					))}
 				</CarouselContent>
 			</Carousel>
-			<ButtonExpert
-				color={'orange'}
-				label='Fale com um especialista'
-			/>
+			<ButtonExpert color={'orange'} label='Fale com um especialista' />
 		</div>
 	);
 }

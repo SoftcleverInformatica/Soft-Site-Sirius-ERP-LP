@@ -6,10 +6,11 @@ export const metadata: Metadata = { title: 'Sirius ERP', description: 'Soft Clev
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang='pt-br' className=' scrollbar-corner-rounded-full scroll-smooth scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-w-1 scrollbar scrollbar-track-transparent dark:scrollbar-track-background-dark scrollbar-thumb-primary hover:scrollbar-track-[#f1f5f9]
-		'>
+		<html
+			lang='pt-br'
+			className='dark:scrollbar-track-background-dark scroll-smooth scrollbar scrollbar-track-transparent scrollbar-thumb-primary scrollbar-track-rounded-full scrollbar-thumb-rounded-full scrollbar-corner-rounded-full scrollbar-w-1 hover:scrollbar-track-[#f1f5f9]'>
 			<body className={''}>
-				<GoogleTagManager gtmId='GTM-N2XFZPPM' />
+				{/* <GoogleTagManager gtmId='GTM-N2XFZPPM' /> */}
 				{children}
 			</body>
 		</html>

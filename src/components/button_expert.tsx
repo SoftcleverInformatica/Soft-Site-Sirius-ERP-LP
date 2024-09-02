@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import WhatsappIcon from '../../public/assets/whatsapp.svg';
-import WhatsappIconWhite from '../../public/assets/whatsapp_white.svg';
+import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 
 interface props {
 	className?: string;
@@ -11,28 +9,11 @@ interface props {
 export default function ButtonExpert({ className, animation, color = 'white', label = 'Fale com um  especialista' }: props) {
 	return (
 		<a
-			className={`
-				flex items-center justify-center gap-2 py-2 px-12 rounded-md  hover:opacity-90
-				${color === 'white' ? 'bg-white  text-sc hover:bg-slate-500 ' : ''}
-				${color === 'orange' ? 'bg-orange-700 hover:bg-orange-600' : ''}
-				${color === 'blue' ? 'bg-sc' : ''} 
-				${animation ? animation : ''} 
-				${className}
-			`}
+			className={`flex items-center justify-center gap-2 rounded-full px-12 py-2 hover:opacity-90 ${color === 'white' ? 'bg-white text-primary hover:bg-slate-500' : ''} ${color === 'orange' ? 'bg-orange-700 hover:bg-orange-600' : ''} ${color === 'blue' ? 'bg-primary text-white hover:bg-primary/90' : ''} ${animation ? animation : ''} ${className} `}
 			href='https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f'
 			target='_blank'>
-			<span
-				className={`
-					text-sm  
-					${color == 'white' && 'font-semibold'} 
-					${color == 'white' ? 'text-sc' : 'text-white'}
-				`}>
-				{label}
-			</span>
-			<Image
-				alt='WhatsappIcon'
-				src={color == 'white' ? WhatsappIcon : WhatsappIconWhite}
-			/>
+			<span className={`text-sm ${color == 'white' && 'font-semibold'} ${color == 'white' ? 'text-primary' : 'text-white'} `}>{label}</span>
+			<WhatsappLogo size={32} weight='fill' />
 		</a>
 	);
 }

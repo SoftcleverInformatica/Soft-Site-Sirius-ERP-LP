@@ -1,8 +1,9 @@
 'use client';
-import Image from 'next/image';
-import DiferenciaisImagem from '../../../public/assets/DiferenciaisImage.png';
+
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import ButtonExpert from '@/components/button_expert';
+import DiferenciaisImagem from '../../../public/assets/DiferenciaisImage.png';
 import Tick from '../../../public/assets/NossosDiferenciaisTick.svg';
 
 export default function Differential() {
@@ -41,71 +42,40 @@ export default function Differential() {
 	}, []);
 
 	return (
-		<section className='flex flex-col justify-center items-center p-10 gap-10 w-full'>
-			<div className=' lg:max-w-3xl xl:max-w-4xl '>
-				<div className='flex items-center gap-10 '>
-					<div className='flex flex-col gap-14  '>
-						<h1 className='text-justify text-sc  text-lg font-semibold lg:text-left lg:text-3xl'>
-							Porque a Sirius ERP é a escolha certa para o seu negócio
-						</h1>
-						<ul
-							className='flex flex-col gap-[6rem] lg:gap-6 row-start-3 text-justify text-sc font-medium text-lg							max-w-[600px]
-            lg:text-left lg:text-lg'>
-							<li className='flex flex-row gap-4 items-center h-[2rem]'>
-								<Image
-									sizes=''
-									alt='Tick'
-									src={Tick}
-								/>
+		<section className='flex w-full flex-col items-center justify-center gap-10 p-10'>
+			<div className='lg:max-w-3xl xl:max-w-4xl'>
+				<div className='flex items-center gap-10'>
+					<div className='flex flex-col gap-14'>
+						<h1 className='text-justify text-lg font-semibold text-sc lg:text-left lg:text-3xl'>Porque a Sirius ERP é a escolha certa para o seu negócio</h1>
+						<ul className='row-start-3 flex max-w-[600px] flex-col gap-[6rem] text-justify text-lg font-medium text-sc lg:gap-6 lg:text-left lg:text-lg'>
+							<li className='flex h-[2rem] flex-row items-center gap-4'>
+								<Image sizes='' alt='Tick' src={Tick} />
 								<span>
-									O <strong className='text-[#CC4125]'>ÚNICO</strong> sistema{' '}
-									<strong className='text-[#CC4125]'>SEM CONTRATO</strong> de fidelidade
+									O <strong className='text-[#CC4125]'>ÚNICO</strong> sistema <strong className='text-[#CC4125]'>SEM CONTRATO</strong> de fidelidade
 								</span>
 							</li>
-							<li className='flex flex-row gap-4 items-center h-[2rem]'>
-								<Image
-									sizes=''
-									alt='Tick'
-									src={Tick}
-								/>
+							<li className='flex h-[2rem] flex-row items-center gap-4'>
+								<Image sizes='' alt='Tick' src={Tick} />
 								<span>
-									A <strong className='text-[#CC4125]'>ÚNICA EMPRESA</strong> que oferece um atendimento{' '}
-									<strong className='text-[#CC4125]'>humanizado e personalizado</strong>, sem qualquer tipo de robô.
+									A <strong className='text-[#CC4125]'>ÚNICA EMPRESA</strong> que oferece um atendimento <strong className='text-[#CC4125]'>humanizado e personalizado</strong>, sem qualquer tipo de robô.
 								</span>
 							</li>
-							<li className='flex flex-row gap-4 items-center h-[2rem]'>
-								<Image
-									sizes=''
-									alt='Tick'
-									src={Tick}
-								/>
+							<li className='flex h-[2rem] flex-row items-center gap-4'>
+								<Image sizes='' alt='Tick' src={Tick} />
 								<span>
-									O sistema <strong className='text-[#CC4125]'>MAIS SIMPLES</strong> e{' '}
-									<strong className='text-[#CC4125]'>ÁGIL</strong> para ser usado.
+									O sistema <strong className='text-[#CC4125]'>MAIS SIMPLES</strong> e <strong className='text-[#CC4125]'>ÁGIL</strong> para ser usado.
 								</span>
 							</li>
-							<li className='flex flex-row gap-4 items-center h-[2rem]'>
-								<Image
-									sizes=''
-									alt='Tick'
-									src={Tick}
-								/>
+							<li className='flex h-[2rem] flex-row items-center gap-4'>
+								<Image sizes='' alt='Tick' src={Tick} />
 								<span>Pacotes para todos os tipos e tamanhos de empresa</span>
 							</li>
-							<li className='flex flex-row gap-4 items-center h-[2rem]'>
-								<Image
-									sizes=''
-									alt='Tick'
-									src={Tick}
-								/>
+							<li className='flex h-[2rem] flex-row items-center gap-4'>
+								<Image sizes='' alt='Tick' src={Tick} />
 								<span>Mais de 12.000 usuários atendidos em milhares de projetos implantados.</span>
 							</li>
-							<li className='flex flex-row gap-4 items-center h-[2rem]'>
-								<Image
-									sizes=''
-									alt='Tick'
-									src={Tick}
-								/>
+							<li className='flex h-[2rem] flex-row items-center gap-4'>
+								<Image sizes='' alt='Tick' src={Tick} />
 								<span>A empresa mais tradicional do mercado, com mais de 30 anos de experiência</span>
 							</li>
 						</ul>
@@ -113,21 +83,15 @@ export default function Differential() {
 
 					<div>
 						{!isMobile && (
-							<div className=' col-span-4 col-start-8 row-start-2 row-span-8 flex flex-col justify-center items-center mr-4 '>
-								<div className=' absolute w-[20%] max-w-[18rem] h-[60%]  max-h-[23.875rem] rounded-xl bg-sc'></div>
-								<Image
-									className='relative right-[10%] w-[18rem]'
-									alt='Homem apertando a mão de outro Homem'
-									src={DiferenciaisImagem}></Image>
+							<div className='col-span-4 col-start-8 row-span-8 row-start-2 mr-4 flex flex-col items-center justify-center'>
+								<div className='absolute h-[60%] max-h-[23.875rem] w-[20%] max-w-[18rem] rounded-xl bg-sc'></div>
+								<Image className='relative right-[10%] w-[18rem]' alt='Homem apertando a mão de outro Homem' src={DiferenciaisImagem}></Image>
 							</div>
 						)}
 					</div>
 				</div>
 			</div>
-			<ButtonExpert
-				color={'orange'}
-				label='Fale com um especialista'
-			/>
+			<ButtonExpert color={'orange'} label='Fale com um especialista' />
 		</section>
 	);
 }
