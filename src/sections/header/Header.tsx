@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { LogoSoftclever } from '@/components/ui/svgs';
+import { planos } from '../plan/Plans';
 
 export default function Header() {
 	// const link_whatsapp = 'https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f';
@@ -9,12 +10,22 @@ export default function Header() {
 		console.log('teste');
 	};
 	return (
-		<header className='z-10 flex w-full flex-col items-center'>
-			<div className={`flex w-full flex-col gap-6 px-4 pt-40 md:px-10 md:pt-20 lg:max-w-5xl lg:gap-20 lg:px-24 lg:pt-28 xl:max-w-6xl 2xl:max-w-[90rem]`}>
+		<header className='z-10 flex w-full flex-col items-center py-10 xl:py-20'>
+			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<div className='fixed left-0 top-0 flex h-40 w-full flex-col items-center justify-center bg-primary md:h-20'>
-					<div className='absolute left-0 z-0 h-full w-full animate-range bg-gradient-to-r from-primary from-60% via-blue-500'></div>
+					<div className='absolute left-0 z-0 h-full w-full animate-range bg-gradient-to-r from-primary from-60% via-[#6d9bea]'></div>
 					<div className='z-10 flex w-full flex-col items-center justify-between gap-4 px-4 md:flex-row md:gap-6 md:px-10 lg:max-w-5xl lg:gap-20 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]'>
-						<p className='text-center font-primary text-xl font-medium text-white md:text-start md:font-bold'>Planos a partir de: R$ 89,90</p>
+						<p className='text-center font-primary text-xl font-medium text-white md:text-start md:font-bold'>
+							{`Planos a partir de: ` +
+								new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(
+									planos.reduce((min, plan) => {
+										if (plan.price !== undefined) {
+											return plan.price < min ? plan.price : min;
+										}
+										return min;
+									}, Infinity),
+								)}
+						</p>
 						<Button size={'lg'} className='rounded-full text-lg ring-primary-foreground hover:ring-2 md:font-medium' variant={'white'}>
 							Solicitar sua Demonstração
 						</Button>
@@ -71,7 +82,7 @@ export default function Header() {
 							</Button>
 						</div>
 					</div>
-					<div className='bg-hero-laptop-sat-web hidden h-48 w-[29rem] max-w-full rounded-3xl bg-primary bg-[length:16rem_10.6rem] bg-[left_50%_top_50%] bg-no-repeat sm:block md:rounded-[40px] lg:h-[18rem] lg:bg-[length:20rem_13.3rem]'></div>
+					<div className='hidden h-48 w-[29rem] max-w-full rounded-3xl bg-primary bg-laptop bg-[length:16rem_10.6rem] bg-[left_50%_top_50%] bg-no-repeat sm:block md:rounded-[40px] lg:h-[18rem] lg:bg-[length:22rem_16.5rem]'></div>
 				</div>
 			</div>
 		</header>

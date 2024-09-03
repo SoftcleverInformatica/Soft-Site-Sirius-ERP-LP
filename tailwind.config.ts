@@ -77,6 +77,7 @@ const config = {
 			},
 			backgroundImage: {
 				// pasta raiz => public/
+				laptop: 'url("/assets/mockup-laptop-sat-web.png")',
 				banner: 'url("/assets/header.png")',
 				bannerMobile: 'url("/assets/HeaderBG.png")',
 				varejo: 'url("/assets/FrameVarejo.png")',

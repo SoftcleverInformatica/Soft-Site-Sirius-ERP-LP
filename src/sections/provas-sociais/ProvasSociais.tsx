@@ -304,8 +304,8 @@ export default function ProvasSociais() {
 	];
 
 	return (
-		<section className='flex w-full flex-col items-center'>
-			<div className={`flex w-full flex-col gap-6 px-4 pt-10 md:px-10 md:pt-20 lg:max-w-5xl lg:gap-20 lg:px-24 lg:pt-28 xl:max-w-6xl 2xl:max-w-[90rem]`}>
+		<section className='flex w-full flex-col items-center py-10 xl:py-20'>
+			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<h2 className='font-main text-center text-3xl font-extrabold leading-tight tracking-wide lg:text-5xl'>Nossos Casos de Sucesso</h2>
 				<div>
 					<Carousel className='w-full' opts={{ loop: true }}>
@@ -326,25 +326,22 @@ export default function ProvasSociais() {
 						align: 'start',
 						loop: true,
 					}}>
-					<CarouselContent className='max-h-[65vh]'>
+					<CarouselContent>
 						{feedbacks.map((_, i) => (
-							<CarouselItem className='basis-1/1 sm:basis-1/3' key={i}>
-								<figure key={i} className='flex flex-col rounded-xl bg-slate-100 p-8 dark:bg-slate-800'>
-									<div className='flex gap-4'>
-										<div className='flex h-12 w-12 items-center justify-center rounded-full bg-primary'>
+							<CarouselItem className='md:basis-1/2 lg:basis-1/3' key={i}>
+								<figure key={i} className='flex w-full flex-col rounded-xl bg-white p-8'>
+									<div className='flex flex-col items-center gap-4 sm:flex-row'>
+										<div className='flex h-12 w-12 flex-none items-center justify-center rounded-full bg-primary'>
 											<User weight='fill' className='h-3/5 w-auto fill-white sm:h-2/5' />
 										</div>
 										<figcaption className='font-medium'>
-											<div className='text-sky-500 dark:text-sky-400'>{_.name}</div>
-											<StarRating score={3} />
-											{/* <div className='text-slate-700 dark:text-slate-500'>Avaliação: {_.score} / 5 estrelas</div> */}
+											<div className='truncate text-sky-500 dark:text-sky-400'>{_.name}</div>
+											<StarRating score={_.score} />
 										</figcaption>
 									</div>
-									<div className='min-h-56 w-full space-y-4 pt-6 text-left'>
-										<blockquote>
-											<ReadMore text={_.message} className='text-lg font-medium' />
-										</blockquote>
-									</div>
+									<blockquote className='mt-6 min-h-56'>
+										<ReadMore text={_.message} amountOfWords={28} className='text-lg font-medium' />
+									</blockquote>
 								</figure>
 							</CarouselItem>
 						))}

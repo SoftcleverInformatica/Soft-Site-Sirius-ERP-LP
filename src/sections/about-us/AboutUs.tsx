@@ -32,37 +32,34 @@ export default function AboutUs() {
 	}, []);
 
 	return (
-		<section id='sobre' className='mt-16 grid grid-cols-12 grid-rows-12 pb-10 pt-4 md:grid-rows-7 lg:mt-0 lg:grid-rows-5'>
-			<h1 className='col-span-5 col-start-2 row-span-1 text-2xl font-bold text-sc lg:col-start-3 lg:row-start-1 lg:flex lg:flex-col lg:justify-center'>Sobre nós</h1>
+		<section id='sobre' className='flex w-full flex-col items-center py-10 xl:py-20'>
+			<div className='flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]'>
+				<h1 className='text-justify text-lg font-semibold lg:text-left lg:text-3xl'>Sobre nós</h1>
 
-			<div className='col-span-10 col-start-2 row-span-8 row-start-2 text-justify text-lg font-medium text-sc md:row-span-3 lg:col-span-5 lg:col-start-3 lg:row-start-2 lg:text-left lg:text-base'>
-				<p>
-					{' '}
-					A Soft Clever tem uma trajetória sólida no desenvolvimento de sistemas desde 1994. Com mais de 12.000 usuários atendidos e inúmeras parcerias estabelecidas com escritórios de contabilidade, nossa empresa está
-					empenhada em oferecer um serviço cada vez mais aprimorado. Nosso segredo reside no compromisso com a excelência, priorizando o bem-estar de nossos clientes e buscando sempre orientá-los para as melhores
-					decisões. Isso resulta em confiança e satisfação em cada interação com nossos serviços.
-				</p>
-				{!isMobile && (
-					<>
-						<br />
-						<p>
-							{' '}
-							Contamos com uma equipe altamente qualificada e própria, capacitada para atender às diversas demandas do mercado com agilidade e comprometimento. A fidelidade de nossos clientes é a maior prova da qualidade
-							dos serviços que oferecemos. Desenvolvemos projetos específicos para empresas de todos os tamanhos, desde micro empreendimentos até médias empresas, adaptando-nos às necessidades individuais de cada
-							cliente.
-						</p>
-					</>
-				)}
-			</div>
-			{!isMobile && (
-				<div className='col-span-4 col-start-8 row-span-8 row-start-1 mr-4 flex flex-col items-center justify-center lg:row-span-5'>
-					<div className='absolute h-[60%] max-h-[23.875rem] w-[20%] max-w-[18rem] rounded-xl bg-sc'></div>
-					<Image className='relative right-[10%] w-[23rem]' alt='Homem apertando a mão de outro Homem' src={SobreNos}></Image>
+				<div className='w-full text-justify text-lg font-medium lg:text-left lg:text-base'>
+					<div className='flex gap-8'>
+						<div className='flex w-full flex-col gap-8 lg:w-2/3'>
+							<p>
+								A Soft Clever tem uma trajetória sólida no desenvolvimento de sistemas desde 1994. Com mais de 12.000 usuários atendidos e inúmeras parcerias estabelecidas com escritórios de contabilidade, nossa empresa
+								está empenhada em oferecer um serviço cada vez mais aprimorado. Nosso segredo reside no compromisso com a excelência, priorizando o bem-estar de nossos clientes e buscando sempre orientá-los para as
+								melhores decisões. Isso resulta em confiança e satisfação em cada interação com nossos serviços.
+							</p>
+
+							<div className='hidden sm:block'>
+								<p>
+									Contamos com uma equipe altamente qualificada e própria, capacitada para atender às diversas demandas do mercado com agilidade e comprometimento. A fidelidade de nossos clientes é a maior prova da
+									qualidade dos serviços que oferecemos. Desenvolvemos projetos específicos para empresas de todos os tamanhos, desde micro empreendimentos até médias empresas, adaptando-nos às necessidades individuais
+									de cada cliente.
+								</p>
+							</div>
+							<ButtonExpert color={'orange'} label='Fale com um especialista' />
+						</div>
+						<div className='relative hidden flex-col items-center justify-center lg:flex'>
+							<div className='absolute right-0 -z-10 h-full max-h-80 w-full max-w-64 rounded-3xl bg-primary'></div>
+							<Image className='right-0 h-auto w-96' alt='Homem apertando a mão de outro Homem' src={SobreNos}></Image>
+						</div>
+					</div>
 				</div>
-			)}
-
-			<div className='col-span-10 col-start-2 row-start-11 lg:col-span-3 lg:col-start-3 lg:row-start-5 lg:mt-10'>
-				<ButtonExpert color={'orange'} label='Fale com um especialista' />
 			</div>
 		</section>
 	);

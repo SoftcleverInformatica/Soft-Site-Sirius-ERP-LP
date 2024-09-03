@@ -4,17 +4,16 @@ import Footer from '../sections/footer/Footer';
 import Funcionalidades from '../sections/funcionalidades/Funcionalidades';
 import Header from '../sections/header/Header';
 import ProvasSociais from '../sections/provas-sociais/ProvasSociais';
-import Trial from '../sections/trial/Trial';
 
 export default function Home() {
 	return (
-		<div className='flex flex-col font-secondary text-muted/85'>
+		<div className='flex flex-col font-secondary text-black/85'>
 			<Header />
 			<Beneficios />
 			<Funcionalidades />
 			<Plans />
 			<ProvasSociais />
-			<Trial />
+			{/* <Trial /> */}
 			{/* <Video /> */}
 			{/* <Products /> */}
 			{/* <Differential /> */}
