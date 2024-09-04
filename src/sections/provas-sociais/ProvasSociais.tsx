@@ -304,16 +304,16 @@ export default function ProvasSociais() {
 	];
 
 	return (
-		<section className='flex w-full flex-col items-center py-10 xl:py-20'>
+		<section className='flex w-full flex-col items-center'>
 			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<h2 className='font-main text-center text-3xl font-extrabold leading-tight tracking-wide lg:text-5xl'>Nossos Casos de Sucesso</h2>
 				<div>
 					<Carousel className='w-full' opts={{ loop: true }}>
 						<CarouselContent>
 							{imgs.map((_, index) => (
-								<CarouselItem className='flex justify-center md:basis-1/5 lg:basis-1/5' key={index}>
+								<CarouselItem className='flex justify-center md:basis-1/3 lg:basis-1/5' key={index}>
 									<div className='flex'>
-										<Image className='h-16 self-center object-contain' alt={_.alt} src={_.src} />
+										<Image className='h-16 self-center object-contain opacity-80 grayscale filter' alt={_.alt} src={_.src} />
 									</div>
 								</CarouselItem>
 							))}

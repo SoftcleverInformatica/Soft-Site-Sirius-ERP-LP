@@ -152,7 +152,7 @@ export const planos: {
 
 export default function Plans() {
 	return (
-		<section className='flex w-full flex-col items-center py-10 xl:py-20' id='planos'>
+		<section className='flex w-full flex-col items-center' id='planos'>
 			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<h2 className='font-main text-center text-3xl font-extrabold leading-tight tracking-wide lg:text-5xl'>Planos</h2>
 				<div className='flex flex-col items-center justify-center gap-5 rounded-[40px] border border-primary/50 px-2 py-10 md:grid md:grid-cols-2 md:grid-rows-2 md:place-items-center xl:flex xl:flex-row'>
@@ -194,7 +194,7 @@ export default function Plans() {
 						);
 					})}
 				</div>
-				<MeiosPagamentos color='#3E3E3E' className='self-center' />
+				<MeiosPagamentos color='#3E3E3E' className='w-60 self-center sm:w-full' />
 			</div>
 		</section>
 	);

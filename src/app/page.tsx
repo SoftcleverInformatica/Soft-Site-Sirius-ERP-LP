@@ -7,7 +7,7 @@ import ProvasSociais from '../sections/provas-sociais/ProvasSociais';
 
 export default function Home() {
 	return (
-		<div className='flex flex-col font-secondary text-black/85'>
+		<div className='flex flex-col gap-20 font-secondary text-black/85'>
 			<Header />
 			<Beneficios />
 			<Funcionalidades />

@@ -5,12 +5,12 @@ import { LogoSoftclever } from '@/components/ui/svgs';
 import { planos } from '../plan/Plans';
 
 export default function Header() {
-	// const link_whatsapp = 'https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f';
+	const link_whatsapp = 'https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f';
 	const f1 = () => {
 		console.log('teste');
 	};
 	return (
-		<header className='z-10 flex w-full flex-col items-center py-10 xl:py-20'>
+		<header className='z-10 flex w-full flex-col items-center pt-44 xl:pt-28'>
 			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<div className='fixed left-0 top-0 flex h-40 w-full flex-col items-center justify-center bg-primary md:h-20'>
 					<div className='absolute left-0 z-0 h-full w-full animate-range bg-gradient-to-r from-primary from-60% via-[#6d9bea]'></div>
@@ -26,7 +26,7 @@ export default function Header() {
 									}, Infinity),
 								)}
 						</p>
-						<Button size={'lg'} className='rounded-full text-lg ring-primary-foreground hover:ring-2 md:font-medium' variant={'white'}>
+						<Button size={'lg'} className='rounded-full text-lg ring-primary-foreground hover:ring-2 md:font-medium' variant={'white'} role='link' onClick={() => window.open(link_whatsapp, '_blank')}>
 							Solicitar sua Demonstração
 						</Button>
 					</div>
@@ -34,24 +34,12 @@ export default function Header() {
 
 				<nav className='border-gray-200 bg-white dark:bg-gray-900'>
 					<div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4'>
-						<LogoSoftclever width={190} height={53} className='fill-primary' />
-						<button
-							onClick={f1}
-							type='button'
-							className='hidden h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden'>
-							<span className='sr-only'>Open main menu</span>
-							<svg className='h-5 w-5' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 17 14'>
-								<path stroke='currentColor' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M1 1h15M1 7h15M1 13h15' />
-							</svg>
-						</button>
+						<a href='https://softclever.com.br/'>
+							<LogoSoftclever width={190} height={53} className='fill-primary' />
+						</a>
 
 						<div className='hidden w-full md:block md:w-auto' id='navbar-default'>
 							<ul className='mt-4 flex flex-col p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse'>
-								<li>
-									<a href='#sobre' className='block rounded-full border-2 border-border px-4 text-black'>
-										Sobre
-									</a>
-								</li>
 								<li>
 									<a href='#funcionalidades' className='block rounded-full border-2 border-border px-4 text-black'>
 										Funcionalidades
@@ -74,10 +62,10 @@ export default function Header() {
 							Simplifique processos, aumente a eficiência e tome decisões baseadas em dados com nosso ERP líder de mercado.
 						</p>
 						<div className='flex w-full flex-wrap items-center justify-center gap-6 md:items-start'>
-							<Button size={'lg'} className='w-56 rounded-full sm:w-auto'>
+							<Button size={'lg'} className='w-56 rounded-full sm:w-auto' role='link' onClick={() => window.open(link_whatsapp, '_blank')}>
 								Solicitar Demonstração
 							</Button>
-							<Button size={'lg'} className='w-56 rounded-full sm:w-auto' variant={'white'}>
+							<Button size={'lg'} className='w-56 rounded-full sm:w-auto' variant={'white'} role='link' onClick={() => (window.location.href = '/#planos')}>
 								Conheça os planos
 							</Button>
 						</div>

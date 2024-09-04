@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Facebook, Instagram, Youtube } from '@/components/ui/svgs';
 import fbLogo from '../../../public/assets/facebookLogo.svg';
 import insta from '../../../public/assets/instagramLogo.svg';
 import youtubeLogo from '../../../public/assets/youtubeLogo.svg';
@@ -14,14 +15,14 @@ export default function Footer() {
 
 						<div className='flex gap-2'>
 							<a href='https://www.facebook.com/softcleverinformatica'>
-								<Image alt='Logo do Facebook' src={fbLogo} />
+								<Facebook className='h-10 w-10' />
 							</a>
 
 							<a href='https://www.instagram.com/soft.clever/'>
-								<Image alt='Logo do Instagram' src={insta} />
+								<Instagram className='h-10 w-10' />
 							</a>
 							<a href='https://www.youtube.com/channel/UCd15UMZr95UzVWWKbu5khTw'>
-								<Image alt='Logo do Youtube' src={youtubeLogo} />
+								<Youtube className='h-10 w-10' />
 							</a>
 						</div>
 					</div>
