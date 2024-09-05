@@ -132,7 +132,7 @@ export default function Funcionalidades() {
 		return (
 			<div key={Math.random()} className='flex animate-fadeIn flex-col gap-4 p-6 opacity-0'>
 				<h3 className='text-xl font-bold'>{exibirDetalhes[0].funcionalidades[item].titulo}</h3>
-				<h6>{exibirDetalhes[0].funcionalidades[item].descricao}</h6>
+				<h6 className='text-justify'>{exibirDetalhes[0].funcionalidades[item].descricao}</h6>
 				<Image alt='' src={'#'} width={1000} height={1000} className='h-96 w-full' />
 				{/* <Image alt='' src={exibirDetalhes[0].funcionalidades[item].imagem} width={1000} height={1000} className='h-10 w-10' /> */}
 			</div>
@@ -141,7 +141,7 @@ export default function Funcionalidades() {
 
 	return (
 		<section className='flex w-full flex-col items-center' id='funcionalidades'>
-			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]`}>
+			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-16 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<h2 className='font-main text-center text-3xl font-extrabold leading-tight tracking-wide lg:text-5xl'>Suas necessidades em um só lugar</h2>
 				<div className='flex flex-col justify-between gap-10 rounded-[40px] border-2 lg:flex-row'>
 					<div className='w-full lg:w-1/2'>

@@ -11,7 +11,7 @@ export default function Header() {
 	};
 	return (
 		<header className='z-10 flex w-full flex-col items-center pt-44 xl:pt-28'>
-			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]`}>
+			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-16 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<div className='fixed left-0 top-0 flex h-40 w-full flex-col items-center justify-center bg-primary md:h-20'>
 					<div className='absolute left-0 z-0 h-full w-full animate-range bg-gradient-to-r from-primary from-60% via-[#6d9bea]'></div>
 					<div className='z-10 flex w-full flex-col items-center justify-between gap-4 px-4 md:flex-row md:gap-6 md:px-10 lg:max-w-5xl lg:gap-20 lg:px-24 xl:max-w-6xl 2xl:max-w-[90rem]'>
