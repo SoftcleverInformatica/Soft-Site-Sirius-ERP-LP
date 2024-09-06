@@ -4,7 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 export default function Beneficios() {
 	const beneficios = [
 		{ icon: <LineSegments size={32} weight='duotone' />, titulo: 'Aumento da Eficiência', descricao: 'Automatize tarefas rotineiras e melhore a produtividade da sua equipe.' },
-		{ icon: <PresentationChart size={32} weight='duotone' />, titulo: 'Decisões Baseadas em Dados', descricao: 'Acesse relatórios detalhados e tome decisões informadas para o crescimento do seu negócio.' },
+		{
+			icon: <PresentationChart size={32} weight='duotone' />,
+			titulo: 'Facilidade na Gestão Fiscal',
+			descricao: 'Simplifique processos fiscais garantindo conformidade e agilidade no dia a dia.',
+		},
 		{ icon: <Graph size={32} weight='fill' />, titulo: 'Integração Completa', descricao: 'Integre todos os departamentos da sua empresa em uma única plataforma.' },
 	];
 

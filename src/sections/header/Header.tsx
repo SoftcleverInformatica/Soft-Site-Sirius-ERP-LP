@@ -6,9 +6,7 @@ import { planos } from '../plan/Plans';
 
 export default function Header() {
 	const link_whatsapp = 'https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f';
-	const f1 = () => {
-		console.log('teste');
-	};
+
 	return (
 		<header className='z-10 flex w-full flex-col items-center pt-44 xl:pt-28'>
 			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-16 xl:max-w-6xl 2xl:max-w-[90rem]`}>
@@ -57,7 +55,9 @@ export default function Header() {
 
 				<div className='flex flex-col items-center gap-8 md:flex-row md:gap-10'>
 					<div className='w-full lg:w-3/5'>
-						<h2 className='font-main text-2xl font-extrabold leading-tight tracking-wide lg:text-4xl xl:text-5xl'>Transforme a Gestão do Seu Negócio com Nosso Software ERP</h2>
+						<h2 className='font-main text-2xl font-extrabold leading-tight tracking-wide lg:text-4xl xl:text-5xl'>
+							Sistema de Gestão Empresarial - Para Atacado, Distribuição, Indústria e Serviços de todos os tipos e tamanhos.{' '}
+						</h2>
 						<p className='my-6 font-secondary text-base font-normal tracking-wider md:my-12 md:text-lg lg:text-xl lg:leading-9'>
 							Simplifique processos, aumente a eficiência e tome decisões baseadas em dados com nosso ERP líder de mercado.
 						</p>
@@ -70,7 +70,7 @@ export default function Header() {
 							</Button>
 						</div>
 					</div>
-					<div className='hidden h-48 w-[29rem] max-w-full rounded-3xl bg-primary bg-laptop bg-[length:16rem_10.6rem] bg-[left_50%_top_50%] bg-no-repeat sm:block md:rounded-[40px] lg:h-[18rem] lg:bg-[length:22rem_16.5rem]'></div>
+					<div className='hidden h-48 w-[29rem] max-w-full rounded-3xl bg-laptop bg-[length:16rem_10.6rem] bg-[left_50%_top_50%] bg-no-repeat sm:block md:rounded-[40px] lg:h-[18rem] lg:bg-[length:22rem_16.5rem]'></div>
 				</div>
 			</div>
 		</header>

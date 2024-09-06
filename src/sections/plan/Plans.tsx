@@ -118,9 +118,9 @@ export default function Plans() {
 			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-16 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<h2 className='font-main text-center text-3xl font-extrabold leading-tight tracking-wide lg:text-5xl'>Planos</h2>
 				<div className='flex flex-col items-center justify-center gap-5 rounded-[40px] border border-primary/50 px-2 py-10'>
-					<div className='flex w-full flex-col items-center justify-center gap-1 sm:flex-row sm:flex-wrap xl:gap-16'>
+					<div className='flex w-full flex-col items-center justify-center gap-1 sm:flex-row sm:flex-wrap xl:gap-12'>
 						{planos.map((_, i) => (
-							<div key={i} className={`flex w-full max-w-72 flex-col gap-1 rounded-[32px] ${_.recommended ? 'bg-amber-500/80' : ''} p-2 pt-2`}>
+							<div key={i} className={`flex w-full max-w-72 flex-col gap-1 rounded-[32px] 2xl:max-w-80 ${_.recommended ? 'bg-amber-500/80' : ''} p-2 pt-2`}>
 								<span className='h-6 pl-3 font-bold text-black/85'>{_.recommended ? 'Recomendado' : ''}</span>
 								<div className={`flex h-[44rem] w-full flex-col justify-around gap-1 rounded-3xl border border-amber-500 bg-white px-3 py-10 transition delay-150 ease-in-out sm:justify-between`}>
 									<div className='w-full'>
@@ -154,8 +154,8 @@ export default function Plans() {
 						))}
 					</div>
 					<div className='flex w-full flex-col gap-16'>
-						<div className='h-full w-full rounded-3xl bg-gradient-to-r from-primary to-secondary'>
-							<div className={`flex w-full flex-col gap-1 self-center rounded-[32px] p-2 2xl:w-9/12`}>
+						<div className='h-full w-full self-center rounded-3xl bg-gradient-to-r from-primary to-secondary p-2 2xl:w-9/12'>
+							<div className={`flex w-full flex-col gap-1 self-center rounded-[32px]`}>
 								<div className={`flex h-auto w-full flex-col justify-between gap-4 rounded-3xl bg-white px-4 py-8 transition delay-150 ease-in-out lg:gap-5 lg:px-8 lg:py-12`}>
 									<div className='w-full'>
 										<h4 className='text-3xl font-semibold text-black/85 md:text-4xl'>{planos2[0].plan}</h4>

@@ -1,7 +1,54 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import adrianahair from '@/../public/assets/clients/adriana-hair.jpg';
+import aia from '@/../public/assets/clients/aia.png';
+import albusclinic from '@/../public/assets/clients/albus-clinic.jpg';
+import alinhastro from '@/../public/assets/clients/alinhastro.jpg';
+import aquiobichopega from '@/../public/assets/clients/aqui-o-bicho-pega.png';
+import artvenite from '@/../public/assets/clients/art-venite.png';
+import ativaportariainteligente from '@/../public/assets/clients/ativa-portaria-inteligente.png';
+import barbaraconservas from '@/../public/assets/clients/barbara-conservas.jpg';
+import bichochic from '@/../public/assets/clients/bicho-chic.jpg';
+import brasilsistemas from '@/../public/assets/clients/brasil-sistemas.jpeg';
+import brumed from '@/../public/assets/clients/brumed.png';
+import caviva from '@/../public/assets/clients/caviva-2.png';
+import cse from '@/../public/assets/clients/cse.jpg';
+import cspfix from '@/../public/assets/clients/csp-fix.jpeg';
+import envelopack from '@/../public/assets/clients/envelopack.png';
+import fastlaser from '@/../public/assets/clients/fastlaser.jpeg';
+import fenixgas from '@/../public/assets/clients/fenixgas.jpg';
+import goldenmix from '@/../public/assets/clients/golden-mix.png';
+import grmodas from '@/../public/assets/clients/gr-modas.jpg';
+import infini from '@/../public/assets/clients/infini.png';
+import infoline from '@/../public/assets/clients/infoline.png';
+import irmaosbozza from '@/../public/assets/clients/irmaos-bozza.jpg';
+import jaccdoces from '@/../public/assets/clients/jacc-doces.jpg';
+import jcrbblocos from '@/../public/assets/clients/jcrb-blocos.png';
+import lira from '@/../public/assets/clients/lira.png';
+import logocasadobar from '@/../public/assets/clients/logo-casa-do-bar.png';
+import mainard from '@/../public/assets/clients/mainard.jpg';
+import miamibilhares from '@/../public/assets/clients/miami-bilhares.png';
+import motodakar from '@/../public/assets/clients/motodakar.png';
+import nanichinelato from '@/../public/assets/clients/nani-chinelato.jpg';
+import nanoblindagens from '@/../public/assets/clients/nano-blindagens.png';
+import oculosmania from '@/../public/assets/clients/oculos-mania.png';
+import petshopbiori from '@/../public/assets/clients/pet-shop-biori.jpg';
+import pontodopadeiro from '@/../public/assets/clients/ponto-do-padeiro.png';
+import pontualpolimeros from '@/../public/assets/clients/pontual-polimeros.png';
+import ramos from '@/../public/assets/clients/ramos.jpg';
+import ramsor from '@/../public/assets/clients/ramsor.png';
+import rikwill from '@/../public/assets/clients/rikwill.jpg';
+import riquella from '@/../public/assets/clients/riquella.png';
+import roma from '@/../public/assets/clients/roma.jpg';
+import rvcautomacao from '@/../public/assets/clients/rvc-automacao.jpeg';
+import saltoja from '@/../public/assets/clients/saltoja.jpg';
+import tecnigrav from '@/../public/assets/clients/tecnigrav.png';
+import tressar from '@/../public/assets/clients/tressar.png';
+import tugumi from '@/../public/assets/clients/tugumi.jpg';
+import tussar from '@/../public/assets/clients/tussar.jpg';
 import { Star, User } from '@phosphor-icons/react/dist/ssr';
+import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -23,6 +70,52 @@ export default function ProvasSociais() {
 		{ alt: 'Logo da empresa Bollatel', src: clientBollatel },
 		{ alt: 'Logo da empresa Escaleve', src: clientEscaleve },
 		{ alt: 'Logo da empresa Portoro', src: clientPortoro },
+		{ alt: 'Logotipo', src: albusclinic },
+		{ alt: 'Logotipo', src: alinhastro },
+		{ alt: 'Logotipo', src: aquiobichopega },
+		{ alt: 'Logotipo', src: artvenite },
+		{ alt: 'Logotipo', src: ativaportariainteligente },
+		{ alt: 'Logotipo', src: barbaraconservas },
+		{ alt: 'Logotipo', src: aia },
+		{ alt: 'Logotipo', src: brasilsistemas },
+		{ alt: 'Logotipo', src: bichochic },
+		{ alt: 'Logotipo', src: brumed },
+		{ alt: 'Logotipo', src: caviva },
+		{ alt: 'Logotipo', src: cse },
+		{ alt: 'Logotipo', src: cspfix },
+		{ alt: 'Logotipo', src: fastlaser },
+		{ alt: 'Logotipo', src: adrianahair },
+		{ alt: 'Logotipo', src: envelopack },
+		{ alt: 'Logotipo', src: goldenmix },
+		{ alt: 'Logotipo', src: grmodas },
+		{ alt: 'Logotipo', src: fenixgas },
+		{ alt: 'Logotipo', src: infini },
+		{ alt: 'Logotipo', src: infoline },
+		{ alt: 'Logotipo', src: irmaosbozza },
+		// { alt: 'Logotipo', src: jaccdoces },
+		{ alt: 'Logotipo', src: jcrbblocos },
+		{ alt: 'Logotipo', src: logocasadobar },
+		{ alt: 'Logotipo', src: mainard },
+		{ alt: 'Logotipo', src: motodakar },
+		{ alt: 'Logotipo', src: miamibilhares },
+		{ alt: 'Logotipo', src: nanichinelato },
+		{ alt: 'Logotipo', src: lira },
+		{ alt: 'Logotipo', src: oculosmania },
+		{ alt: 'Logotipo', src: petshopbiori },
+		{ alt: 'Logotipo', src: pontodopadeiro },
+		{ alt: 'Logotipo', src: nanoblindagens },
+		{ alt: 'Logotipo', src: pontualpolimeros },
+		{ alt: 'Logotipo', src: ramos },
+		{ alt: 'Logotipo', src: ramsor },
+		{ alt: 'Logotipo', src: rikwill },
+		{ alt: 'Logotipo', src: roma },
+		{ alt: 'Logotipo', src: rvcautomacao },
+		{ alt: 'Logotipo', src: saltoja },
+		{ alt: 'Logotipo', src: tecnigrav },
+		{ alt: 'Logotipo', src: tressar },
+		{ alt: 'Logotipo', src: riquella },
+		{ alt: 'Logotipo', src: tugumi },
+		{ alt: 'Logotipo', src: tussar },
 		{ alt: 'Logo da empresa Colormix', src: clientColormix },
 		{ alt: 'Logo da empresa Coopercas', src: clientCoopercas },
 	];
@@ -347,12 +440,19 @@ export default function ProvasSociais() {
 			<div className={`flex w-full flex-col gap-16 px-4 md:px-10 lg:max-w-5xl lg:gap-16 lg:px-16 xl:max-w-6xl 2xl:max-w-[90rem]`}>
 				<h2 className='font-main text-center text-3xl font-extrabold leading-tight tracking-wide lg:text-5xl'>Nossos Casos de Sucesso</h2>
 				<div>
-					<Carousel className='w-full' opts={{ loop: true }}>
+					<Carousel
+						className='w-full'
+						opts={{ loop: true }}
+						plugins={[
+							Autoplay({
+								delay: 6000,
+							}),
+						]}>
 						<CarouselContent>
 							{imgs.map((_, index) => (
 								<CarouselItem className='flex cursor-grab select-none justify-center active:cursor-grabbing md:basis-1/3 lg:basis-1/5' key={index}>
 									<div className='flex'>
-										<Image className='h-16 self-center object-contain opacity-80 grayscale filter' alt={_.alt} src={_.src} />
+										<Image className='h-48 w-full min-w-48 self-center object-contain opacity-80 grayscale filter' alt={_.alt} src={_.src} />
 									</div>
 								</CarouselItem>
 							))}
@@ -388,7 +488,7 @@ export default function ProvasSociais() {
 							</CarouselItem>
 						))}
 					</CarouselContent>
-					<div className='hidden self-center lg:flex'>
+					<div className='mt-3 hidden self-center lg:flex'>
 						{Array.from(Array(count).keys()).map((i) => (
 							<Button key={i} className={`mx-1 h-1 flex-grow rounded-full p-1 hover:bg-secondary ${i === current - 1 ? 'bg-white hover:bg-white' : 'bg-neutral-600/75'}`} onClick={() => api?.scrollTo(i)} />
 						))}
@@ -401,9 +501,7 @@ export default function ProvasSociais() {
 	);
 }
 
-interface StarRatingProps {
-	score: number;
-}
+type StarRatingProps = { score: number };
 
 const StarRating: React.FC<StarRatingProps> = ({ score }) => {
 	const stars = Array.from({ length: 5 }, (_, index) => index + 1);

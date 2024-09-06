@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube } from '@/components/ui/svgs';
+import { Facebook, Instagram, LogoSoftclever, Youtube } from '@/components/ui/svgs';
 
 export default function Footer() {
 	return (

@@ -9,120 +9,292 @@ export default function Funcionalidades() {
 	const recursos = [
 		{
 			modulo: 'Vendas',
+			descricao:
+				'O módulo de Vendas gerencia todo o ciclo de vendas, desde o pedido até a emissão de notas fiscais e entrega. Permite o acompanhamento detalhado de cada fase da venda, facilitando o controle de estoque, emissão de faturas e relatórios de performance.',
 			funcionalidades: [
 				{
 					titulo: 'Pedidos de Vendas',
 					descricao:
-						'Integrado com o estoque e financeiro. Emissão de pedidos de vendas de maneira expressa ou detalhada. Diversas opções de filtros e relatórios e finalização de vendas parciais ou totais através da emissão de NF-e ou NFS-e. Geração de orçamentos e transferências, controle de entregas parciais com elaboração de romaneio de carga, geração de ordem de produção, múltiplos status, troca e devolução com geração de crédito ao cliente, reserva de produtos, controle de movimentações financeiras dos clientes, liberação e expedição de pedidos, impressão de recibo de entrega, etiquetas e pedidos e muito mais',
-					imagem: 'screenshot do sistema',
+						'Integrado com o estoque e financeiro. Emissão de pedidos de vendas de maneira expressa ou detalhada. Diversas opções de filtros e relatórios e finalização de vendas parciais ou totais através da emissão de NF-e ou NFS-e. Geração de orçamentos e transferências, controle de entregas parciais com elaboração de romaneio de carga, geração de ordem de produção, múltiplos status, troca e devolução com geração de crédito ao cliente, reserva de produtos, controle de movimentações financeiras dos clientes, liberação e expedição de pedidos, impressão de recibo de entrega, etiquetas e pedidos e muito mais.',
+				},
+				// {
+				// 	titulo: 'Emissão de Notas Fiscais',
+				// 	descricao: 'Emissão automática de NF-e ou NFS-e para finalização de vendas. O sistema gera e envia automaticamente os arquivos XML e PDFs para os clientes e autoridades fiscais.',
+				// },
+				{
+					titulo: 'Orçamentos e Propostas',
+					descricao: 'Permite a geração de orçamentos para clientes, com histórico detalhado e conversão rápida em pedidos de venda.',
 				},
 				{
-					titulo: 'Compras de Mercadorias',
+					titulo: 'Relatórios de Vendas',
+					descricao: 'Geração de relatórios gerenciais sobre vendas realizadas, status de pedidos, e análise de performance de vendedores e produtos.',
+				},
+			],
+		},
+		{
+			modulo: 'Compras',
+			descricao: 'O módulo de Compras gerencia o processo de aquisição de materiais e serviços, garantindo a reposição eficiente de estoque e controle sobre as movimentações financeiras relacionadas a compras.',
+			funcionalidades: [
+				{
+					titulo: 'Pedidos de Compra',
 					descricao:
-						'Pedidos de Compras - Totalmente integrado com o estoque e financeiro. Permite ao usuário gerar pedidos de compras para serviços ou produtos. Também é possível importar arquivos XMLs enviado pelos fornecedores. Impressão de diversos modelos de pedidos de compra e diversas opções de filtros e relatórios.',
-					imagem: 'screenshot do sistema',
+						'Totalmente integrado com o estoque e financeiro. Permite ao usuário gerar pedidos de compras para serviços ou produtos. Também é possível importar arquivos XMLs enviado pelos fornecedores. Impressão de diversos modelos de pedidos de compra e diversas opções de filtros e relatórios.',
+				},
+				{
+					titulo: 'Integração com Fornecedores',
+					descricao: 'Facilita a comunicação com fornecedores, permitindo a importação de XMLs e integração de pedidos e cotações, além da geração automática de relatórios.',
+				},
+				{
+					titulo: 'Relatórios de Compras',
+					descricao: 'Geração de relatórios detalhados sobre compras realizadas, custos e análise de fornecedores, com filtros personalizáveis.',
 				},
 			],
 		},
 		{
 			modulo: 'Financeiro',
+			descricao: 'O módulo Financeiro integra as áreas de contas a pagar, contas a receber, conciliação bancária e fluxo de caixa. Oferece relatórios financeiros completos e projeções de receitas e despesas.',
 			funcionalidades: [
 				{
-					titulo: 'Pagar',
+					titulo: 'Contas a Pagar',
 					descricao:
-						'Financeiro - Integrado com as compras e vendas. Controle detalhado das contas a pagar e a receber. Diversas opções de filtros e relatórios. Opções de controle de contas contábeis, centro de custos e departamento. Controle de conciliação bancária. Gera boleto bancário com controle de remessa e retorno junto ao banco. Integração de pagamentos bancários através do SISPAG. Permite lançamento de despesas avulsas e de contas estimadas e/ou reais. Vínculo com conta corrente e cheques. Permite projeção de novas despesas, registro de pagamentos individuais, tudo individualmente ou através de filtro, Controle de fluxo de caixa, previsões e metas orçamentárias, controle de saldo bancários com transferência em contas correntes e muito mais.',
-					imagem: 'screenshot do sistema',
+						'O Contas a Pagar oferece controle detalhado das obrigações financeiras da empresa, como fornecedores e serviços adquiridos. Totalmente integrado com os módulos de compras e financeiro, permite o lançamento de despesas avulsas ou programadas, o controle de contas estimadas e/ou reais, e a geração de relatórios financeiros. O sistema facilita a gestão de pagamentos individuais ou em lote, com opções de projeção de novas despesas e vinculação com contas correntes e cheques. Também permite a integração de pagamentos bancários via SISPAG, além de controle de fluxo de caixa e previsões financeiras.',
 				},
 				{
-					titulo: 'Receber',
+					titulo: 'Contas a Receber',
 					descricao:
-						'Controle das contas a receber com emissão de boletos bancários. Possibilidade de filtros para relatórios detalhados sobre os recebimentos de clientes, gerenciamento de inadimplência e controle de fluxo de caixa.',
-					imagem: 'Screenshot do módulo de gestão de estoque.',
+						'O Contas a Receber automatiza o controle das receitas da empresa, integrando-se ao módulo de vendas para gerenciar pagamentos de clientes. Permite o lançamento de contas a receber, vinculação a contas correntes, emissão de boletos bancários com controle de remessa e retorno, e a projeção de recebimentos futuros. Além disso, o sistema oferece opções avançadas de filtragem e relatórios, permitindo análise precisa da performance financeira e a previsão de fluxo de caixa.',
 				},
 				{
-					titulo: 'Conciliação',
+					titulo: 'Conciliação Bancária',
 					descricao:
-						'Rotina para conciliar transações bancárias com os registros internos, permitindo maior controle sobre entradas e saídas financeiras, minimizando erros de registro e aumentando a transparência financeira.',
-					imagem: 'Screenshot do módulo de gestão de estoque.',
+						'Conciliação Bancária assegura que os registros financeiros da empresa estejam em conformidade com os extratos bancários. Ele integra os lançamentos de contas a pagar e a receber, proporcionando um controle rigoroso dos saldos bancários. A conciliação automática facilita a identificação de divergências e ajustes financeiros, garantindo a precisão das informações e o monitoramento em tempo real do saldo em contas correntes.',
+				},
+				{
+					titulo: 'Fluxo de Caixa',
+					descricao: 'Projeção de fluxo de caixa com base em contas a pagar, receber e despesas previstas, permitindo a análise financeira da empresa a curto, médio e longo prazo.',
 				},
 				{
 					titulo: 'Cobrança',
 					descricao:
-						'Gerenciamento de cobranças de clientes com controle de inadimplência, emissão de avisos de cobrança, integração com bancos para envio de remessas de cobrança e controle de negociações e acordos de pagamento.',
-					imagem: 'Imagem pendente',
+						'Cobrança gerencia o processo de recuperação de créditos de maneira automatizada, assegurando que as faturas em atraso sejam cobradas eficientemente. O sistema permite o envio de avisos de cobrança, a emissão de boletos e a geração de remessas para cobrança bancária. Além disso, oferece relatórios detalhados sobre o status das cobranças, histórico de inadimplência e performance dos recebíveis, facilitando o controle do fluxo de caixa e a previsão de receitas.',
+				},
+			],
+		},
+		{
+			modulo: 'Estoque',
+			descricao: 'O módulo de Estoque gerencia o controle de entradas e saídas de mercadorias, otimiza o inventário e permite um acompanhamento detalhado das movimentações de produtos.',
+			funcionalidades: [
+				{
+					titulo: 'Controle de Entradas e Saídas',
+					descricao: 'Gerenciamento completo de movimentações de estoque, com controle de entradas, saídas e transferências de produtos.',
+				},
+				{
+					titulo: 'Inventário',
+					descricao: 'Ferramentas para a realização de inventários periódicos, controle de divergências e ajustes de estoque.',
+				},
+				{
+					titulo: 'Relatórios de Estoque',
+					descricao: 'Geração de relatórios sobre o status do estoque, movimentações e produtos com baixa ou alta rotação.',
 				},
 			],
 		},
 		{
 			modulo: 'Fiscal',
+			descricao: 'O módulo Fiscal garante que a empresa esteja em conformidade com as legislações tributárias, automatizando a geração de documentos fiscais como NF-e, NFS-e, e declarações como Sped Fiscal e Bloco K.',
 			funcionalidades: [
 				{
-					titulo: 'NF-e',
+					titulo: 'Nota Fiscal Eletrônica',
 					descricao:
-						'Nota Fiscal Eletrônica- Totalmente integrado com o estoque e financeiro, Nota Fiscal Eletrônica (NF-e) com envio e autorização junto à Secretaria da Fazenda SEFAZ. Rotinas de cancelamento e inutilização por faixa numérica, carta de correção, envio automático de e-mail com XML e PDF para o cliente, configurações de diversos tipos de operações com cálculo automático de impostos, pré-visualização e impressão do DANFE e opções de relatórios fiscais.',
-					imagem: 'screenshot do sistema',
+						'Totalmente integrado com o estoque e financeiro, Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a Secretaria da Fazenda SEFAZ. Rotinas de cancelamento e inutilização por faixa numérica, carta de correção, envio automático de e-mail com XML e PDF para o cliente, configurações de diversos tipos de operações com cálculo automático de impostos, pré-visualização e impressão do DANFE e opções de relatórios fiscais. ',
 				},
 				{
-					titulo: 'Ct-e',
+					titulo: 'Sped Fiscal',
 					descricao:
-						'Emissão de Conhecimento de Transporte Eletrônico (CT-e) com envio e autorização junto à SEFAZ. Diversos processos automatizados. Filtros e relatórios gerenciais. Cadastros de emitente, remetente, consignatário, redespacho, tomador, expedidor, recebedor e destinatário. Pré-visualização e impressão do Conhecimento de Transporte.',
-					imagem: 'screenshot do sistema',
+						"Totalmente integrado com compras e vendas. Cálculo de impostos de entrada e saída. Captura do arquivo XML. Atribuição automática das CFOP'S de entrada e das CST'S de ICMS, IPI, PIS E COFINS. Geração mensal do arquivo Sped para envio a SEFAZ e contabilidade. Geração de livro fiscal para conferência com livro da contabilidade. Permite conversão das unidades de medidas (compra x venda) e rateio de impostos. Pode ser contratado separadamente de nosso ERP e integrado ao seu sistema. Você não precisa substituir todos os sistemas de sua empresa.",
 				},
 				{
-					titulo: 'Mdf-e',
+					titulo: 'Bloco K',
 					descricao:
-						'Emissão de Manifestação de Documentos Fiscais para transporte em veículos próprios, arrendados ou transportador autônomo, com mais de uma NF-e ou CT-e. Agiliza o registro de documentos fiscais em trânsito e identifica a unidade de carga e características do transporte.',
-					imagem: 'screenshot do sistema',
+						'Totalmente integrado com as compras, estoque e produção. O Bloco K atua como um componente do Sped Fiscal para controle detalhado dos saldos de entrada e saída de produtos e insumos. Geração mensal do arquivo Bloco K 200 e/ou 280 para envio a SEFAZ e para a contabilidade com movimentações das compras, vendas e produção. Também controla os insumos. Controla estoque próprio e estoque em poder de terceiros. Pode ser contratado separadamente de nosso ERP e integrado ao seu sistema. Você não precisa substituir todos os sistemas de sua empresa.',
+				},
+				{
+					titulo: 'CT-e',
+					descricao:
+						'Emissão de Conhecimento de Transporte Eletrônico (CT-e) com envio e autorização junto a SEFAZ. Diversos processos automatizados. Filtros e relatórios gerenciais. Cadastros de emitente, remetente, consignatário, redespacho, tomador, expedidor, recebedor e destinatário. Pré-visualização e impressão do Conhecimento de Transporte. ',
+				},
+				{
+					titulo: 'MDF-e',
+					descricao:
+						'Emissão de Manifestação de Documentos Fiscais com a finalidade de atender empresas prestadoras de serviço cujo transporte seja realizado em veículos próprios, arrendados, ou mediante a contratação de transportador autônomo de cargas, com mais de uma NF-e ou CT-e. A finalidade do MDF-e é agilizar o registro em lote de documentos fiscais em trânsito e identificar a unidade de carga utilizada e demais características do transporte. ',
 				},
 				{
 					titulo: 'NFS-e',
 					descricao:
 						'Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro. Envio automático de PDF por e-mail.',
-					imagem: 'screenshot do sistema',
-				},
-				{
-					titulo: 'Sped Fiscal',
-					descricao:
-						'Totalmente integrado com compras e vendas. Cálculo de impostos de entrada e saída. Captura do arquivo XML. Atribuição automática das CFOP´S de entrada e das CST´S de ICMS, IPI, PIS E COFINS. Geração mensal do arquivo Sped para envio à SEFAZ e contabilidade. Geração de livro fiscal para conferência com o livro da contabilidade.',
-					imagem: 'screenshot do sistema',
-				},
-				{
-					titulo: 'Bloco K',
-					descricao:
-						'Componente do Sped Fiscal para controle detalhado dos saldos de entrada e saída de produtos e insumos. Geração mensal do arquivo Bloco K para envio à SEFAZ com movimentações de compras, vendas e produção. Controle de estoque próprio e em poder de terceiros.',
-					imagem: 'screenshot do sistema',
 				},
 			],
 		},
 		{
-			modulo: 'Assistência Técnica e Produção',
+			modulo: 'Produção',
+			descricao: 'O módulo de Produção oferece controle total sobre o processo produtivo, desde a geração de ordens de produção até a baixa de matérias-primas e controle de produtos acabados.',
 			funcionalidades: [
 				{
-					titulo: 'Produção',
+					titulo: 'Ordens de Produção',
 					descricao:
-						'Totalmente integrado com o estoque. Geração de ordem de produção a partir do pedido de venda. Controle por fases da produção, baixa automática de matérias-primas e remessa parcial de matérias-primas a terceiros. Carga automática de estoque dos produtos acabados e impressão de ordem de produção.',
+						'Totalmente integrado com o estoque. Geração de ordem de produção a partir do pedido de venda. Controle por fases da produção, controle por grade, baixa automática das matérias primas e remessa parcial de matérias primas a terceiros. Carga automática de estoque dos produtos acabados, impressão de ordem de produção, ficha técnica e ou de corte. Envia pagamento a terceiros para as contas a pagar.',
 				},
 				{
-					titulo: 'Ordens de Serviços',
-					descricao:
-						'Totalmente integrado com vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados. Geração de orçamentos e ordens de serviços. Envio para pedido de vendas e geração de nota fiscal. Baixa automática das peças utilizadas, controle de status, filtros e relatórios.',
-					imagem: 'screenshot do sistema',
+					titulo: 'Controle de Produção por Fases',
+					descricao: 'Acompanhamento detalhado das fases de produção, garantindo que cada etapa seja monitorada e gerenciada com precisão.',
 				},
 				{
-					titulo: 'Beneficiamento',
+					titulo: 'Relatórios de Produção',
+					descricao: 'Relatórios detalhados sobre o status de produção, fases, consumo de matérias-primas e produtos acabados.',
+				},
+			],
+		},
+		{
+			modulo: 'Assistência Técnica',
+			descricao: 'O módulo de Assistência Técnica permite o controle de ordens de serviço e gerenciamento de consertos, com integração ao financeiro e estoque para o controle de peças e faturamento.',
+			funcionalidades: [
+				{
+					titulo: 'Ordens de Serviço',
 					descricao:
-						'Controle detalhado das entradas de mercadorias para processos de beneficiamento. Emissão de pedidos de vendas totais e parciais, controle de saldos de matérias-primas e produtos acabados. Emissão de NF-es a partir do pedido de venda, com mais de uma operação na mesma NF-e.',
-					imagem: 'screenshot do sistema',
+						'Ordens de Serviços - Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados. Geração de orçamentos e ordens de serviços. Envio para pedido de vendas e geração de nota fiscal. Baixa automática das peças utilizadas, diversas opções de status, filtros, relatório e rotinas com exportação para Excel. ',
 				},
 				{
-					titulo: 'Assistência Técnica',
-					descricao:
-						'Controle de reparos e serviços técnicos, gerenciando o ciclo completo desde a entrada do equipamento até o conserto e retorno ao cliente. Geração de relatórios de serviços, controle de peças utilizadas e emissão de notas fiscais.',
-					imagem: 'Imagem pendente',
+					titulo: 'Controle de Peças',
+					descricao: 'Baixa automática de peças utilizadas em consertos e controle de estoque em tempo real, garantindo que os itens estejam disponíveis para reparos.',
+				},
+				{
+					titulo: 'Relatórios de Assistência',
+					descricao: 'Relatórios completos sobre as ordens de serviço em andamento e finalizadas, além de análises de peças utilizadas e custos.',
 				},
 			],
 		},
 	];
+	//  [
+	// 	{
+	// 		modulo: 'Vendas',
+	// 		funcionalidades: [
+	// 			{
+	// 				titulo: 'Pedidos de Vendas',
+	// 				descricao:
+	// 					'Integrado com o estoque e financeiro. Emissão de pedidos de vendas de maneira expressa ou detalhada. Diversas opções de filtros e relatórios e finalização de vendas parciais ou totais através da emissão de NF-e ou NFS-e. Geração de orçamentos e transferências, controle de entregas parciais com elaboração de romaneio de carga, geração de ordem de produção, múltiplos status, troca e devolução com geração de crédito ao cliente, reserva de produtos, controle de movimentações financeiras dos clientes, liberação e expedição de pedidos, impressão de recibo de entrega, etiquetas e pedidos e muito mais',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 		],
+	// 	},
+	// 	{
+	// 		modulo: 'Compras',
+	// 		funcionalidades: [
+	// 			{
+	// 				titulo: 'Compras de Mercadorias',
+	// 				descricao:
+	// 					'Pedidos de Compras - Totalmente integrado com o estoque e financeiro. Permite ao usuário gerar pedidos de compras para serviços ou produtos. Também é possível importar arquivos XMLs enviado pelos fornecedores. Impressão de diversos modelos de pedidos de compra e diversas opções de filtros e relatórios.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 		],
+	// 	},
+	// 	{
+	// 		modulo: 'Financeiro',
+	// 		funcionalidades: [
+	// 			{
+	// 				titulo: 'Pagar',
+	// 				descricao:
+	// 					'Financeiro - Integrado com as compras e vendas. Controle detalhado das contas a pagar e a receber. Diversas opções de filtros e relatórios. Opções de controle de contas contábeis, centro de custos e departamento. Controle de conciliação bancária. Gera boleto bancário com controle de remessa e retorno junto ao banco. Integração de pagamentos bancários através do SISPAG. Permite lançamento de despesas avulsas e de contas estimadas e/ou reais. Vínculo com conta corrente e cheques. Permite projeção de novas despesas, registro de pagamentos individuais, tudo individualmente ou através de filtro, Controle de fluxo de caixa, previsões e metas orçamentárias, controle de saldo bancários com transferência em contas correntes e muito mais.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'Receber',
+	// 				descricao:
+	// 					'Controle das contas a receber com emissão de boletos bancários. Possibilidade de filtros para relatórios detalhados sobre os recebimentos de clientes, gerenciamento de inadimplência e controle de fluxo de caixa.',
+	// 				imagem: 'Screenshot do módulo de gestão de estoque.',
+	// 			},
+	// 			{
+	// 				titulo: 'Conciliação',
+	// 				descricao:
+	// 					'Rotina para conciliar transações bancárias com os registros internos, permitindo maior controle sobre entradas e saídas financeiras, minimizando erros de registro e aumentando a transparência financeira.',
+	// 				imagem: 'Screenshot do módulo de gestão de estoque.',
+	// 			},
+	// 			{
+	// 				titulo: 'Cobrança',
+	// 				descricao:
+	// 					'Gerenciamento de cobranças de clientes com controle de inadimplência, emissão de avisos de cobrança, integração com bancos para envio de remessas de cobrança e controle de negociações e acordos de pagamento.',
+	// 				imagem: 'Imagem pendente',
+	// 			},
+	// 		],
+	// 	},
+	// 	{
+	// 		modulo: 'Fiscal',
+	// 		funcionalidades: [
+	// 			{
+	// 				titulo: 'NF-e',
+	// 				descricao:
+	// 					'Nota Fiscal Eletrônica- Totalmente integrado com o estoque e financeiro, Nota Fiscal Eletrônica (NF-e) com envio e autorização junto à Secretaria da Fazenda SEFAZ. Rotinas de cancelamento e inutilização por faixa numérica, carta de correção, envio automático de e-mail com XML e PDF para o cliente, configurações de diversos tipos de operações com cálculo automático de impostos, pré-visualização e impressão do DANFE e opções de relatórios fiscais.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'Ct-e',
+	// 				descricao:
+	// 					'Emissão de Conhecimento de Transporte Eletrônico (CT-e) com envio e autorização junto à SEFAZ. Diversos processos automatizados. Filtros e relatórios gerenciais. Cadastros de emitente, remetente, consignatário, redespacho, tomador, expedidor, recebedor e destinatário. Pré-visualização e impressão do Conhecimento de Transporte.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'Mdf-e',
+	// 				descricao:
+	// 					'Emissão de Manifestação de Documentos Fiscais para transporte em veículos próprios, arrendados ou transportador autônomo, com mais de uma NF-e ou CT-e. Agiliza o registro de documentos fiscais em trânsito e identifica a unidade de carga e características do transporte.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'NFS-e',
+	// 				descricao:
+	// 					'Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro. Envio automático de PDF por e-mail.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'Sped Fiscal',
+	// 				descricao:
+	// 					'Totalmente integrado com compras e vendas. Cálculo de impostos de entrada e saída. Captura do arquivo XML. Atribuição automática das CFOP´S de entrada e das CST´S de ICMS, IPI, PIS E COFINS. Geração mensal do arquivo Sped para envio à SEFAZ e contabilidade. Geração de livro fiscal para conferência com o livro da contabilidade.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'Bloco K',
+	// 				descricao:
+	// 					'Componente do Sped Fiscal para controle detalhado dos saldos de entrada e saída de produtos e insumos. Geração mensal do arquivo Bloco K para envio à SEFAZ com movimentações de compras, vendas e produção. Controle de estoque próprio e em poder de terceiros.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 		],
+	// 	},
+	// 	{
+	// 		modulo: 'Assistência Técnica e Produção',
+	// 		funcionalidades: [
+	// 			{
+	// 				titulo: 'Produção',
+	// 				descricao:
+	// 					'Totalmente integrado com o estoque. Geração de ordem de produção a partir do pedido de venda. Controle por fases da produção, baixa automática de matérias-primas e remessa parcial de matérias-primas a terceiros. Carga automática de estoque dos produtos acabados e impressão de ordem de produção.',
+	// 			},
+	// 			{
+	// 				titulo: 'Ordens de Serviços',
+	// 				descricao:
+	// 					'Totalmente integrado com vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados. Geração de orçamentos e ordens de serviços. Envio para pedido de vendas e geração de nota fiscal. Baixa automática das peças utilizadas, controle de status, filtros e relatórios.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'Beneficiamento',
+	// 				descricao:
+	// 					'Controle detalhado das entradas de mercadorias para processos de beneficiamento. Emissão de pedidos de vendas totais e parciais, controle de saldos de matérias-primas e produtos acabados. Emissão de NF-es a partir do pedido de venda, com mais de uma operação na mesma NF-e.',
+	// 				imagem: 'screenshot do sistema',
+	// 			},
+	// 			{
+	// 				titulo: 'Assistência Técnica',
+	// 				descricao:
+	// 					'Controle de reparos e serviços técnicos, gerenciando o ciclo completo desde a entrada do equipamento até o conserto e retorno ao cliente. Geração de relatórios de serviços, controle de peças utilizadas e emissão de notas fiscais.',
+	// 				imagem: 'Imagem pendente',
+	// 			},
+	// 		],
+	// 	},
+	// ];
 
 	const [selecionado, setSelecionado] = useState<{ modulo: string; item: number }>({ modulo: recursos[0].modulo, item: 0 });
 
@@ -133,7 +305,7 @@ export default function Funcionalidades() {
 			<div key={Math.random()} className='flex animate-fadeIn flex-col gap-4 p-6 opacity-0'>
 				<h3 className='text-xl font-bold'>{exibirDetalhes[0].funcionalidades[item].titulo}</h3>
 				<h6 className='text-justify'>{exibirDetalhes[0].funcionalidades[item].descricao}</h6>
-				<Image alt='' src={'#'} width={1000} height={1000} className='h-96 w-full' />
+				{/* <Image alt='' src={'#'} width={1000} height={1000} className='h-96 w-full' /> */}
 				{/* <Image alt='' src={exibirDetalhes[0].funcionalidades[item].imagem} width={1000} height={1000} className='h-10 w-10' /> */}
 			</div>
 		);
