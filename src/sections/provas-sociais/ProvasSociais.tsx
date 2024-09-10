@@ -92,7 +92,7 @@ export default function ProvasSociais() {
 		{ alt: 'Logotipo', src: infini },
 		{ alt: 'Logotipo', src: infoline },
 		{ alt: 'Logotipo', src: irmaosbozza },
-		// { alt: 'Logotipo', src: jaccdoces },
+		{ alt: 'Logotipo', src: jaccdoces },
 		{ alt: 'Logotipo', src: jcrbblocos },
 		{ alt: 'Logotipo', src: logocasadobar },
 		{ alt: 'Logotipo', src: mainard },
@@ -452,7 +452,7 @@ export default function ProvasSociais() {
 							{imgs.map((_, index) => (
 								<CarouselItem className='flex cursor-grab select-none justify-center active:cursor-grabbing md:basis-1/3 lg:basis-1/5' key={index}>
 									<div className='flex'>
-										<Image className='h-48 w-full min-w-48 self-center object-contain opacity-80 grayscale filter' alt={_.alt} src={_.src} />
+										<Image className='h-48 w-auto min-w-48 self-center object-contain opacity-80 grayscale filter' alt={_.alt} src={_.src} />
 									</div>
 								</CarouselItem>
 							))}
@@ -493,8 +493,8 @@ export default function ProvasSociais() {
 							<Button key={i} className={`mx-1 h-1 flex-grow rounded-full p-1 hover:bg-secondary ${i === current - 1 ? 'bg-white hover:bg-white' : 'bg-neutral-600/75'}`} onClick={() => api?.scrollTo(i)} />
 						))}
 					</div>
-					<CarouselPrevious className='hidden md:flex' />
-					<CarouselNext className='hidden md:flex' />
+					{/* <CarouselPrevious className='hidden md:flex' />
+					<CarouselNext className='hidden md:flex' /> */}
 				</Carousel>
 			</div>
 		</section>

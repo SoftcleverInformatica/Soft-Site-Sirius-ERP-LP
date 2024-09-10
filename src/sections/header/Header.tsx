@@ -70,7 +70,9 @@ export default function Header() {
 							</Button>
 						</div>
 					</div>
-					<div className='hidden h-48 w-[29rem] max-w-full rounded-3xl bg-laptop bg-[length:16rem_10.6rem] bg-[left_50%_top_50%] bg-no-repeat sm:block md:rounded-[40px] lg:h-[18rem] lg:bg-[length:22rem_16.5rem]'></div>
+					<div>
+						<div className='hidden h-48 w-[29rem] max-w-full rounded-3xl bg-laptop bg-[length:16rem_10.6rem] bg-[left_50%_top_50%] bg-no-repeat sm:block md:rounded-[40px] lg:h-[18rem] lg:bg-[length:28rem_15.24rem]'></div>
+					</div>
 				</div>
 			</div>
 		</header>

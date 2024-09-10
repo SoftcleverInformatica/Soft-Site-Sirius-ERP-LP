@@ -15,7 +15,7 @@ export default function Funcionalidades() {
 				{
 					titulo: 'Pedidos de Vendas',
 					descricao:
-						'Integrado com o estoque e financeiro. Emissão de pedidos de vendas de maneira expressa ou detalhada. Diversas opções de filtros e relatórios e finalização de vendas parciais ou totais através da emissão de NF-e ou NFS-e. Geração de orçamentos e transferências, controle de entregas parciais com elaboração de romaneio de carga, geração de ordem de produção, múltiplos status, troca e devolução com geração de crédito ao cliente, reserva de produtos, controle de movimentações financeiras dos clientes, liberação e expedição de pedidos, impressão de recibo de entrega, etiquetas e pedidos e muito mais.',
+						'Integrado com o estoque e financeiro. Emissão de pedidos de vendas de maneira expressa ou detalhada. Diversas opções de filtros e relatórios e finalização de vendas parciais ou totais através da emissão de NF-e ou NFS-e. Geração de orçamentos e transferências, controle de entregas parciais com elaboração de romaneio de carga, geração de ordem de produção, múltiplos status, troca e devolução com geração de crédito ao cliente, reserva de produtos, controle de movimentações financeiras dos clientes, liberação e expedição de pedidos, impressão de recibo de entrega, etiquetas e muito mais.',
 				},
 				// {
 				// 	titulo: 'Emissão de Notas Fiscais',
@@ -23,11 +23,12 @@ export default function Funcionalidades() {
 				// },
 				{
 					titulo: 'Orçamentos e Propostas',
-					descricao: 'Permite a geração de orçamentos para clientes, com histórico detalhado e conversão rápida em pedidos de venda.',
+					descricao:
+						'Gere seus orçamentos e propostas com facilidade utilizando os produtos e serviços previamente cadastrados no sistema. Destaque promoções, produtos em ofertas, condições de pagamentos. Converta os orçamentos aprovados pelos clientes em pedidos de forma rápida e precisa.',
 				},
 				{
 					titulo: 'Relatórios de Vendas',
-					descricao: 'Geração de relatórios gerenciais sobre vendas realizadas, status de pedidos, e análise de performance de vendedores e produtos.',
+					descricao: 'Avalie com segurança os resultados de sua empresa pelos relatórios gerenciais. Permite análise das vendas por vendedores, produtos, períodos, curva ABC e muito mais',
 				},
 			],
 		},
@@ -57,12 +58,12 @@ export default function Funcionalidades() {
 				{
 					titulo: 'Contas a Pagar',
 					descricao:
-						'O Contas a Pagar oferece controle detalhado das obrigações financeiras da empresa, como fornecedores e serviços adquiridos. Totalmente integrado com os módulos de compras e financeiro, permite o lançamento de despesas avulsas ou programadas, o controle de contas estimadas e/ou reais, e a geração de relatórios financeiros. O sistema facilita a gestão de pagamentos individuais ou em lote, com opções de projeção de novas despesas e vinculação com contas correntes e cheques. Também permite a integração de pagamentos bancários via SISPAG, além de controle de fluxo de caixa e previsões financeiras.',
+						'Este módulo oferece controle detalhado das obrigações financeiras da empresa relacionados aos fornecedores e serviços adquiridos. Totalmente integrado com o módulo de compra, permite o lançamento das despesas avulsas e programadas, controle de contas estimadas e/ou reais e a geração de relatórios financeiros. O sistema facilita a gestão de pagamentos únicos ou em lote, com opções de projeção de novas despesas. Tudo vinculado a uma ou mais contas correntes. Permite a integração de pagamentos bancários via SISPAG, controle do fluxo de caixa, previsões financeiras e muito mais.',
 				},
 				{
 					titulo: 'Contas a Receber',
 					descricao:
-						'O Contas a Receber automatiza o controle das receitas da empresa, integrando-se ao módulo de vendas para gerenciar pagamentos de clientes. Permite o lançamento de contas a receber, vinculação a contas correntes, emissão de boletos bancários com controle de remessa e retorno, e a projeção de recebimentos futuros. Além disso, o sistema oferece opções avançadas de filtragem e relatórios, permitindo análise precisa da performance financeira e a previsão de fluxo de caixa.',
+						'Automatiza o controle das receitas da empresa, integrando-se ao módulo de vendas para gerenciar todos os pagamentos. Permite lançamentos vinculados a uma ou mais contas correntes, emissão de boletos bancários com controle de remessas e retornos bancários. Viabiliza a projeção de recebimentos futuros. Oferece opções avançadas de filtros e relatórios, permitindo análise precisa da performance financeira, previsão de fluxo de caixa e muito mais.',
 				},
 				{
 					titulo: 'Conciliação Bancária',
@@ -86,15 +87,16 @@ export default function Funcionalidades() {
 			funcionalidades: [
 				{
 					titulo: 'Controle de Entradas e Saídas',
-					descricao: 'Gerenciamento completo de movimentações de estoque, com controle de entradas, saídas e transferências de produtos.',
+					descricao:
+						'Gerenciamento completo das movimentações do estoque pelo controle das entradas, saídas e transferências. Para cada produto é viabilizada a verificação de todas as movimentações ocorridas com saldos temporários, datas, quantidades, tudo vinculado à respectiva documentação.',
 				},
 				{
 					titulo: 'Inventário',
-					descricao: 'Ferramentas para a realização de inventários periódicos, controle de divergências e ajustes de estoque.',
+					descricao: 'Ferramenta prática para a realização de inventários parciais ou totais, análises, controles e ajustes de eventuais divergências encontradas. Tudo permanece documentado para avaliações futuras.',
 				},
 				{
 					titulo: 'Relatórios de Estoque',
-					descricao: 'Geração de relatórios sobre o status do estoque, movimentações e produtos com baixa ou alta rotação.',
+					descricao: 'Inúmeros relatórios para viabilizar o acompanhamento das necessidades de compras, produtos com baixa ou alta rotatividade, estoques em pontos críticos, curva ABC e muito mais.',
 				},
 			],
 		},
@@ -302,10 +304,10 @@ export default function Funcionalidades() {
 		let exibirDetalhes = recursos.filter((item: any) => item.modulo === modulo);
 
 		return (
-			<div key={Math.random()} className='flex animate-fadeIn flex-col gap-4 p-6 opacity-0'>
+			<div key={Math.random()} className='sticky right-0 top-20 flex animate-fadeIn flex-col gap-4 p-6 opacity-0'>
 				<h3 className='text-xl font-bold'>{exibirDetalhes[0].funcionalidades[item].titulo}</h3>
 				<h6 className='text-justify'>{exibirDetalhes[0].funcionalidades[item].descricao}</h6>
-				{/* <Image alt='' src={'#'} width={1000} height={1000} className='h-96 w-full' /> */}
+				<Image alt='' src={'#'} width={1000} height={1000} className='h-96 w-full' />
 				{/* <Image alt='' src={exibirDetalhes[0].funcionalidades[item].imagem} width={1000} height={1000} className='h-10 w-10' /> */}
 			</div>
 		);
